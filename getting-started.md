@@ -14,12 +14,8 @@ To download GATE, point your web browser at http://gate.ac.uk/download and downl
 In GATE, processing resources are used to automatically create and manipulate annotations on documents. The CREOLE∗ plugins allow to use the Processing Resources (and certain language resources) provided by GATE. In the CREOLE plugin menu we can choose the plugin that contains the processing resource that we want to use. Notice that a single plugin may contain various resources, e.g., in Figure 1, we show the resources that are in the ANNIE plugin.
 The CREOLE plugins can be managed through the graphical user interface which can be activated by selecting “Manage CREOLE Plugins” from the “File” menu. This will bring up a window listing all the known plugins. For each plugin there are two check-boxes, one labelled “Load Now” , which will load the plugin, and the other labelled “Load Always” which will add the plugin to the list of auto-loadable plugins. A “Delete” button is also provided, which will remove the plugin from the list of loaded plugins. This operation does not delete the actual plugin directory, so that it can be reloaded in future usages.. Installed plugins are found automatically when GATE is started; if an installed plugin is deleted from the list, it will re-appear next time GATE is launched.
 In order to set up our pipeline we need to select the Load Now box in the CREOLE Plugin Manager for the following plugins:
- Markup : * ANNIE, from which we take the following processing resources:
+
+Markup : * ANNIE, from which we take the following processing resources:
               * Document Reset
               * GATE Unicode Tokeniser 
-              * RegEx Sentence Splitter 
-              * ANNIE Gazetteer
-              * Jape Transducer
-          * Tagger Framework, which contains the Generic Tagger Processing Resource
-          * OwlExporter. To load this processing resource we need to download the creole.zip file from http://www.semanticsoftware.info/owlexporter, unzip the downloaded file, after that push the button with the symbol + in the upper-left corner of the tab “Install Plugins” (cf. Figure 1), and specify the path of the unzipped folder containing the OwlExporer resource. Finally we can flag the Load Now box in correspondence of OwlExporter in the
-CREOLE Plugin Manager.
+              * RegEx Sentence Splitter
