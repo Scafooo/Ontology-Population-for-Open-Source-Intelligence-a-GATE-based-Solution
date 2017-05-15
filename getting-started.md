@@ -1,8 +1,9 @@
 ![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/logo.png)
 
-# Setting Up The GATE System for OSINT Project
 
 Authors: Giulio Ganino, Domenico Lembo, Massimo Mecella, Federico Scafoglieri
+
+# Setting Up The GATE System for OSINT Project
 
 In this Section we show all the steps needed to set up our solution. We remark that what we describe in the following is not a simple collection of pieces of documentation available for GATE and the processing resources we use. Indeed, some of these resources are lacking of complete or adequate documentation, and their combination in our pipeline requires special configurations. Therefore, the instructions we list below are crucial to properly set up the environment for our aims.
 
