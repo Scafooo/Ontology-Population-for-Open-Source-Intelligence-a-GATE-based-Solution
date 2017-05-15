@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.5.0.2
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Creato il: Mag 21, 2016 alle 11:22
+- Versione del server: 10.0.17-MariaDB
+- Versione PHP: 5.6.14
+-->
+
+<pma_xml_export version="1.0">
+    <!--
+    - Database: 'LA REPUBBLICA'
+    -->
+    <database name="LA REPUBBLICA">
+        <!-- Tabella tblWebData -->
+        <table name="tblWebData">
+            <column name="Article">Bilancio Unipol, pioggia di profitti sulle cooperative di Bologna
+
+
+ENRICO MIELE
+
+IL conto non è ancora in pareggio, ma il traguardo è vicino. Perché quello che le coop in questi anni hanno tirato fuori per sostenere Unipol, che ha inglobato le assicurazioni Fondiaria Sai, sta ritornando. E con gli interessi. Il bilancio in crescita del colosso assicurativo, presentato ieri, con tanto di rimbalzo del titolo a Piazza Affari, dove UnipolSai ha guadagnato oltre l'11%, si traduce in una pioggia di milioni per gli azionisti: su un maxi assegno da oltre 129 milioni, quasi la metà dei dividendi entrerà nelle casse dei big cooperativi. In testa la neonata Alleanza 3.0 che ha messo insieme Adriatica, Estense e Nordest e incasserà da sola una cedola di 26 milioni (dopo quella da 20,8 ricevuta l'anno scorso).
+
+In fondo, se la nave ammiraglia va – in questo caso Unipol – i primi a beneficiarne sono quelli che non l'hanno abbandonata, neanche nei momenti di tempesta (finanziaria). La scommessa del mondo cooperativo, che per primo ha creduto nella possibilità che le assicurazioni &quot;made in Bo&quot; potessero scalare il mercato, sta rendendo come da programma. In via Stalingrado ci hanno sempre creduto, nonostante la crisi dei mercati prosegua e il panorama delle polizze auto non tiri più come un tempo. Da quando l'ad Carlo Cimbri e il presidente Pierluigi Stefanini hanno portato nel perimetro di &quot;casa Unipol&quot; l'ex galassia Fondiaria Sai, prestigiosa ma fiaccata dalla gestione della famiglia Ligresti, il gruppo ha iniziato a macinare profitti. Il piano industriale 2013-2015 si è tradotto in 1,2 miliardi di utili netti e 375 milioni di dividendi. «Risultati positivi», li ha definiti il manager, che si sono tradotti in assegni incassati dalle coop locali per un valore intorno ai 168 milioni. La fetta più grande tocca a loro, che controllano il gruppo col 45% delle azioni. Il 20,3% è in mano all'Alleanza dei supermercati. Ma dentro, seppur con quote minori – racchiuse nelle due holding Holmo e Finsoe – ci sono tutti i nomi di grido del mondo coop: da Manutencoop a Camst, passando per il Consorzio costruttori e Granarolo. Col presidente di Alleanza, Adriano Turrini, che oggi guida anche Finsoe (società che in futuro potrebbe essere rottamata per far spazio ai singoli azionisti).
+
+La compagnia post-fusione è la prima nel mercato italiano delle polizze Danni e tra le prime dieci d'Europa. Le sue assicurazioni valgono più di 16 miliardi di euro. E anche rami in passato meno floridi, come Unipol Banca, oggi non perdono più e hanno il patrimonio in sicurezza. Per mantenere il controllo su tutto questo le coop più volte hanno messo mano al portafoglio per sostenerne gli aumenti di capitale. L'ultima iniezione di liquidità degli azionisti dentro Finsoe è stata di 23 milioni (nel 2013). Aumento arrivato dopo quello da 300 milioni (2012), servito per la scalata Fonsai in cui la holding delle coop ha investito intorno al mezzo miliardo. Ma dal 2013 la musica è cambiata: ciò che è entrato in aumenti di capitale, bilancio dopo bilancio, ha intrapreso la strada del ritorno nelle tasche dei soci. Unipol, per dirla con Cimbri, «ha di fatto restituito agli azionisti quanto anticipato tre anni fa sottoforma di aumento di capitale». Per la gioia delle coop.
+
+©RIPRODUZIONE RISERVATA
+
+Ieri in Piazza Affari il colosso assicurativo ha segnato un rimbalzo dell'11 per cento
+
+13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Via libera al piano anticorruzione
+
+
+DALLA PRIMDI CRONACA
+
+GIOVANNA VITALE
+
+UN DOCUMENTO triennale, destinato perciò a restare. Firmato dal segretario generale Antonella Petrocelli, la dirigente venuta da Milano come il prefetto che l'ha voluta, scippandola a Palazzo Marino.
+
+Non è un segreto per nessuno che è proprio sulle norme contro il malaffare che il commissario straordinario punta per lasciare il segno su Roma. Il campo in cui lui è più ferrato e di cui la città, ferita da Mafia Capitale, ha estremo bisogno. Un work in progress, per ammissione dello stesso Tronca: «Si tratta di un primo nucleo di adempimenti tesi a delineare una nuova strategia, dinamica e partecipata, di prevenzione e contrasto dei fenomeni corruttivi ». Che, oltre a «rendere più chiari e definiti i processi», rispetto al documento elaborato solo un anno fa dall'ex assessore Alfonso Sabella, tiene conto anche delle indicazioni dell'Anac.
+
+Un piano dunque più dettagliato e di conseguenza ampliato, che tra l'altro non varrà solo per i dipendenti capitolini: tutti i soggetti che, siano pubblici o privati, avranno a che fare con il Campidoglio dovranno attenersi alle norme anti-corruzione in vigore a Palazzo Senatorio. E non è l'unica novità. Per evitare che le rotazioni — decise non più solo con il criterio territoriale, ma anche temporale e funzionale — vengano vissute come un'azione punitiva da parte dell'amministrazione, è stato previsto un sistema di incentivi in termini di valutazione complessiva delle singole performance: chi accetta di spostarsi, in sostanza, acquisirà una sorta di bonus che si tradurrà, alla fine, in un premio sul salario accessorio.
+
+E siccome però le cattive abitudini sono dure a morire, il &quot;manuale Tronca&quot; contiene una precauzione per dire addio agli incarichi ottenuti per &quot;filiera&quot;. Ovvero tutti quei funzionari e segretari sbarcati al seguito dei dirigenti, a ogni nuova destinazione di questi ultimi. Non solo per ciascun posto verrà attivato quello che in gergo si chiama &quot;interpello&quot;, ossia un bando interno che mette in palio la funzione vacante, a cui può aspirare chiunque ne abbia i requisiti. Ma è di imminente emanazione un regolamento ad hoc che fisserà paletti rigorosi per l'assegnazione in base a criteri oggettivi. Fondati sul merito. Che prima non c'era.
+
+Infine, aumentano le tutele per chi denuncia. Ciascun dipendente potrà collegarsi al portale del Comune da qualsiasi postazione internet, anche da casa, e con un codice inoltrare la segnalazione. La denuncia, è garantito, sarà letta solo dal responsabile dell'anticorruzione.
+
+©RIPRODUZIONE RISERVATA
+
+&quot;Rende più chiari e definiti i processi elaborati da Sabella e le indicazioni dell'Anac&quot;
+
+ALLA GUIDA
+
+Francesco Paolo Tronca, commissario straordinario del Campidoglio, arrivato da Milano a inizio novembre
+
+02 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Rotazioni e premi il nuovo piano anti-corruzione
+
+
+&gt; &gt;
+
+Il commissario Tronca ha varato un documento in 17 punti con le linee guida per contrastare il dilagante fenomento della corruzione negli uffici del Campidoglio. Il punto centrale riguarda l'introduzione di meccanismi di premio ai dirigenti che favoriscono il meccanismo della rotazione nelle procedure di affidamento di lavori e servizi. Prevista anche l'individuazione di nuove figure per monitorare la correttezza degli atti e una più stretta collaborazione con l'Anac guidata da Raffaele Cantone. Dal prefetto Gabrielli, audito in commissione Antimafia, un nuovo sconfortante panorama sulla penetrazione delle mafie sul territorio della capitale: «Negli ultimi mesi 2015 la mafia ha continuato a infiltrarsi sfruttando la forza finanziaria».
+
+VITALE A PAGINA II
+
+27 gennaio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">no titolo
+
+... il primo e il secondo aumento di capitale. Non è un caso, lascia intendere Malacalza nella sua lettera di venerdì, che la buona riuscita del secondo aumento da 850 milioni, a un anno di distanza da...
+la Repubblica 14 febbraio 2016 pag. 02 sez. CRONACA</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">IL RETROSCENA
+
+MASSIMO MINELLA
+
+RIDARE a Carige quella centralità che sembra smarrita dopo le inchieste giudiziarie e la crisi finanziaria da cui si sta uscendo con sforzi immani. Ridare centralità perché il lavoro di pulizia dei conti e di rafforzamento patrimoniale condotti dall'attuale vertice sono stati fondamentali, ma adesso è necessario accelerare il passo e rimettere la banca dei liguri al centro delle grandi e piccoli iniziative economiche, industriali e commerciali della Liguria. La famiglia Malacalza ha atteso l'esame dei conti 2015 per pronunciarsi, ma la decisione di non confermare i vertici (il presidente Cesare Castelbarco, l'amministratore delegato Piero Montani) era nell'aria da qualche tempo e la volontà dell'azionista di maggioranza di anticipare la data dell'assemblea giocava a favore di questo &quot;sentiment&quot;. Il fatto è che il nuovo azionista vuol fare della banca un'impresa, un'azienda che sia sana nei conti, ma anche aggressiva commercialmente, che sappia pressare i clienti perduti per strada e riprendersi il suo ruolo di protagonista. E per questo intende affidarsi a una squadra di fiducia che sia specchio fedele del nuovo azionariato, quello emerso con maggiore forza fra il primo e il secondo aumento di capitale. Non è un caso, lascia intendere Malacalza nella sua lettera di venerdì, che la buona riuscita del secondo aumento da 850 milioni, a un anno di distanza da quello di 800, sia anche (soprattutto) imputabile ai soggetti che hanno deciso di esporsi in prima persona e mettere sul piatto centinaia di milioni di euro. La loro discesa in campo, a cominciare da quella di Malacalza per continuare con Gabriele Volpi, la famiglia Spinelli, le coop, le fondazioni bancarie, ha fatto da traino al successo del rafforzamento patrimoniale, inducendo tutti gli altri a dare ancora una volta fiducia a Carige. Saranno loro adesso, i principali azionisti, a guidare il gioco, perché fra i motivi per cui è giusto dare fiducia a Carige c'è anche «l'attuale configurazione del nuovo assetto della compagine azionaria, caratterizzata dalla presenza di nuovi soci con vocazione imprenditoriale e, in genere, di un'ampia pluralità di azionisti, alcuni dei quali titolari di partecipazioni consistenti, con forti legami con il territorio nel quale Carige tradizionalmente e prevalentemente opera».
+
+Non c'è più un secondo da perdere, ripete da settimane Vittorio Malacalza ai suoi più stretti collaboratori, bisogna tornare a presidiare e a battere il territorio ogni giorno, a pressare i vecchi clienti che hanno accettato le proposte della banche concorrenti, a recuperare quella centralità nel dialogo con le istituzioni locali che è da sempre patrimonio di Carige, ad aprire nuovi fronti di business. Esattamente come fa un'impresa. Carige, insiste da tempo l'azionista di riferimento, non può non essere il partner del comune di Genova, della Regione Liguria, dell'autorità portuale, ma anche dei terminalisti privati che investono sulle banchine. È da qui che bisogna ricominciare, facendo leva appunto sui soci che hanno dato fiducia alla banca e non hanno mai smesso di sostenerla e di comprare azioni, nonostante il titolo che dopo l'ultimo aumento di capitale valeva 1,7 euro ora è piombato a 45 centesimi. La Borsa, in pochi mesi, ha bruciato il 70% di quel valore. Ma non è detto che la rotta non si possa invertire e che il titolo non possa ricominciare a salire, recuperando il terreno perduto.
+
+©RIPRODUZIONE RISERVATA
+
+IL PIANO
+
+Non attendere oltre, dare ai risparmiatori un forte segnale nel segno della discontinuità
+
+LA SQUADRA
+
+Presenteremo una lista di candidati improntata al massimo rinnovamento
+
+&quot; &quot;
+
+&quot;
+
+Ó&quot;
+
+La sede di Banca Carige
+
+14 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Giuseppe Tomaselli
+
+
+La rubrica viene pubblicata ogni giovedì. Per segnalazioni scrivere una e-mail a &quot;rubrica se ne sono andati&quot; all'indirizzo di posta elettronica palermo@repubblica.it. Gli autori dei testi sono Mario Pintagro e Arianna Rotolo.
+
+Ex agente delle Volanti, è stato un valente boxeur e allenatore dei campioni Nino Castellini, Pino Leto e Michele Orlando
+
+Nel mondo della boxe palermitana era considerato un maestro di alto livello. Ex pugile e titolare dell'omonima Polisportiva di via Evangelista Di Blasi, Giuseppe Tomaselli ha allenato i più grandi campioni di pugilato siciliano, da Nino Castellini a Pino Leto e Michele Orlando. Tutti atleti che a vario titolo sono saliti sui ring nazionali e internazionali.
+
+Il maestro di pugilato Pino Tomaselli, oltre a essere stato un grande boxeur tra gli anni Sessanta e Novanta, ha prestato servizio nella polizia di Stato, nella sezione Volanti. È stato dunque un agente operativo, orgoglioso della divisa che ha indossato sino alla metà degli anni Novanta. Per i suoi grandi meriti sportivi ha fatto parte del gruppo sportivo Fiamme oro. Un uomo semplice e umile, che ha sempre vissuto per la boxe.
+
+L'ultimo saluto è avvenuto nella chiesa del quartiere Passo di Rigano. Se n'è andato il 2 febbraio, a 86 anni.
+
+Ex caporedattore de &quot;L'Ora&quot;, ha seguito i grandi processi di mafia degli anni Sessanta e ha scritto &quot;L'anonima Dc&quot;
+
+Ai tempi delle linotype, Orazio Barrese era già sul fronte della cronaca. Firma storica del giornale &quot;L'Ora&quot;, Orazio Barrese ha seguito i grandi processi di mafia degli anni Sessanta e i lavori della prima commissione Antimafia. È stato lui a rivelare che Luciano Liggio era fuggito da una clinica romana per la mancata esecuzione di un ordine di cattura emesso dal procuratore Pietro Scaglione.
+
+Nativo di Taurianova, in Calabria, Barrese aveva cominciato a &quot;Paese sera&quot;, prima di passare a &quot;L'Ora&quot; durante la direzione di Vittorio Nisticò. Dal combattivo giornale palermitano partirono grandi campagne antimafia cui Cosa nostra rispose con intimidazioni e una bomba in tipografia. Barrese è stato notista politico, inviato, capo redattore. Sulle vicende dell'Antimafia ha pubblicato nel 1973 il libro &quot;I complici&quot; che per la prima volta ricostruiva in modo organico le relazioni tra mafia e potere. Ma l'attenzione di Barrese si è rivolta anche alla malapolitica e alla storia del bandito Giuliano, con i volumi &quot;L'anonima Dc&quot; e &quot;La guerra dei sette anni&quot;. È stato anche sceneggiatore di due film di Pasquale Squitieri, &quot;Corleone&quot; e &quot;Il pentito&quot;. Se n'è andato il 6 febbraio, a 90 anni.
+
+Docente di Patologia chirurgica all'Università di Palermo, eseguì il primo trapianto di rene nel Sud
+
+Si deve a lui il primo centro dialisi a Palermo, realizzato a metà degli anni Settanta. Il professore Leopoldo Manlio Rapisarda è stato titolare della cattedra di Patologia chirurgica all'Università di Palermo e direttore del Centro trapianti e dialisi del Policlinico. Messinese d'origine, nel 1983 è stato artefice del primo trapianto di rene nell'Italia meridionale. Nel novembre dell'85 Rapisarda ha organizzato il XV congresso nazionale della Società italiana dei trapianti d'organo, al quale ha partecipato anche Christian Barnard, autore del primo trapianto di cuore della storia.
+
+Alla fine degli anni Novanta, in ricordo della moglie scomparsa qualche anno prima, ha fatto costruire una statua dedicata a Maria Santissima del Lume che ha donato al Comune di Porticello e che si può tuttora vedere al porticciolo. Su sua iniziativa è stata istituita una borsa di studio annuale per gli studenti meritevoli dell'istituto comprensivo Wojtyla di Santa Flavia.
+
+Se n'è andato il 3 febbraio, a 88 anni.
+
+Sottufficiale in pensione dei carabinieri e appassionato di radiotecnica, era stato istruttore alla scuola dell'Arma
+
+Un sottufficiale dei carabinieri con la passione per la radiotecnica. Negli anni Sessanta, mentre i suoi coetanei spendevano le paghette in fumetti, Salvatore Guglielmino correva in edicola per acquistare riviste di elettrotecnica. Originario di Partanna Mondello dove ha trascorso la gioventù, Guglielmino è stato un uomo mite e affabile, che esternava la sua allegria con fragorose risate. Era poco più che un ragazzino quando con alcuni pezzetti di carta stagnola trasformò in pochi secondi un telefonino della prima generazione in un radioricevitore. Negli stessi anni, assieme a un gruppo di amici, ha preso in affitto una vecchia casetta, a ridosso dell'ingresso di Villa Partanna, fondando il club &quot;La casa degli amici&quot; e trasformando una stanza in discoteca, con luci all'avanguardia. La sua passione per l'elettronica è proseguita, attraverso gli studi, con il suo arruolamento nell'Arma dei carabinieri, in cui, all'apice della carriera, è divenuto istruttore nelle scuole di formazione. Da sottufficiale, è stato responsabile per la Sicilia delle radiotrasmissioni, radiomontatore e tecnico informatico. Se n'è andato il 5 febbraio, a 64 anni.
+
+Originario di Vita, è stato presidente provinciale dell'Inail e ha diretto per 18 anni il patronato Inca della Cgil
+
+La sua direzione del patronato Inca di Palermo ha lasciato il segno. È il 1966 quando Vito Leo, di estrazione socialista, aderisce alla Cgil e ben presto viene nominato direttore dell'Inca. Un incarico di tutto rispetto che Leo porta avanti dal 1970 al 1988, distinguendosi nella salvaguardia delle tutele individuali. Passa poi alla segreteria regionale dello Spi, il sindacato pensionati all'epoca guidato da Orazio De Guilmi, uno dei più stretti collaboratori di Danilo Dolci.
+
+Originario di Vita, Leo ha assunto anche la carica di presidente provinciale Inail tra la metà degli anni Ottanta e i primi anni Novanta. È stato firmatario della Carta dei diritti dell'anziano. L'ultimo saluto è avvenuto nella chiesa di San Giovanni Bosco, a Palermo. Se n'è andato il 1° febbraio, a 85 anni.
+
+11 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Dai buttafuori alla droga le mani di Cosa nostra sul regno della notte
+
+
+NATALE BRUNO SALVO PALAZZOLO
+
+La sicurezza nelle discoteche siciliane è affare di Cosa nostra. Da Palermo a Catania, passando per Messina, i boss continuano a gestire parecchi buttafuori. L'ultimo caso, eclatante, fra Giardini Naxos e la Plaia: i Laudani, i mussi ri ficurinia, controllavano il &quot;Taitù&quot;, il &quot;Marabù&quot;, poi ancora il &quot;Capannone&quot; e il Sobhà. «Per noi non era una questione di soldi — racconta l'ultimo pentito di mafia, il catanese Giuseppe Laudani — era soprattutto una questione di prestigio. Certo, ovviamente, i soldi ce li prendevamo. Ma non era questo che cercavamo». I soldi che finivano nella tasche del clan smantellato tre giorni fa a Catania dai carabinieri erano quelli delle pasticche di ecstasy, che venivano vendute senza problemi nei locali della movida grazie alla presenza dei buttafuori dei boss.
+
+Proprio come avveniva qualche mese fa nelle discoteche di Barcellona e di Milazzo. Lo hanno svelato altri due pentiti, Franco Munafò e Alessio Alesci: hanno raccontato della punizione data al gestore di Villa Ligà, a Furnari, che si era rifiutato di far entrare i buttafuori di Cosa nostra. Il suo locale venne incendiato. A Palermo, invece, i Militano avevano modi meno irruenti e più convincenti. Al titolare del Goa, storico locale cittadino, assicurarono che non avrebbe avuto alcun problema con i ragazzini terribili dello Zen. Ma successe comunque il finimondo. Proprio a causa di un buttafuori abusivo. La notte del 14 febbraio dell'anno scorso, il calcio sferrato da un diciassettenne stroncò la vita del giovane Aldo Naro, che era al Goa per festeggiare il Carnevale con i suoi amici.
+
+Altro che sicurezza. Fra liti furibonde e spaccio di droga, i boss impongono le loro regole e soprattutto i loro affari. «Storia antica quella delle discoteche di Taormina gestite da noi», ha spiegato il pentito Giuseppe Laudani, il nipote prediletto di don Sebastiano, il patriarca dei Laudani. «Un tempo, erano tutte gestite da noi. Partiamo dallo Skipper. Poi, la prima discoteca che era di mio padre Gaetano, il Marabù. Ricordo il Lady Godiva, dove adesso c'è un posteggio: poi, il Kabana, che è di Enzo Padovani, che era sempre un amico». Erano gli anni d'oro della movida catanese. «Le due uniche discoteche rimaste erano il Marabù e il Taitù, di proprietà di Galeano. Poi lui se n'è voluto uscire e ha dato la gestione a Nino Puglia». E qui inizia una storia nella storia. Un tempo, Puglia era un affermato dj e instancabile animatore delle serate catanesi. «Si rivolse a Mario Lanzafame, che era di Giarre, all'epoca era responsabile della famiglia. Puglia si rivolse a Mario per questa situazione ». Chiede il pubblico ministero al pentito Giuseppe Laudani: «Cosa voleva da lui?». Risposta, senza troppi giri di parole: «La gestione e la tutela nelle discoteche. Per la sicurezza ci mettevamo le persone che dicevano loro». E così, alla fine, anche l'ex dj Nino Puglia è stato arrestato nel blitz della Dda di Catania, con l'accusa di associazione mafiosa.
+
+Qualche anno fa, Giuseppe Laudani, all'epoca latitante aveva deciso di imporre l'assunzione come buttafuori di suo cugino, Alessandro Raimondo, uno dei 109 arrestati del blitz. Inizialmente Puglia aveva rifiutato l'imposizione e aveva affidato la sicurezza del locale a Ottavio Pizzino, titolare di una società legale che garantisce questo tipo di servizi. Ma presto sorse una controversia, che poi si risolse nel modo desiderato da Cosa nostra: Raimondo entrò nella compagine della società legale. Parabola perfetta di un sistema mafioso che preferisce infiltrarsi nell'economia lecita piuttosto che imporre ricatti. E anche il sistema dei buttafuori di mafia trovò una sua strutturazione perfetta.
+
+Altri mafiosi catanesi, i Pillera-Puntina, avevano invece preferito comprarsi tutta la discoteca: nel mese di ottobre scorso, sono scattati i sigilli per la frequentatissima &quot;Empire&quot;, uno dei gioielli del boss Giacomo Maurizio Ieni. Gestiva un patrimonio di quattro milioni di euro.
+
+Non erano da meno i Mazzei, altro nome altro clan della geografia mafiosa di Catania. Avevano preferito gestire solo alcune quote di due discoteche. Per evitare di dare troppo nell'occhio. E comunque assicurarsi proventi sicuri. Così faceva capire nel novembre 2014 Giuseppe Caruso, ritenuto un affiliato dei Carcagnusi, poi transitato nelle fila dei Santapaola: «È una vita che combatto con le discoteche, combattevo al 69Lune, al Moon, al Moon Beach perché erano di Willy, ora poi mi sono messo allo Stone». Caruso spiegava gli intrecci societari: «Lui, il Moon l'aveva in società con il proprietario dello Stone con Mirko, con quel ragazzo con cui ho parlato sabato erano soci». Intrecci di prestanome che aprono nuovi scenari di indagine. Perché la movida non conosce crisi in Sicilia. E i boss lo hanno capito ormai da tempo.
+
+©RIPRODUZIONE RISERVATA
+
+SBALLO
+
+I clan controllano i locali per poter spacciare senza problemi al loro interno
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Idea donna a destra, Matone o Dalla Chiesa Marchini resta in pista: &quot;Non cedo ai veti&quot;
+
+
+COMUNALI / E PARTE LA CAMPAGNA M5S, DI BATTISTA: SERVE PUGNO DI FERRO
+
+Due donne per una poltrona. Il centrodestra è a caccia del suo candidato sindaco dopo la rinuncia di Guido Bertolaso e i veti di Giorgia Meloni su Alfio Marchini. E così, proprio la leader dei Fratelli d'Italia ha tirato fuori due proposte &quot;in rosa&quot;. La prima è Simonetta Matone, classe ‘53, sostituto procuratore in Corte d'Appello, gran frequentatrice di talk (è buona amica di Bruno Vespa). Anche se in pole sembra esserci Rita Dalla Chiesa, 69 anni, figlia del generale ucciso dalla mafia, giornalista e conduttrice tv. Che però si schermisce: «Devo ancora decidere, nei prossimi giorni incontrerò Berlusconi e la Meloni». Ma, sempre a destra, resta in campo la candidatura di Marchini: «Non cedo ai veti», dice l'imprenditore.
+
+GIOVANNA VITALE A PAGINA IV
+
+10 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">guiderà cittadini, turisti e studenti attraverso le strade di Palermo nei luoghi degli attentati di mafia. I narratori delle storie e dei loro protagonisti sono artisti siciliani, da Beppe Fiorello a Francesco Scianna, a Nino Frassica, Leo Gullotta, Isabella Ragonese, Giuseppe Tornatore e tanti altri. Voluta dall'associazione &quot;Sulle nostre gambe&quot; che ha Pif tra i soci fondatori, l'app è stata sviluppata da Tim e presentata ieri al Senato.
+
+06 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Abusivismo, blitz a Capocotta sigilli ai chioschi Zagaja e Oasi
+
+
+FLAMINIA SAVELLI
+
+IL BLITZ DEI vigili urbani è scattato all'alba a Capocotta. La via Litoranea era una distesa di auto della municipale incolonnate. La task force, che da settembre si occupa di stanare abusi sul mare, ed è il terrore dei balneari, è entrata in azione, planimetrie alla mano, in quel tratto di arenile dove in estate dalla capitale arrivano in massa per aperitivi e cene on the beach.
+
+SEGUE A PAGINA VI
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">UnipolSai batte i target del piano e Piazza Affari la premia: +11%
+
+
+MILANO.
+
+UnipolSai archivia l'integrazione con Fonsai con risultati superiori a quelli comunicati al mercato nel 2012, con 2,21 miliardi di utili contro gli 1,78 previsti. E la Borsa premia il titolo del colosso bolognese con un rialzo dell'11%. «Il processo di integrazione di Unipol e Fondiaria si chiude con risultati positivi», ha sottolineato l'ad Carlo Cimbri, ricordando che nel triennio UnipolSai ha distribuito «quasi 1,5 miliardi di euro» in dividendi, poco meno degli «1,7 miliardi ricevuti come aumento di capitale per l'integrazione ». Il bilancio della fusione è stato fatto ieri nel corso della presentazione del preconsuntivo 2015 di UnipolSai, chiuso con un utile di 738 milioni (-5,8%, anche a causa però di una posta fiscale straordinaria di 84 milioni) e premi per 14 miliardi (-8,8%) per una proposta di dividendo di 0,15 euro ad azione (0,175 nel 2014). Per la capogruppo Ugf, utili di 579 milioni (+14,6%), raccolta di 16,5 miliardi (-4,2%) e cedola di 0,18 euro (0,17).
+
+©RIPRODUZIONE RISERVATA
+
+AL VERTICE
+
+Carlo Cimbri è amministratore delegato e direttore generale di Unipol
+
+13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Sgombero dei nomadi in lungo Stura Lazio inchiesta sull’appalto
+
+... aiutato a uscire dal campo rom». Non sarà il preludio a una «mafia capitale» del Nord Italia - non ci sono elementi per ipotizzare un malcostume diffuso nel business del sociale - ma resta una bella tegola...
+la Repubblica 05 febbraio 2016 pag. 02 sez. CRONACA</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Bicipolitana e bosco sociale le ricette dei nostri comuni per sconfiggere lo smog
+
+
+Dalla bicipolitana di Pesaro al Pony a zero emissioni di Torino, dal bicibus scuola di Reggio Emilia al bosco sociale di Ferrara. Sono solo alcune delle dodici esperienze virtuose per uscire dalla morsa dello smog attuate in diversi comuni italiani, da Nord a Sud. A individuarle è Legambiente, che rilancia le buone pratiche già in atto per liberare le città dall'inquinamento e superare le misure di emergenza come blocchi e targhe alterne.
+
+Al primo posto c'è la mobilità sostenibile. L'esempio arriva dal tram Firenze-Scandicci. Una linea lunga 7,4 km con 14 fermate e oltre 13 milioni di viaggiatori all'anno, ben disposti a lasciare l'auto a casa. Per Legambiente tra le misure anti- smog da replicare c'è senz'altro la zona con limite a 30 km/h nelle aree residenziali, come quelle testate a Cagliari e a Torino Mirafiori, che hanno migliorato la circolazione e hanno consentito un dimezzamento dei costi sostenuti per incidenti. Altro modello vincente è quello dell'area C di Milano, pensata per disincentivare l'uso dei veicoli privati a favore dei mezzi pubblici. A vincere in originalità è la Bicipolitana di Pesaro, una metropolitana in superficie dove le rotaie sono i percorsi ciclabili e le carrozze sono le biciclette. Il Pony Zero Emissioni, invece, è una realtà che ha preso il via a Torino grazie alla Pony Zero, società nata nel 2013 per rivoluzionare, in modo ecosostenibile, il settore delle spedizioni usando la bici. C'è poi il servizio pedibus e bicibus scuola promosso dal comune di Reggio Emilia, servizio pubblico di trasporto per l'infanzia. Altra città virtuosa è Bolzano, l'unica in Italia dove meno di un terzo degli abitanti usa l'auto grazie a più aree pedonali, meno parcheggi e più corsie per le bici.
+
+C'è poi l'esperienza avviata a Bari con il park&amp;ride, i parcheggi di interscambio periferici che, con un euro al giorno, consentono di parcheggiare e andare in centro con bus navetta gratuiti. Oppure c'è l'Hub delle merci di Parma, che è riuscito a spostare parte del trasporto da gomma a rotaia. Sul fronte dell'efficienza energetica a far scuola sono le province di Trento e Bolzano, dove si è deciso che per tutte le nuove costruzioni la classe B deve essere quella minima obbligatoria. Infine il verde urbano. Tra i tanti esempi, il bosco sociale di Ferrara: un'area realizzata dai cittadini che produce frutta e ortaggi.
+
+E anche a Roma qualcosa si muove. «Vorremmo venisse rilanciata l'idea del Grab, il Grande raccordo anulare in bici — afferma Rossella Muroni, presidente nazionale di Legambiente — un anello ciclopedonale di 44 km all'interno della Capitale, mai ufficializzato dal Comune».
+
+©RIPRODUZIONE RISERVATA
+
+A Roma si cerca di rilanciare il progetto del Grab, un anello ciclopedonale di 44 chilometri all'interno della Capitale
+
+Monica Rubino13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Hemingway e Miró uniti da un dipinto
+
+
+Ernest Hemingway e Joan Miró. L'amicizia tra due personaggi in apparenza estremamente diversi. E la passione comune per un quadro, La masía, che l'artista catalano dipinse e che considerò sempre uno dei suoi capolavori. Mentre il Nobel se ne innamorò a prima vista, senza darsi pace fino a quando non riuscì a entrarne in possesso. Il periplo di una tela emblematica tra Barcellona, Chicago, L'Avana sino alla destinazione finale di Washington (oggi è esposta alla National Gallery), passando attraverso la Parigi della &quot;lost generation&quot;. C'è tutto questo nel libro La masía, un Miró para Mrs. Hemingway (editoriale Puv, Valencia), frutto del lavoro di ricerca lungo cinque anni del professor Alex Fernández de Castro. Miró, come non poteva essere altrimenti, trovò l'ispirazione per l'opera nella casa rurale (&quot;masía&quot;, appunto, in catalano) di Mont-Roig del Camp, il suo paradiso personale. E la completò a Parigi nel 1922. Curiosamente, mentre per lui rappresentava la Catalogna, per Hemingway era il ritratto perfetto della Spagna («contiene tutto quello che senti per la Spagna quando sei lì e tutto quello che senti quando sei lontano e non ci puoi andare»). I due si conobbero, e fecero amicizia, al Cercle Américain della capitale francese. L'ossessione dello scrittore per quel quadro finì, nel 1925, con una colletta in giro per i bar parigini insieme al poeta Evan Shipman (che aveva già messo gli occhi sulla tela) per raccogliere tra gli amici i 3500 franchi necessari per acquistarla. Poi fu Hemingway ad appropriarsene — se la giocarono ai dadi o al lancio della moneta, non è chiaro — ma l'anno dopo, quando finì il suo matrimonio con Hadley Richardson, il quadro andò alla moglie. Più tardi lo chiese in &quot;prestito&quot;. Ma non glielo restituì mai più.
+
+©RIPRODUZIONE RISERVATA
+
+DISEGNO DI MASSIMO JATOSTI
+
+{
+
+Alessandro Oppes14 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Carminati a Gramazio: &quot;Vacci pesante&quot;
+
+
+FEDERICA ANGELI
+
+«GRAMAZIO HA partecipato all'associazione mafiosa perseguendo un proprio interesse non solo economico, ma anche diretto a consolidare ed accrescere il proprio prestigio politico. E' solo attraverso la sua opera che l'associazione di Carminati riesce a penetrare quell'ambito di servizi pubblici che, in una perversa ottica di spartizione, è di pertinenza dell'area politica di destra ». È il giorno di Luca Gramazio ieri nell'aula bunker di Rebibbia. Mentre il capitano del ros Federica Carletti risponde alle domande dei pm Luca Tescaroli e Paolo Ielo, l'ex capo gruppo Pdl prima in Comune e poi in Regione, in carcere per corruzione e 416 bis, a braccia conserte ascolta senza muovere un muscolo. Accanto a lui Fabio Testa, ex consigliere di Enav e uomo cerniera tra la gang di Buzzi e Carminati e la pubblica amministrazione.
+
+Il capitano dei carabinieri del Ros è precisa fino all'esasperazione quando ricostruisce, elencando le intercettazioni e le risultanze degli appostamenti, tutto quello che Luca Gramazio ha fatto per la gang di Mafia Capitale. Si comincia con la delibera comunale 31, quella che nel bilancio pluriennale 2012-2014 prevede lo stanziamento di un milione di euro per le piste ciclabili a cui si è aggiunto un sub emendamento che prevedeva 2 milioni da destinare ai servizi per l'ambiente da affidare alle cooperative sociali. Il 7 novembre 2012 viene approvato il bilancio, votato tra gli altri da Gramazio, Testa e Quarzo. Prima però che questi soldi vengano erogati c'è un blocco e le telefonate tra Buzzi e Carminati con Gramazio diventano fitte e incalzanti. Sarà lui tre mesi dopo, dopo incontri nei bar col &quot;Cecato&quot;, accompagnato dal papà senatore, a risolvere tutto. E voilà, 800mila euro più Iva per Buzzi e soci, in cambio di una &quot;stecca&quot;. «J'avemo dato 50mila a Gramazio », confida Buzzi nel suo quartier generale di via Pomona nel corso di una riunione. Ma l'affare dello stanziamento di soldi per assegnare il verde al ras delle Coop non è l'unica partita che Gramazio deve sbrogliare. Le sollecitazioni della gang sono numerose e frequenti: per gli immigrati minori, per i campi rom. Soldi e pratiche che hanno battute d'arresto ma che dopo l'intervento di Gramazio tornano sui binari. «Vacce giù pesante con la Santarelli che non vuole firmare la determina dirigenziale », incalza Carminati. E mezz'ora dopo, rassicurato al telefono da Gramazio, anche quel finanziamento è nelle tasche della gang Mafia Capitale.
+
+©RIPRODUZIONE RISERVATA
+
+&quot;È grazie all'azione del capogruppo che la gang riesce a penetrare nei servizi pubblici&quot;
+
+EX CAPOGRUPPO
+
+Luca Gramazio è stato capogruppo sia in consiglio comunale sia in consiglio regionale per il Pdl
+
+26 gennaio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Se il padre fosse incinto
+
+
+Gerardo Bianco
+
+Roma
+
+Secondo il magistrato Melita Cavallo non c'è differenza ( Repubblica di mercoledì) tra donare un rene e donare un bambino portato nel proprio utero. Accade già, con rigorose procedure, insiste il giudice, in Canada indicando la via all'Italia per diventare davvero un &quot;Paese moderno&quot;. La tesi della signora Cavallo apre un nuovo capitolo di antropologia umana che merita di essere approfondito e sviluppato, così come la sua tesi giuridica della &quot;discriminazione sessuale&quot; nel caso di stralcio dell'adozione del figlio del partner dal disegno di legge all'esame del Senato sulle &quot;Unioni civili&quot;. Rivoluzioni concettuali, dunque, sono alle porte che la scienza potrebbe perfino realizzare, concretamente, come quella, per esempio, di rendere direttamente incinti gli aspiranti padri, senza passare per l'utero in affitto (vedi J. Testart su Le nouvel Observateur, 1986), come, appunto, in una nota novella di Boccaccio.
+
+Roberto Antonini
+
+roberto.venezia@hotmail.it
+
+Siamo giustamente tutti scandalizzati davanti ai &quot;furbetti&quot; che timbrano ed escono per fare i fatti propri. A costoro i politici promettono la mano pesante e licenziamenti veloci e sicuri. Bene, ben vengano queste norme, siamo tutti d'accordo. Apprendiamo poi dalle stesse fonti che i nostri senatori e deputati si permettono un assenteismo anche oltre il 95 % e lasciano il loro posto di lavoro il giovedì per riprenderlo il lunedì &quot;in giornata&quot; o addirittura il martedì. In questi giorni su agitano pro o contro le coppie gay ma delegano ad altri,pochi,la loro foga in vista del week end. Non sento però in questi casi sollevamenti, modifiche di regolamento, provvedimenti o quant'altro da parte dei politici eccetto il senatore Napolitano. Questo pensiero sarà ispirato da quel sentimento chiamato «antipolitica » ?
+
+Alex Misirocchi
+
+Milano
+
+Ho sempre contestato la tesi che il Senato aggiungesse democrazia, centinaia di deputati devono bastare per fare le leggi che servono. Più che il Senato dovrebbe contare il lavoro delle commissioni della Camera, quando sarà unica, e l'appello di Napolitano al maggior impegno dei parlamentari (anche se riferito alle commissioni del Senato) è molto opportuno per prepararsi all'assetto futuro del Parlamento dove la qualità delle leggi sarà ancora più condizionata dal lavoro delle commissioni. Poi, per contro-pesare il governo serve eliminarne i conflitti di interesse escludendone i membri dal Parlamento e porre un limite costituzionale ai decreti (10 all'anno?) perché da sempre il potere legislativo è esercitato soprattutto dall'esecutivo, uno scandalo.
+
+Oltre le frontiere e gli egoismi
+
+Gianluigi De Marchi
+
+demarketing2008@libero.it
+
+Il dibattito sull'Europa sembra basato su &quot;pugni sul tavolo&quot; anziché &quot;soluzioni di problemi&quot;. Potremmo dire che &quot;abbiamo fatto gli europei, dobbiamo fare l'Europa&quot;. Dobbiamo avere un'unica legislazione su lavoro, fisco, giustizia, difesa, politica estera. Piantiamola con gli egoismi nazionali, cerchiamo di &quot;volare alto&quot; come i padri costituenti che hanno delineato una vera Europa, al di là delle frontiere.
+
+Il crepuscolo dell'antimafia
+
+Luciano Vigorelli
+
+Brescia
+
+Nell'indeterminatezza della nuova mafia: non sappiamo quali forme abbia, chi la diriga , quali siano i nuovi referenti, almeno una cosa la sappiamo. L'antimafia si è adeguata al suo contrario. O ufficio rilascio patenti di impunità o comitato d'affari per furbi e trasformisti.
+
+©RIPRODUZIONE RISERVATA
+
+13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">L'Ama a Panzironi: 21 milioni di danni per Parentopoli
+
+
+IL PROCESSO/ L'AZIENDA CONTRO L'EX MANAGER: &quot;I SOLDI NECESSARI ALLE CAMPAGNE PER RIFARCI UN'IMMAGINE&quot;
+
+LORENZO D'ALBERGO
+
+L'AMA presenta il conto a Franco Panzironi e soci per Parentopoli. Sull'ex ad, arrestato per Mafia Capitale, e i suoi collaboratori, ora pesa una richiesta di risarcimento danni da 21 milioni di euro per le decine di assunzioni pilotate del 2008. A doversi presentare a maggio davanti ai giudici del tribunale civile assieme al supermanager ora in carcere saranno l'allora direttore del personale Luciano Cedrone, il capo dell'ufficio legale Gian Francesco Regard e il presidente della commissione di concorso Bruno Frigerio.
+
+Sono loro i dirigenti già condannati in sede penale che, come si legge nell'atto di citazione, «hanno causato gravissimi danni all'azienda, che in ragione delle loro condotte illegittime e illegali ha dovuto sopportare ingenti e non giustificati costi economici e un enorme danno di immagine per lo scandalo pubblico provocato ». Uno smacco che costringerà la municipalizzata dell'ambiente, spiega ancora il documento, «sostenere notevoli spese per finanziare campagne pubblicitarie volte al ripristino della propria reputazione, per spese sicuramente non inferiori a 10 milioni di euro».
+
+Tanto servirà, secondo l'attuale management di Ama, per recuperare la credibilità persa con le 41 assunzioni a chiamata diretta del 20 ottobre 2008. Un'infornata di nuovi assunti tra cui spiccano quell'Armando Appetito che il 4 luglio del 2009 sarebbe diventato il genero di Panzironi e l'ex segretaria dell'ad ai tempi dell'Unire, Gloria Rojo. Ancora: Edoardo Mamalchi, figlio del responsabile della segreteria dell'ex sindaco Alemanno e Stefano Andrini, ex estremista di destra condannato in appello a tre anni per l'aggressione a due ragazzi di sinistra davanti al cinema Capranica nel 1989. Chiudono l'elenco Ilaria Marinelli, figlia del caposcorta dell'ex primo cittadino.
+
+Panzironi, a sinistra, con Alemanno
+
+01 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Il pd Vincenzi al bilancio Gli M5S sulle barricate
+
+
+È bufera alla Regione Lazio per la nomina di Marco Vincenzi, ex capogruppo del Pd, a presidente della commissione bilancio. Un atto che ha sollevato l'aspra contestazione del MoVimento 5 Stelle: i 5 consiglieri alla Pisana si sono autosospesi dai lavori di tutte le commissioni perché, sostengono, «Vincenzi sarebbe al centro di un'intercettazione dei Ros mai pubblicata dai giornali che potrebbe configurare il reato di voto di scambio politico-elettorale con il boss delle cooperative rosse Salvatore Buzzi». A rincarare la dose anche i parlamentari del M5S, da Roberta Lombardi a Alessandro Di Battista, che parlano di «Mafia Regionale». Dai grillini arriva anche la richiesta che sia Vincenzi sia il governatore Nicola Zingaretti siano auditi dalla commissione antimafia. Da parte sua il neo presidente della commissione bilancio si difende e parla di «ingiurie: non ho ricevuto avvisi di garanzia e non sono coinvolto in alcuno dei procedimenti giudiziari in corso. È sconcertante l'accanimento degli esponenti del M5S nei miei confronti. Si tratta di puro sciacallaggio, falsità e continue insinuazioni che ho dato mandato ai mie legali di denunciare nelle sedi competenti». A suo sostegno interviene, tra gli altri, il capogruppo Dem alla Pisana, Massimiliano Valeriano: «I processi non si fanno nelle sedi istituzionali ma nei tribunali: Vincenzi non ha ricevuto nessun avviso di garanzia e non è coinvolto in alcun procedimento giudiziario».
+
+11 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">I giorni della civetta quando il cinema apparve a Partinico
+
+
+GIANNI BONINA
+
+Tra cinema e letteratura il quattordicenne Luca Lamanna, un'avversione innata per la scuola e una vocazione indomita per le battaglie campali alla maniera dei ragazzi della Via Pál, è a un romanzo sconosciuto a tutti che deve la rivelazione di un paesone siciliano del 1967, Partinico, dove i cinema proiettano pure due film consecutivi e sono gremiti di coetanei in debito di emozioni forti. Il libro è Il giorno della civetta, il primo che Luchino legge e dal quale apprende come la mafia sia un potere superiore allo Stato, per modo che come don Mariano Arena torna trionfante dal carcere mentre il capitano Bellodi viene trasferito, così il boss di Partinico &quot;Signuruzzu&quot; ingiunge alla troupe di Damiani di lasciare il paese per via del film &quot;politico&quot; che, tratto con qualche libertà dal romanzo, sta girando per dimostrare che mafia è sinonimo di Democrazia cristiana. Luchino lo legge per cercare la Rosa Nicolosi che sul set del film in lavorazione in piazza Otto Cannoli ha la bellezza di Claudia Cardinale di cui è rimasto folgorato e divenuto amico. Ma nello stesso tempo scopre cos'è la mafia.
+
+Il tipo della Malèna che seduce l'adolescente avvertito delle sue fantasie non meno che dei suoi doveri civili - e che conoscevamo già dai sospiri del giovane Alessio Mainardi di Vittorini invaghito della Zobeida e spinto a farsi &quot;más hombre&quot;, dalla malizia delle commedie di Risi e Samperi nonché da Fellini e ancora da Moravia, Ercole Patti e Calvino - ci viene riproposto ora in L'incantesimo delle civette (pagine 176, euro 15, edizioni e/o) da Amedeo La Mattina (giornalista politico della Stampa, palermitano, ma da ragazzo &quot;partinicoto&quot; e libera trasposizione del giovane Luchino Lamanna, che è membro della banda dei Guerrieri della Rocca in guerra per un campetto di calcio contro i selvaggi Mezzocuore) entro un vertiginoso quadro di commistioni tra verità e finzione, cinema e narrativa, gioco e realtà, fanciullezza e maturità, che riflette un'idea di Sicilia riportata al momento storico in cui, attraverso il romanzo di Sciascia, fa la sua prima apparizione il concetto di antimafia, due anni prima della costituzione della commissione parlamentare ad hoc e a ridosso dell'uscita di Mafia e antimafia di Michele Pantaleone: un'antimafia che coonesta il suo contrario dacché legittima Cosa nostra fino a giustificarla.
+
+Così, è un ragazzino imberbe e virginale, per amore di una celebre attrice che lo chiama &quot;occhi belli&quot;, a incaricarsi di sfidarla contro il parere di quanti, compagni di gang e rivali, lo ritengono un &quot;foddi&quot; perché fare la guerra alla mafia non è come fracassarsi a sassate la testa tra loro. Il calviniano ragazzo Pin di La Mattina che si fa partigiano di un ideale di liberazione mutuato da un impeto d'amore interpreta allora l'inanità di un'antimafia che nasce goffa, disarmata, velleitaria e fallimentare. Come Bellodi che va via, ma nel presupposto di rompersi la testa, anche Luchino Lamanna lascia Partinico, allo stesso modo della troupe minacciata dal capomafia e della divina Claudia, sgombrando così tutto il campo e consentendo alla mafia di continuare a imperare. Le Civette del cinema, arrivate per involgere in un temporaneo incantesimo un paese che però non deve cambiare, da presenze beneaugurali tornano a farsi cattivi presagi: ma bastano a indicare alla prima generazione del Dopoguerra e dei sorgivi vagiti dell'antimafia una conradiana linea d'ombra superata la quale si apre un cammino di formazione che, quanto a La Mattina, volendo anch'egli rompersi la testa, ha significato volgersi infine indietro per definirne il ricominciamento e ricreare l'incantesimo di un tempo in cui ogni vagheggiamento era stato possibile, anche battere la mafia o conquistare il cuore di una diva.
+
+©RIPRODUZIONE RISERVATA
+
+Il fascino di Claudia Cardinale l'ordine del boss che fece sloggiare la troupe e la formazione di una coscienza
+
+IL VOLUME
+
+La copertina del libro di Amedeo La Mattina &quot;Gli incantesimi delle civette&quot; (e/o) e, in alto, un momento del film di Damiano Damiani &quot;Il giorno della civetta&quot;
+
+06 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Carminati a Gramazio: “Vacci pesante”
+
+... appostamenti, tutto quello che Luca Gramazio ha fatto per la gang di Mafia Capitale. Si comincia con la delibera comunale 31, quella che nel bilancio pluriennale 2012-2014 prevede lo stanziamento di un milione...
+la Repubblica 26 gennaio 2016 pag. 08 sez. CRONACA</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">New York il sogno si fa realtà
+
+
+MAGARI NEW YORK non è la capitale della creatività più alta o dell'eccellenza sartoriale — il titolo se lo giocano Parigi e Milano — ma è qui che spesso nascono le rivoluzioni del costume e della società. È dagli stilisti newyorchesi, tanto per fare un esempio, che è partita l'idea di ripensare alle sfilate affinché siano più vicine ai consumatori, poi dilagata a macchia d'olio tra tutti gli altri creatori; questa è la metropoli per eccellenza, un coacervo unico di etnie, usi e culture, ed è anche a questo che fanno riferimento molti dei brand che scelgono di sfilare qui.
+
+È il caso dello spagnolo Desigual, cui è toccato il compito di inaugurare le passerelle 2016 con una collezione dedicata al melting pot delle grandi città. Il marchio, 576 store in tutto il mondo, tra i riferimenti cita Samarcanda e Costantinopoli, e il risultato a sorpresa si allontana dalle stampe e dai colori allegri e a tratti infantili che ne hanno sinora caratterizzato lo stile — in verità inconfondibile — per pendere verso un'estetica più matura e articolata. In scena si è così visto parecchio velluto, usato per i pigiami stampati e per le tuniche portate con le stole oversize faux-fur, tanto broccato — una sorpresa — e diversi motivi jacquard pensati per decorare i soprabiti geometrici e le giacchine strizzate in vita. La silhouette è lunga e al cappotto di macro-tweed verde brillante che sfiora il pavimento fanno da contraltare le giacche maschili ricamate anni 80 e il denim délavé incrostato di ricami: a bordo passerella applaude Ines Rau, modella transgender e portavoce del movimento per i loro diritti. Lei non ha dubbi sull'importanza della moda nello spingere nuove tematiche sociali, non ultima quella dell'identità di genere: «Questo mondo non anticipa solo come ci si vestirà in futuro, ma anche verso cosa si sta muovendo la società», riflette Ines. «I primi a darci retta sono stati gli stilisti, e gli altri li hanno seguiti a ruota. Mai sottovalutare il potere della moda».
+
+Anche Kanye West deve crederci tanto, e per la terza stagione di Yeezy, collezione che crea con Adidas, ha messo su un evento mastodontico al Madison Square Garden. Centinaia di modelli reclutati online e messi in posa nell'installazione di Vanessa Beecroft, inviti per la prima volta divisi tra addetti ai lavori e pubblico pagante e presentazione in contemporanea del suo nuovo album, &quot;The Life Of Pablo&quot;: difficile scegliere su cosa concentrarsi prima. Ci sono i volti intensi dei figuranti, che finiscono la performance a pugno alzato in onore del Black History Month, c'è Naomi Campbell, in platea ci sono la moglie di Kanye Kim Kardashian e le sorelle, accolte dal boato della folla, e c'è il rapper/designer che balla i suoi brani con gli amici. Peccato per il caos, perché i vestiti — per quanto si riesca a vedere — sono una variazione di quel casual di lusso che a West riesce bene. In chiusura arrivano il trailer del videogioco con protagonista la madre defunta (sul serio) e la sua candida confessione di sognare un giorno la direzione creativa di Hermès. Anche questo è il sogno americano.
+
+©RIPRODUZIONE RISERVATA
+
+L'EVENTO
+
+Kanye West per la terza stagione di Yeezy, collezione che crea con Adidas, ha messo su un evento al Madison Square Garden Centinaia di modelli reclutati online nell'installazione di Vanessa Beecroft
+
+MELTING POT
+
+La mescolanza di etnie è la nuova ispirazione del marchio spagnolo Desigual, che si rinnova lontano dalle sue stampe cariche di colore
+
+LA NOMADE
+
+Donna girovaga senza frivolezze per Nicholas K.
+
+L'EROINA
+
+Fondato da tre giovani donne, ecco Holy Ghost
+
+Serena Tibaldi13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Le strategie del Comune &quot;Sì alla carta dei doveri ma niente nuove tasse sulle spalle dei turisti&quot;
+
+
+ERNESTO FERRARA
+
+SÌ A una carta dei doveri del turista, sorta di &quot;patto&quot; civico da distribuire a chi visita Firenze. Sì pure all'idea di una riflessione collettiva, da allargare ad altre città d'arte, sulla sostenibilità economica e ambientale della pressione dei viaggiatori. Ma sull'idea di mettere nuove tasse sul turismo il sindaco Dario Nardella è molto cauto. Non ha ancora preso decisioni ma l'ipotesi di un nuovo &quot;pedaggio&quot; oltre alla tassa di soggiorno e al ticket dei bus turistici, che insieme nel 2015 a Palazzo Vecchio hanno fruttato a Palazzo Vecchio 45 milioni di euro, non lo convince fino in fondo. Sebbene non ancora al punto da portarlo a escluderlo. «Noi accettiamo la sfida: servono più regole e più attenzione per chi vuole usufruire della bellezza di Firenze. Ma allo stesso tempo non possiamo dimenticarci che il turismo è un potente fattore di crescita, anche economica, della città», scrive ieri Nardella su Facebook.
+
+Segno comunque che la ricerca sulla sostenibilità del turismo in città firmata dalla Fondazione Cesifin e anticipata ieri da Repubblica, coglie un nodo sempre più attuale e urgente: chi paga il costo delle quasi 20 milioni di presenze turistiche della città? Questo si chiede lo studio, che verrà presentato domani alle 17.30 a Palazzo Incontri, in via dei Servi 3. Due le risposte che suggerisce il coordinatore scientifico del dossier, l'ex ministro del Tesoro Piero Barucci: un decalogo di buone pratiche e impegno al rispetto per il turista e un &quot;pass&quot; di lieve costosità e volontario anche per chi passa in città solo mezza giornata. Sì alla prima proposta, cautela sulla seconda, è la reazione di Palazzo Vecchio. Una studiosa come Mirella Loda, ordinaria di geografia sociale all'Università di Firenze, pensa che un'ulteriore forma di pedaggio non serva a granchè: «Non si governano i flussi turistici con la tassazione ma con politiche di decompressione del centro. Si pensi ad esempio a creare percorsi ciclabili sicuri per andare a visitare un luogo come il cenacolo di Andrea del Sarto o un parco come le Cascine. Per qualificare il turismo vanno riqualificati pezzi di città», propone Loda. E il dibattito è aperto.
+
+Non è questione di facile interpretazione del resto. Anche la ricerca Cesifin si scontra con l'aporia del fenomeno: 20 milioni di presenze interessate a godere principalmente del &quot;chilometro magico&quot; del centro storico vogliono dire un Pil che tiene nonostante la crisi ma anche enormi costi di smaltimento dei rifiuti, 7 volte più alti nel castrum romano che a Novoli. Nove milioni di pernottamenti negli alberghi e altrettanti nelle case in affitto su Airbnb vogliono dire 27 milioni di tassa di soggiorno, ma può un fazzoletto di 2,8 chilometri quadrati reggere una pressione turistica abnorme? E cosa dire dei &quot;free riders&quot;, turisti mordi e fuggi che sbarcano in città su 60 mila bus turistici senza spendere che pochi euro per un panino consumato sui gradini di un monumento? «Firenze è bellissima. Da tutto il mondo arrivano persone che vogliono visitare la nostra città. L'anno scorso abbiamo avuto più di 9 milioni di pernottamenti.
+
+Questo vuol dire ricchezza e lavoro. Basti dire che con imposta di soggiorno e ticket dei bus pagati dai turisti il Comune incassa quanto da addizionale Irpef e Tasi pagati dai fiorentini. Ci sono però anche dei rischi che vanno gestiti », riconosce Nardella. «C'è soprattutto l'obbligo che noi amministratori abbiamo di conservare e valorizzare un patrimonio artistico inestimabile», aggiunge pure il sindaco probabilmente rivendicando dentro di sé il nuovo regolamento Unesco anti-minimarket e ritenendo «una buona idea» la carta dei doveri del turista lanciata da Barucci. E un &quot;pass&quot;? Londra e Milano hanno scelto la &quot;congestion charge&quot;, ticket onerosi per entrare in auto. L'economista ex assessore Alessandro Petretto suggerisce di valutare l'idea di una tassa sugli sbarchi in aeroporto o un surplus sui caselli autostradali fiorentini. Sulla prima qualche mese fa Nardella si disse a favore, ma sarebbe una decisione da prendere con il governo. Intanto il sindaco ha deciso di aumentare il ticket dei bus turistici: «Lo voglio raddoppiare per i più inquinanti». E la tassa di soggiorno? In attesa di studiare altre mosse per rispondere al &quot;deep impact&quot;, Perra intanto ha in mente una cosa: contare i flussi turistici. «Si può fare con le celle dei telefonini, chiunque ne ha uno», dice l'assessore che ha già chiesto un preventivo a Vodafone per uno studio (39 mila euro) e ne attende uno da Telecom.
+
+©RIPRODUZIONE RISERVATA
+
+Nardella su Fb: &quot;Non scordiamoci che è un potente fattore di crescita economica&quot;
+
+CAPITALE DEL TURISMO
+
+File di turisti per la città; in basso a destra, Oslo dove sono state prese contromisure per risolvere la pressione del turismo
+
+14 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Ferrero e la Samp Il futuro si giocherà tra quattro mesi
+
+
+RENZO PARODI
+
+EDOARDO Garrone ha davvero regalato la Sampdoria a Massimo Ferrero? Perché lo ha fatto e perché proprio a lui? La cessione era maturata all'insaputa degli altri azionisti del club e degli stessi familiari più stretti del primogenito del compianto Duccio Garrone. Strano, no? E ancora. Si è trattato di una vendita vera o di una sorta di affitto mascherato? Forse il Viperetta rappresenta qualcuno fra le quinte? Cosa riserva il futuro alla Sampdoria ora che la luna di miele fra i tifosi e la dirigenza venuta da Roma sta svanendo? Il nome di Gabriele Volpi rimbalza da mesi e la fantasia della gente di sangue blucerchiato vola. Ci sono stati sondaggi informali condotti da Flavio Briatore con l'avvocato Romei e interrotti quando la soluzione sembrava dietro l'angolo. Briatore ha rotto con Volpi , il quale ad un certo punto ha tuonato: «Non comprerò mai la Sampdoria». Ora non si muoverà finché la mela-Sampdoria non sarà ben matura. E certamente non farà offerte al buio. La cessione è autentica. Ferrero non ha nessuno alle spalle. Non ci sono clausole segrete, neppure quella che imporrebbe a Ferrero di vendere il club in presenza di una condanna penale. Ferrero temeva molto l'epilogo giudiziario del fallimento Livingston Un anno e dieci mesi, con probabile pena alternativa scontata ai servizi sociali. E 800mila euro da devolvere alla curatela fallimentare, che girerà la somma al Ministero dell'economia. Non è chiaro se in base alle norme federali Ferrero sia obbligato a dimettersi dalla carica di presidente della Sampdoria. Le norme sono state cambiate di recente. E si sa che in Italia, specie ramo calcio, le leggi si interpretano e poi si applicano. Eventualmente.
+
+Dunque, si diceva. Perché Garrone ha venduto la Sampdoria? Questo è già chiaro da tempo. La contestazione scomposta di una frangia di tifosi, le minacce alla sua famiglia, gli sputi di qualche esagitato. Da tutto ciò le pressioni dei familiari e della maggior parte dei 22 azionisti (Garrone e Mondini) affinché ci si liberasse di una partita scottante. L'unica via era ridimensionare i costi e di conseguenza gli obiettivi sportivi della squadra. Sapendo che, oltre a scontentare i tifosi, gli azionisti avrebbero dovuto affrontare comunque pesanti sacrifici economici. Una studio aveva infatti indicato un esborso di 45 milioni in tre anni (20 il primo anno, 15 il secondo e 10 il terzo). Troppi denari e senza eliminare il rischio di essere contestati dalla piazza. Dunque, basta.Nei dodici anni di gestione (2002-2014) la Sampdoria è costata ai Garrone- Mondini (con esposizioni personali di entità differente) all'incirca 300 milioni di euro. Edoardo Garrone non ha lucrato sulla vendita a Ferrero. Gli ha regalato l'intero capitale azionario, ha versato 15 milioni di euro a titolo di aumento di capitale e ha alleggerito la posizione debitoria verso le banche che a giugno 2014 era di 65 milioni di euro. Si è assunto personalmente l'onere di coprirne 25 milioni. Il debito residuo si aggira ora sui 10 milioni di euro. Fin dall'inizio Garrone ha fornito alcune corpose fideiussioni. Una presso il Mediocredito Centrale a valere sui crediti (a suo tempo scontati dalla banca) relativi all'affitto del marchio Sampdoria. La cosa funziona come un mutuo. La Sampdoria, cioè ora Ferrero, paga una rata mensile e il capitale da rimborsare decresce anno dopo anno. Dai 20 milioni iniziali già rinegoziati a 15 all'atto della cessione, si è scesi a una dozzina. La partita si chiuderà fra sette anni. La seconda voce riguarda il debito, pari a 8 milioni di euro, presso due primari istituti bancari. La relativa fideiussione fornita da Garrrone (scadenza giugno 2016) contempla una controgaranzia a valere sui diritti televisivi in capo alla Sampdoria. Se Garrone dovesse ripagare il debito non onorato da Ferrero, attingerebbe agli oltre 40 milioni di euro alla voce diritti Tv. A giugno dunque Garrone uscirà di scena. E Ferrero dovrà assumere su di sè gli oneri bancari. Oppure trovare un nuovo fideiussore. Ce la farà? E come fronteggerà il probabile sbilancio di gestione? Qui la risposta è facile. O iniettando liquidità propria oppure vendendo giocatori. L'avvocato Romei ha promesso un bilancio quasi in pari o appena in rosso. Quando potremo leggerlo capiremo quale destino attende la Sampdoria.
+
+©RIPRODUZIONE RISERVATA
+
+IN ATTESA
+
+I tifosi della Sampdoria chiedono legittimamente chiarezza sul futuro della società blucerchiata
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">La sfida di Bassolino &quot;Se vinco le primarie diventerò sindaco&quot;
+
+
+DARIO DEL PORTO
+
+ENZO Rivellini, che ha annunciato la sua candidatura al Comune nello schieramento di centrodestra sotto le insegne di &quot;Napoli capitale&quot;, gli lancia un augurio- provocazione: «D'accordo, visto che ci tieni tanto a vincere le primarie, io poi vinco le secondarie». Antonio Bassolino, in corsa con il Pd, non si sottrae e subito rilancia: «Guarda che se vinco le primarie vinco anche le elezioni ». E subito parte l'applauso della platea dell'antisala dei Baroni che assiste al confronto tra i due sfidanti introdotto da Gabriella Peluso. Poi Bassolino aggiunge: «Per me le primarie sono più difficili delle elezioni vere e proprie. Parliamoci chiaramente, il mio è un voto di opinione. Dunque più napoletani andranno a votare, più le mie possibilità aumentano».
+
+Rivellini, che per l'occasione indossa una maglia azzura con il logo &quot;Napoli capitale&quot; analogo a quello della squadra di calcio, attacca a tutto campo: ne ha per l'altro candidato come Gianni Lettieri perché, sostiene «non è di centrodestra, non per niente tra gli esperti incaricati di preparare il suo programma c'è l'ex direttore di Bagnolifutura, Carlo Borgomeo, nominato da Bassolino». Sferra bordate al sindaco Luigi de Magistris: «È stato una sciagura per Napoli e, quando era parlamentare europeo, ha tradito la città sui rifiuti. Mi quereli pure, se vuole». Non risparmia il centrosinistra che, dice, «ha governato per quarant'anni ». Quindi punge Bassolino: «Che fine hanno fatto le inferriate settecentesche della Villa Comunale, quelle che avete sostituito con le &quot;supposte&quot; kitsch?». L'ex sindaco scuote il capo e replica: «Rivellini è incompetente in materia di arte contemporanea e classica. Comunque le inferriate settecentesche non esistono, chiedetelo alla Sovrintendenza ». Nel pubblico, tra gli altri, anche Ernesto Paolozzi e Guido Trombetti. Su un punto i due contendenti sono d'accordo: la critica al sindaco uscente. «Scassare è facile, bisogna ricostruire», dicono entrambi riferendosi a de Magistris.
+
+In caso di elezione, dice Bassolino, «per prima cosa telefonerò al presidente della Repubblica Sergio Mattarella e al presidente del Consiglio Matteo Renzi. La seconda cosa sarà andare alla cabina di regina per Bagnoli, invece di disertare le riunioni. Un sindaco ha il dovere di presenziare a quelle riunioni. Un sindaco - argomenta Bassolino deve governare la sua città e dialogare con le altre istituzioni, non fare opposizione. Altrimenti diventa un piccolo partito. Invece siede a Palazzo San Giacomo, che è la casa di tutti i cittadini, e deve soprattutto unire».
+
+Rivellini pensa di rilanciare la proposta di aprire a Napoli una sede periferica del Parlamento Europeo, punta sullo sviluppo del porto e intende riprendere il progetto dell'area franca a Est. Dopo il faccia a faccia con Bassolino, è pronto a cimentarsi in dibattiti pubblici con gli altri aspiranti alla guida del Comune: «Scriverò a Valeria Valente (candidata alle primarie del Pd) e naturalmente a de Magistris, anche se non credo che accetterà. Ma io - sottolinea Rivellini - ritengo che i candidati debbano confrontarsi ». Bassolino continua la corsa verso le primarie democrat del 6 marzo. «Sono di sinistra e non ho mai nascosto la mia storia - rimarca - Non faccio parte di nessuna corrente o correntone. Mi rivolgo ai cittadini ».
+
+©RIPRODUZIONE RISERVATA
+
+Faccia a faccia nell'antisala dei Baroni L'ex governatore: &quot;Basta scassare, ora ricostruire&quot;
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Mafia capitale &quot;Armi da guerra nell'arsenale di Carminati&quot;
+
+
+RORY CAPPELLI
+
+PER LA QUARTA volta, ieri, è salito sul banco dei testimoni il capitano del Ros Giorgio Mazzoli. Ha parlato dell'arsenale, mai trovato, dell'organizzazione di Massimo Carminati.
+
+Le armi sono un punto delicato e importante di tutta l'indagine. Dimostrano, secondo la procura, la ferocia e gli intenti omicidi dei soggetti coinvolti, che spesso, intercettati, parlano di fare «morti» («lo ammazzo come un cane», «entro 48 ore o ti ammazzo io o c'hai un uomo che ‘mmazza », dice in due diverse occasioni Carminati, e così via). E sono un forte collante con il passato violento ed estremista di Nar di Carminati e anche del suo braccio destro Riccardo Brugia, da giovane ugualmente coinvolto in organizzazioni di estrema destra.
+
+Le armi nelle intercettazioni saltano fuori tantissime volte. Conversazioni che sottolineano come &quot;Er Cecato&quot; e Brugia avessero un vero pallino per le armi in genere e per quelle da guerra in particolare — «che i privati per legge non possono detenere», spiega il capitano — e come si sforzassero di trovare nascondigli adatti a occultare il loro arsenale. Ricco oltre che di «Makarov 9 con il silenziatore», «che non senti neanche il clack», anche di mitragliatrici, silenziatori (per cui spendono «25mila euro»), munizioni e giubbotti antiproiettile in kevlar, perché «se c'hai quello ti salvi» non come il «povero Danilo», dice Brugia, riferendosi a Danilo Abbruciati, della banda della Magliana, ucciso in un conflitto a fuoco. Dalle intercettazioni si capisce anche che già da tempo Carminati è in possesso di un'arma: «Certe volte, quando mi sento aggressivo me la prenderei quella, cioè hai capito, per annà a minaccia' la gente ».
+
+Nelle conversazioni telefoniche Brugia spiega al capo della sua idea di ricavare nel muro vicino alla legnaia uno spazio per nascondere l'arsenale, in quel momento occultato nella stalla. Ma nelle perquisizioni non è saltato fuori niente. Soltanto due cassette vuote: una interrata sotto una catasta di legno, una sotto il tetto di un forno. Oltre a un kit per la pulizia delle armi.
+
+Ma perché le armi sono sparite? Un'ipotesi è che Carminati e i suoi complici siano stati avvertiti dai componenti delle forze dell'ordine con cui avevano rapporti. La mattina del 4 ottobre 2013, per esempio, nella stazione di servizio Eni di corso Francia, luogo di incontri e di scambi, Carminati si ferma a parlare con due uomini che arrivano a bordo di un Alfa Romeo 156 intestata alla questura di Roma. Uno dei due dice a Carminati in tono ammirato che «io starei due giorni a sentirti». Il Ros non è mai riuscito a individuare i due poliziotti. Anche se con targa e orario forse non sarebbe stato così difficile.
+
+Nel pomeriggio, poi, Salvatore Buzzi si è collegato in videoconferenza per affermare di non aver mai conosciuto l'imprenditore Cristiano Guarnera.
+
+©RIPRODUZIONE RISERVATA
+
+GLI INTERROGATORI
+
+Sopra, un momento dell'udienza di Mafia capitale. Qui sopra, Massimo Carminati
+
+15 gennaio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Capitali europee: alla scoperta delle meraviglie nostrane
+
+
+ALLA SCOPERTA DI LUOGHI SENZA TEMPO IN CUI CULTURA E TRADIZIONE SI FONDONO
+
+Un grande classico irrinunciabile: un viaggio nelle più belle capitali europee. Il fascino senza tempo di città come Parigi, Vienna, Londra, Madrid e Praga contagia proprio tutti almeno una volta nella vita. E anche chi ha già visitato queste mete spesso non rinuncia a tornarci, andando alla ricerca di angoli nascosti e suggestivi, curiosità e magari nuovi locali e musei. Tra i luoghi più famosi e importanti da non perdere assolutamente per chi si reca a Berlino c'è il museo di Pergamo, uno dei più importanti musei archeologici della Germania e del mondo. Si trova sull'isola dei Musei, Museums Insel, dove ci sono cinque fra i musei più importanti della capitale tedesca. Costruito tra il 1910 e il 1930 il museo di Pergamo presenta la ricostruzione di alcuni monumenti antichi, come la porta di Ischtar e una parte delle mura di Babilonia, l'altare di Pergamo, la porta d'accesso al mercato di Mileto e altri elementi architettonici di grande importanza. Chi ama l'arte contemporanea non può non visitare il Museo Guggenheim di Bilbao, oggi il più visitato museo di arte contemporanea. Progettato da Frank O'Gehry, il museo dalle brillanti pareti in titanio, si snoda come un nastro lungo le rive del fiume al centro della città. Oltre a una collezione permanente di arte del XX secolo, vengono ospitate mostre temporanee di arte moderna e contemporanea. Il Vienna Museums Quartier è uno dei dieci maggiori complessi museali al mondo e si trova tra il centro storico e la frequentatissima Mariahilfestrasse. Due grandi edifici moderni affiancano uno spazio con costru- zioni settecentesche di Fischer von Erlach per un totale di 60.000 metri quadrati. Vi sono ospitati: il Museo di Arte Moderna, la Collezione Leopold, il Kunsthalle e l'Architekturzentrum Wien, in circa 14mila metri quadrati. Il Victoria and Albert Museum di Londra, invece, è il più grande museo di arte e design del mondo, con collezioni impareggiabili.
+
+13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">no titolo
+
+... l’applicazione ideata da Tiziano Di Cara e curata da Pif insieme ad altri tre autori, per divulgare le storie di quanti hanno combattuto la mafia. «Ho sposato subito l’idea- dice l’attore-mi è sembrato...
+la Repubblica 12 febbraio 2016 pag. 20 sez. GIORNO</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">LAURA NOBILE
+
+Una seduta spiritica che sfugge di mano alla medium, uno spiritello fin troppo allegro che combina disastri, fino a quando gli spiritelli non diventano due.
+
+È &quot;Spirito allegro&quot;, la commedia dl Noel Coward, scritta nel 1940, che stasera alle 21 va in scena al teatro Biondo di via Roma con Leo Gullotta protagonista e la regia di Fabio Grossi. La traduzione è di Masolino D'Amico, le scene di Ezio Antonelli e le musiche di Germano Mazzocchetti.
+
+Rappresentata nel '45 per la prima volta, in piena guerra mondiale , la commedia esorcizza il tema della morte e gioca con ironia con gli imprevisti del soprannaturale. La storia è quella del famoso scrittore Charles Condomine (Leo Gullotta) , che decide di fare una seduta spiritica per documentarsi sul mondo del soprannaturale e delineare il protagonista del suo prossimo romanzo. Charles si ritroverà a fare i conti con lo spirito della prima moglie (che lo vorrebbe morto per riabbracciarlo) ma anche con l'attuale compagna in carne ed ossa, che dovrà subire gli scherzi e attacchi della cara estinta, finendo per lasciarci la pelle.
+
+In scena con l'attore catanese, Betti Pedrazzi è la medium madame Arcadi, la palermitana Valentina Gristina è Elvira, la prima moglie di Charles, Federica Bern è Ruth, la seconda consorte, Sergio Mascherpa e Chiara cavalieri sono il dottor Breadman e sua moglie e Rita Abela la cameriera.
+
+«È una commedia scritta per esorcizzare il concetto della morte e mi sembra molto attuale, perché di continui segnali di paura e di morte siamo davvero circondati nel mondo che stiamo vivendo- dice Leo Gullotta- Questo poi è davvero un testo elegante, ben scritto, tutto costruito sul filo del gioco, del gusto e della misura. Fabio Grossi ha dato vita a una messinscena fantasiosa, adattandola ai nostri tempi e usando un video mapping sulle scene di Enzo Antonelli per mostrare l'ingresso dello spiritello in scena, tra piatti che volano e tavolini che si muovono». Per l'attore catanese, la commedia di Coward segna «un ritorno alla gioiosità, e un invito alla gente a uscire di casa per venire a ritrovare il piacere del teatro».
+
+Tra i suoi impegni recenti c'è la partecipazione a &quot;Noma-luoghi e storie antimafia&quot;, l'applicazione ideata da Tiziano Di Cara e curata da Pif insieme ad altri tre autori, per divulgare le storie di quanti hanno combattuto la mafia. «Ho sposato subito l'idea- dice l'attore-mi è sembrato doveroso: questo mezzo ci consente di raggiungere i giovani, e di ricordare loro che la nostra libertà è frutto di una conquista realizzata faticosamente, un pezzo dopo l'altro». Poi sarà di nuovo in tv, su Rai Uno nella nuova serie in sei puntate girata in Sicilia, &quot;Squadra catturandi&quot;, nei panni di un avvocato vicino a Cosa nostra.
+
+©RIPRODUZIONE RISERVATA
+
+L'attore ha partecipato alla &quot;app&quot; antimafia &quot;Per fare capire che la libertà è faticosa&quot;
+
+Leo Gullotta (nella foto di Tommaso Le Pera) nei panni del protagonista di &quot;Spirito allegro&quot; di Noel Coward in scena stasera alle 21 al teatro Biondo e in replica sino al 14
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Il saluto di Savina &quot;Lascio con il magone vinte le sfide di Expo e dei grandi vertici&quot;
+
+
+SIMONE BIANCHIN
+
+LUIGI Savina è il questore con la valigia per Roma. Sta «preparando i bagagli di corsa» per la partenza: «Lunedì sono lì». E il suo cellulare squilla continuamente. «Mi chiamano da tutta Italia, per congratularsi». Pronti a seguirlo la moglie e i due figli piccoli, uno ha meno di due anni e l'ultima appena 20 giorni: «Che bello essere papà. La famiglia si muove unita, a parte il mio primo figlio, che ha 30 anni ed è anche lui un funzionario servitore dello Stato».
+
+Savina, vicecapo della polizia di Stato nominato dal Consiglio dei ministri: il presidente Renzi ha detto che lei ha fatto &quot;un grandissimo lavoro durante l'Expo&quot; e il ministro dell'Interno Alfano ha dichiarato che lei è stato &quot;promosso sul campo&quot;.
+
+«Ringrazio assolutamente con piacere per la nomina. Non è una sorpresa, qualche cosa era stato percepito. Certo si tratta di un altro lavoro, nell'ambito delle deleghe che il capo della polizia, che mi ha voluto e ringrazio, vorrà darmi. Ma la vita da noi non è mai tranquilla ».
+
+Come saluta Milano questa volta?
+
+«Con un po' di magone per i collaboratori che lascio, ma anche con entusiasmo: sono una persona serena, quello che dovevo fare l'ho fatto. Il bilancio è positivo ed è il risultato dell'intera forza messa in campo dalla polizia che mi onoro di aver diretto a Milano. Città splendida, stimolante, dove il business degli affari si accumula con l'umanesimo. È veramente un punto centrale di innovazione, di capacità di fare sistema, ed Expo le ha fatto molto bene elevando al massimo l'allerta per la prevenzione ».
+
+E corruzione, mafia e ndrangheta?
+
+«La corruzione è il problema del mondo contemporaneo ma il lavoro antimafia è grande: è come la pulizia della casa, va praticata tutti i giorni soprattutto quando sembra che quella cosa non faccia rumore».
+
+Quali sono stati i punti più alti della sua vita da questore di Milano e provincia?
+
+«La sicurezza al secondo semestre europeo con i maggiori eventi, il meeting dei paesi asiatici e europei con cinquantaquattro capi di Stato che sono potuti andare tranquillamente a spasso per la città, Expo che ha portato Milano al centro del mondo, la presenza di centoventi consoli a Milano, il maggior numero al mondo. Grandi risultati, riconosciuti anche dal sindaco Pisapia come dei manifesti per la &quot;grande Milano&quot; ».
+
+La sicurezza per i cittadini, invece, a che punto è?
+
+«È un percorso mai interrotto, c'è più polizia in strada ed era ed è quello che viene richiesto dalla gente. Ci vogliono vedere, ci vogliono presenti. Abbiamo dato una risposta più che adeguata al fenomeno della criminalità organizzata sotto il comando della Direzione distrettuale Antimafia: questa è una priorità, la strada da seguire è quella di prevenire i reati».
+
+Un messaggio per il suo successore, quindi. Chi sarà e quando arriva?
+
+«Ci sono dei rumors, uno che ha già un grado di dirigente generale, un questore che arriva da un'altra sede e credo sarà qui entro una decina di giorni. Da lunedì comunque c'è il questore vicario, Michele Sinigaglia».
+
+Che situazione gli lascia?
+
+«Una grande questura e una grande squadra che collabora anche con le altre forze dell'ordine. Con i carabinieri c'è un rapporto fraterno, perché è così che si fa sicurezza: non ci sono primedonne ».
+
+Con la politica come si è trovato?
+
+«Non seguiamo la politica e soprattutto non seguiamo il partitismo. Abbiamo avuto con tutti ottimi rapporti».
+
+©RIPRODUZIONE RISERVATA
+
+&quot;
+
+GLI STIMOLI
+
+È una città splendida dove il business si accumula con l'umanesimo
+
+LA SICUREZZA
+
+Abbiamo messo più agenti in strada e dato risposte contro la criminalità
+
+&quot;
+
+VICECAPO DELLA POLIZIA A ROMA
+
+Luigi Savina lascia l'incarico di questore per andare a Roma come vice capo della Polizia
+
+SEI MESI
+
+Tremila in totale gli agenti di polizia e delle altre forze dell'ordine che si sono alternati nei presidi dei sei mesi di Expo
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Bruxelles premia i progetti di due ricercatrici del &quot;Poli&quot;
+
+
+STEFANO PAROLA
+
+NELLA medicina di domani i farmaci potranno essere sostituiti da nuovi materiali, in grado di condizionare il comportamenti delle cellule. È una frontiera tutta nuova, in cui il Politecnico di Torino crede molto. Tanto che l'Unione Europea ha appena assegnato a due ricercatrici dell'ateneo altrettanti &quot;Erc Grant&quot;, un contributo economico che viene stanziato per supportare progetti &quot;altamente ambiziosi, pionieristici e non convenzionali&quot;.
+
+Ieri il Consiglio europeo della ricerca (Erc) ha annunciato i vincitori dell'ultima selezione. Tra loro c'è Chiara Vitale Brovarone, che ha ottenuto due milioni per &quot;Boost&quot;, progetto che mira a sviluppare un nanomateriale innovativo, in grado di &quot;ingannare&quot; le cellule ossee in caso di fratture provocate da osteoporosi e di spingerle a riattivare il comportamento che hanno le cellule sane.
+
+L'altra vincitrice torinese è Valentina Cauda, che avrà 1,5 milioni come &quot;Erc starting grant&quot; (dedicato agli emergenti) per il suo progetto &quot;TrojaNanoHorse&quot;, con cui cercherà di realizzare una nanoparticella che agisca come una specie di cavallo di Troia, portando con sé un nanomateriale letale per le cellule tumorali direttamente all'obiettivo, senza effetti tossici sui tessuti sani.
+
+Chiara Vitale Brovarone e Valentina Cauda sono le prime due donne del Politecnico a ricevere un &quot;Erc grant&quot;, riconoscimento che durante il precedente programma quadro europeo (2007-2013) l'ateneo aveva già ottenuto per due suoi ricercatori. Questi bandi, spiega il rettore Marco Gilli, «selezionano i migliori in Europa e hanno ormai assunto una rilevanza strategica, che ha generato una competizione crescente». Il Magnifico di corso Duca degli Abruzzi evidenzia infatti che «la presenza di progetti Erc è un indice riconosciuto della reputazione di un'istituzione, dell'esistenza di un ambiente favorevole all'attività di ricerca ed è un fattore importante per l'attrazione di capitale umano e di investimenti qualificati: questi ultimi risultati ci posizionano al livello dei migliori atenei italiani».
+
+©RIPRODUZIONE RISERVATA
+
+Fondi europei per studi su nanomateriali da usare nelle cure di fratture e tumori
+
+Chiara Vitale Brovarone studia nanomateriali per le fratture ossee
+
+13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">FELICE LIPERI
+
+«LA VIE EN ROSE» di Richard Galliano per illuminare la Palestina colpita dall' operazione militare &quot;Protective Edge&quot;. Il grande fisarmonicista torna lunedì al Teatro Argentina per sostenere la ONG Sunshine4Palestine (S4P) che intende realizzare 1 km di illuminazione fotovoltaica nel quartiere di al Zannah a Gaza dove si vive in gravi condizioni di scarsità d'acqua ed energia elettrica. Maestro dell'incontro fra classico e popolare, Galliano presterà la sua arte per una importante causa dopo aver portato nella Capitale il progetto &quot;Suoni, voci, danze&quot; che spaziava da Bach e Vivaldi per approdare all'amato tango. Nel concerto di lunedì renderà omaggio anche alla canzone francese a partire dal recente cd &quot;La vie en rose&quot; registrato con il chitarrista Sylvain Luc sui temi delle celebri canzoni scritte e interpretate da Edith Piaf e dal fisarmonicista Gus Viseur. Poi, grazie ad uno strumento che nelle sue mani di virtuoso diventa fonte di suoni e ricordi, il repertorio proposto si arricchirà di una vasta gamma di sonorità, spaziando dalla classica, al jazz, al folk. Il famoso &quot;folklore universale&quot;, sintesi ideale di linguaggi e memorie di un territorio sonoro ibrido e affascinante, per cui Galliano è diventato celebre. Non per caso i suoi live si trasformano in vere esplorazioni musicali di lirismo e rara polivalenza come pure album come &quot;New York Tango&quot;, &quot;French touch&quot;, &quot;Tango forever&quot; e &quot;Ruby my dear&quot; diventati popolari anche per le preziose riscoperte di musicisti e repertori diversi. Come quello, in particolare di Astor Piazzolla, di cui Galliano è considerato l'erede legittimo perché, come ha spesso ricordato, «mi ha spinto a credere nella tradizione per ripartire dalle radici francesi e dalle sue contaminazioni mediterranee». Così, per la seconda volta il fisarmonicista torna a sostenere Sunshine4Palestine – come ricorda Barbara Capone, ricercatrice in Fisica all'Università di Vienna e presidente di S4P - ONG che vuole intervenire per combattere la scarsità di acqua ed energia elettrica a Gaza attraverso una tecnologia green ad alto impatto».
+
+Teatro Argentina largo di Torre Argentina, 52, 15 febbraio, ore 21.30, ingressi da 12 a 28 euro. Info tel. 06.684000311
+
+VIRTUOSO
+
+Richard Galliano (1950), francese di origini italiane suona al Teatro Argentina. E' uno dei maggiori virtuosi di bandoneon e fisarmonica
+
+13 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Traffico, turismo, bus ecco le dieci app per vivere a Palermo
+
+
+GRAZIA LA PAGLIA
+
+Qual è la farmacia più vicina e aperta nei giorni festivi? Come segnalare l'abbandono di rifiuti nelle villette? E come visitare i luoghi più belli di Palermo ottimizzando i tempi? Le risposte, ormai, le danno le app. Ecco le dieci che aiutano a vivere in città.
+
+MUOVERSI CON INTELLIGENZA
+
+Incidenti, lavori in corso e traffico in tilt sono indicati nell'app Info Traffico Palermo. E per facilitare l'utente nella localizzazione dei punti caldi , offre visualizzazione su mappa e aggiornamenti costanti. Cantieri, reportage fotografici sulle attività per migliorare il decoro urbano e per riqualificare il verde sono disponibili con Mobilita Palermo. L'app viene aggiornata anche con informazioni sulle modiche alla viabilità di strade a causa di lavori in corso, e dà la possibilità di lasciare segnalazioni su rifiuti abbandonati e di partecipare a sondaggi.
+
+È dedicata al trasporto Moovit, l'app che fornisce una guida sugli autobus del trasporto pubblico locale. Chiede all'utente di inserire il punto da cui partirà e il luogo da raggiungere, generando diverse possibilità di percorsi con i mezzi Amat e indicando anche orari e fermate.
+
+Per chi preferisce utilizzare le auto e le bici del Comune, è da poco arrivata Amunì. L'app offre il collegamento a Io Guido, che indica su una mappa le auto disponibili in zona. Per il bike sharing Amunì offre una panoramica delle ciclostazioni della città con i numeri delle biciclette presenti nei vari stalli.
+
+PULIZIA IN CITTÀ
+
+Per i cittadini ecologisti c'è Palermo Pulita, che permette di segnalare in maniera anonima rifiuti abbandonati nelle piazze, nelle strade e nelle spiagge. Aprendo Palermo Pulita, l'utente può scegliere se scattare e caricare la sua foto di automobilisti incivili oppure lasciare una denuncia sull'inquinamento acustico. L'app rielabora le informazioni e genera una mappatura delle zone più sporche o senza una sufficiente manutenzione.
+
+SERVIZI A PORTATA DI SCHERMO
+
+Un'app che si propone come &quot;city guide&quot; è aPalermo, con contenuti in italiano e inglese. Non solo itinerari per i turisti e cenni sull'architettura locale, ma anche ristoranti e pizzerie, un calendario di eventi serali in pub e discoteche e le programmazioni dei cinema. Indica anche farmacie di turno e banche vicine.
+
+Dalle sartorie ai negozi artigianali , dalle artiste che rilegano libri a mano ai falegnami: Crezi Kit offre una mappa di tutte le botteghe del centro storico. Dopo aver individuato il produttore e l'oggetto da acquistare, l'utente può ordinare un abito, una bottiglia di vino o un accessorio moda on line. E per chi vuole riscoprire antichi mestieri e vedere gli artigiani all'opera, si possono prenotare i tour. Per essere sempre aggiornati su cosa accade in città si può scaricare Notizie di Palermo. L'utente sfoglia con un'unica app gli articoli più recenti di quattordici testate locali.
+
+TURISTI COL DITO
+
+Per chi è di passaggio in città e ha poco tempo c'è Palermo On Tour. Al suo avvio, l'app chiede al turista quanti minuti o ore si hanno a disposizione per un tour più o meno veloce e approfondito. Sulla base della posizione dell'utente, dei suoi interessi e dei mezzi di trasporto che ha a disposizione, crea un percorso ad hoc. Hotel Palermo accompagna i turisti in città con una lista di hotel e di percorsi. È munita di mappa, meteo e guida gli utenti nell'affitto di auto, nel cambio valuta e sugli eventi in città. Indica anche i ristoranti nelle vicinanze e gli sportelli bancomat.
+
+©RIPRODUZIONE RISERVATA
+
+&quot;
+
+I cantieri sulle strade le farmacie di turno e le botteghe artigianali con tutte le informazioni in tempo reale per gli utenti
+
+UN TOCCO ANTIMAFIA
+
+Si chiama &quot;NOma&quot; e racconta luoghi e vittime della mafia con contributi audio, video, fumetti e animazioni digitali. L'app, patrocinata dal Comune e sviluppata da Tim, nasce su spinta di &quot;Sulle nostre gambe&quot;, associazione fondata da Pif, Roberta Iannì, Emanuela Giuliano e Tiziano Di Cara, autore dell'idea
+
+12 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">1,7 mld
+
+
+Il 2015 di Unicredit si è chiuso con utili a 1,7 miliardi, sotto i due miliardi dello scorso anno, ma sopra le stime della vigilia. Ultimi tre mesi in attivo per 153 milioni, gli analisti si aspettavano un rosso
+
+L'indice di solidità patrimoniale Cet1 sale al 10,94%. Nel quarto trimestre dell'anno i crediti deteriorati lordi sono scesi a 79,8 miliardi (-1,2% rispetto al terzo trimestre, -5,5% sul 2014)
+
+Nel corso dell'anno la banca ha ridotto la forza lavoro di 3.500 unità, e ha già firmato con i sindacati un accordo per altre 2.700 uscite su base volontaria. Sono state chiuse 582 filiali, 121 nel quarto trimestre
+
+Gli Utili Il Capitale I Tagli10 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">PIERO MELATI
+
+Uno Stato che ora si ricordava di essere presente anche in terra di infedeli, seppur mostrando il braccio armato. L'aula bunker restò poi a ricordo imperituro di quel tempo, entrando a far parte degli emblemi cittadini al pari della Zisa, di palazzo dei Normanni, della cattedrale.
+
+Antonio Calabrò, trent'anni fa, era redattore capo de L'Ora. Nella sede del giornale confluirono in quei giorni le decine di fascicoli dell'ordinanza-sentenza del pool dei giudici antimafia, con la quale si rinviava a giudizio tutta un'epoca. Falcone, Borsellino, Di Lello, Guarnotta: avevano finito quel mostruoso lavoro relegati al confino nell'isola dell'Asinara, dove erano stati deportati per preservarne l'incolumità dopo la terribile estate dell'85, quando al culmine di una sequenza di sangue Cosa Nostra aveva ucciso i poliziotti Beppe Montana e Ninni Cassarà, i primi cacciatori di mafiosi. Oggi Calabrò ha riavvolto il film in un libro ( I mille morti di Palermo, Mondadori, pp.256, euro 18,50), che anzitutto offre le cifre di quel lontano evento, utili a comprenderne la portata: 349 udienze, 1314 interrogatori, due requisitorie maratona dei pubblici ministeri Giuseppe Ayala e Domenico Signorino, 635 arringhe difensive da parte degli oltre 200 avvocati, 475 imputati, 19 ergastoli inflitti, 327 condanne, 114 assoluzioni, 2665 anni di reclusione comminati.
+
+Fu la vittoria di Giovanni Falcone. Quella sentenza di primo grado venne confermata fino in Cassazione. Per la prima volta Cosa Nostra veniva condannata. La chiave di volta era stato il pentimento di Tommaso Buscetta, arrestato in Brasile, estradato, per tre mesi interrogato in gran segreto a Roma. Le sue parole abbatterono un impero, quello che dagli anni ‘50 governava la Sicilia, in combutta con i mitra prima dei clan palermitani (i Bontate, gli Inzerillo), poi con le lupare corleonesi (i Riina, i Provenzano): la potente Dc di Vito Ciancimino, Salvo Lima, Giovanni Gioia, degli esattori Nino e Ignazio Salvo, di Arturo Cassina, dei cavalieri del lavoro di Catania.
+
+La guerra che i corleonesi avevano mosso alle cosche palermitane aveva mietuto mille morti. E non solo: tutte le istituzioni dello Stato erano state decapitate. Magistrati, poliziotti, carabineri, giornalisti, politici, in una palingenesi di nomi e omicidi eccellenti. Tra l'85 e l'86 il cronista di giudiziaria de L'Ora, Enzo Raffaele curava la pubblicazione delle rivelazioni dei pentiti del Maxiprocesso, ricostruzioni fitte di nomi e circostanze, come mai a Palermo si erano sentite. Ogni giorno il giornale andava esaurito, spesso prima di arrivare nelle edicole. A volte bastavano gli strilloni in strada.
+
+Venivano detti nomi che prima di allora non si potevano neppure accennare. Anselmo Calaciura, che per il Giornale di Sicilia, seguì dall'inizio il &quot;processone&quot;, ebbe un‘espressione felice per descrivere la situazione: l'evento aveva spaccato in due Palermo. Favorevoli e contrari. La divisione attraversava ogni strato sociale, ogni categoria professionale, ogni famiglia, persino ogni tavola da pranzo. A volte metteva in disaccordo con se stessi persino le singole persone. Lo scrittore Leonardo Sciascia, per esempio. Assistette dalla sala stampa del bunker alla deposizione di Tommaso Buscetta. Ne uscì sgomento, e lo scrisse. Ma poi, a sentenza avvenuta, plaudì il Maxi: gli piacquero le assoluzioni che si alternarono alle condanne, a riprova che non era stata una sentenza &quot;politica&quot;, dettata dalla ragion di Stato.
+
+Cosa è rimasto adesso, di quella rivoluzione copernicana? Come noto, la Cosa Nostra che aveva accettato una &quot;tregua&quot; durante il processo, riprese in mano la strategia terrorista. Dapprima chiuse i conti con chi aveva, forse, promesso nuove impunità (Ignazio Salvo, Lima), poi aprì i crateri delle stragi del ‘92 (Capaci e via D'Amelio), infine terrorizzò l'Italia con gli attentati del '93. Era davvero troppo. Così la vecchia mafia fini per autodistruggersi tra arresti, pentimenti, trappole. Senza più Falcone e Borsellino, si aprì con Caselli procuratore la stagione dei processi eccellenti (Andreotti, Contrada, Dell'Utri, Mannino, Cuffaro, Mori, in un alternarsi di condanne e assoluzioni), con Grasso procuratore giunse il periodo della stabilizzazione e delle polemiche interne, infine la fase del processo sulla Trattativa Stato-mafia.
+
+Un filo unico, per quanto ingarbugliato, collega tutte le storie. Gli ultimi capitoli sono stati il depistaggio dell'inchiesta Borsellino (il finto pentito Scarantino smentito da Spatuzza, per altro il killer di padre Puglisi) e il conflitto tra procura di Palermo e Quirinale. Con, in appendice, la scoperta recente dei finti antimafiosi nell'antimafia.
+
+Oggi è un anno zero. Il Maxiprocesso ha vinto la partita, la mafia è stata condannata. A prezzo della vita di Falcone e Borsellino e di tanti servitori dello Stato. Forse oggi Cosa Nostra non c'è più, almeno come l'abbiamo conosciuta in passato. Forse nessuno si lamenta più, come nel biennio 85-86, di scorte e sirene per le strade. Forse non c'è più un avvocato dei boss che, entrando nel bunker dell'Ucciardone, diceva al bar: «Tutte minchiate, poi arriviamo in Cassazione e saremo tutti assolti». Forse non ci sono più latitanti (Michele Greco, Riina, Provenzano) che vengano arrestati dopo decenni di sospetta impunità, dando la sensazione di un meccanismo a orologeria dettato da reciproche convenienze. Oggi (e questo senza forse) non si spara più lungo le strade. Ma la guerra civile italiana ci ha lasciato in circolo tossine, trasformandosi in un conflitto di carta. Il cosiddetto fronte della giustizia e quello altrettanto cosiddetto delle garanzie continuano a guardarsi in cagnesco, come parenti serpenti. E i siciliani, come gli italiani, continuano a non avere una memoria condivisa.
+
+©RIPRODUZIONE RISERVATA
+
+LA COPERTINA
+
+&quot;I mille morti di Palermo&quot; di Antonio Calabrò
+
+IL BOSS
+
+Luciano Liggio nella gabbia degli imputati A destra, la corte del processo e, sotto i pm Ayala e Signorino
+
+10 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Mi scusi ma non era un partigiano legato alle brigate di Tito?
+
+
+sta condizione familiare. Divenni comunista. Mio padre si incazzò. Mi disse tu non sai quanto male hanno fatto i comunisti».
+
+«Quella fu la lotta che si trovò a combattere. E restò sempre fedele a quegli uomini con cui aveva rischiato la vita. Ma aveva ideali politici socialisti. Ed è la ragione per cui non condivise le mie scelte».
+
+«C'era stato il Sessantotto, sembrò un modo per inventarsi una nuova vita».
+
+«Tra la politica e il gioco finì col prevalere un modo antiquato di intendere i rapporti di forza».
+
+Nel romanzo c'è anche la figura di Vittorio Foa.
+
+«Siamo stati amici e abbiamo creduto nelle stesse cose, nello stesso bisogno di libertà e giustizia».
+
+Cosa non ha funzionato? A un certo punto Foa dice: abbiamo sbagliato tutto.
+
+«Avevamo sopravvalutato il momento della soggettività politica, senza comprendere che la politica si faceva altrove».
+
+Cosa vuol dire essere sconfitti?
+
+«Fu lo smarrimento. Improvvisamente mi sentii così agli inizi degli anni Ottanta: sembravo l'ultimo giapponese che non aveva capito che la guerra era finita. E la cosa era tanto più comica quanto più in giro era chiaro il riposizionamento».
+
+«I nostri intellettuali improvvisamente si scoprirono quasi tutti nicciani, heideggeriani, lacaniani. Danzanti. Era un gran parlare del pensiero debole. Compiaciuti nella propria debolezza».
+
+Allude a Gianni Vattimo?
+
+«Lui fu l'abile cantore del nuovo corso. Nel 1984, durante un convegno a Palermo, alcuni di noi si trovarono schiacciati dall'imperante misticismo».
+
+Alcuni chi?
+
+«Con me c'erano Edoardo Sanguineti, Francesco Leonetti e, mi pare, Giancarlo Ferretti. Venimmo isolati in mezzo a 400 persone che ci impedirono di parlare. Capisce? Ai loro occhi eravamo vecchi e superati. Uno di questi, uno dei poeti &quot;innamorati&quot;, mi pare fosse Milo De Angelis, minacciò di picchiarmi. Il giorno dopo si scusò. Ma questo era il clima».
+
+Perché ha scelto di occuparsi di letteratura italiana?
+
+«Potrei risponderle perché mi piaceva. In realtà anche qui c'entra mio padre. Era stato amico di Romano Bilenchi e credo che queste frequentazioni fiorentine abbiano influito sulle mie scelte. Mi sono anche occupato di letteratura europea e non ho disdegnato di insegnare in America».
+
+Tuttavia, il suo insegnamento si è svolto per larga parte all'Università di Siena.
+
+«Sì vi arrivai nel 1972. Lo stesso anno, o giù di lì, in cui giunse Franco Fortini».
+
+Che ricordo ha di lui?
+
+«Contraddittorio. Per un verso, era un personaggio affascinante. In grado di dire cose intelligenti e puntuali; dall'altro, sembrava posseduto da un'ingenuità narcisistica. O si era con lui o contro di lui. La sua irascibilità poteva sfiorare la violenza fisica. Soffriva di un certo complesso di persecuzione. Ma restò un intellettuale di prim'ordine. Come dire: un'intelligenza pura negata da scatti di collera. Era per carattere agli antipodi del mio amico Paolo Volponi».
+
+Era l'opposto in che senso?
+
+«Aveva passioni positive e un amore sconfinato per la natura. Un giorno venne a trovarmi a casa e vedendo un'enorme pianta di rosmarino, l'abbracciò. Era anche esperto di storia dell'arte. Lo portai una volta a Volterra per vedere La deposizione di Rosso Fiorentino. Cominciò a parlare del dipinto e si formò attorno a lui una piccola folla, rapita dalle sue considerazioni. Concluse dicendo che il manierismo aveva anticipato il Novecento».
+
+Come scrittore che giudizio ne dà?
+
+«Ha sbagliato qualche libro, me ne ha fatti di bellissimi. Le mosche del capitale è un romanzo che rimane ».
+
+Con chi altri si vedeva allora?
+
+«Una frequenza importante fu con Ferruccio Masini, grande germanista. Un uomo affabile e critico notevole di Nietzsche. Era un sostenitore dell'omeopatia. Quando si ammalò di cancro provò a curarsi con i sistemi naturali. Purtroppo non funzionarono».
+
+C'era anche Mario Tronti che insegnava a Siena.
+
+«È vero, uomo intelligente. Di tutto il gruppo operaista il più sagace e serio. Se penso a Toni Negri e al suo dannunzianesimo politico, Tronti mi appare come una stella di prima grandezza. Ma anche lui mi sembra sia finito a studiare i profeti. Della vecchia guardia materialistica vedevo volentieri Sebastiano Timpanaro. Non poteva insegnare perché non era in grado di parlare davanti a più di due persone. E per questo, uno dei più grandi filologi del ‘900, si mise a fare il correttore di bozze».
+
+George Steiner, affascinato dalla sua storia, gli dedicò un romanzo.
+
+«Cosa che Timpanaro non gradì. Gli parve una caricatura. Gli suggerii di tentare con l'analisi. Ma era troppo vecchio, si limitò a scrivere un saggio sul lapsus freudiano».
+
+Quando iniziò a fare analisi?
+
+«Nel 1978, nel pieno degli anni di piombo. E l'ho portata avanti per cinque anni».
+
+Che cos'è la guarigione?
+
+«Non esiste. Freud parlò di destino. Beninteso non quello dei greci, ma il saper riconoscere la spinta della propria vita. La corrente che ti attraversa. La guarigione è questo riconoscimento».
+
+Lei l'ha trovata questa corrente?
+
+«Penso di sì. Quando morì Jervis il mondo mi parve nuovamente crollarmi addosso. Ma Johnny, così gli amici lo chiamavano, aveva saputo creare basi solide per la mia psiche».
+
+L'impressione che si ricava è che lei sia un uomo che ha attraversato la durezza dell'ideologia e la fragilità della vita.
+
+«Mi riconosco e non rifiuto la fragilità».
+
+Cosa significa accettarla?
+
+«Sapere che il tuo destino è questo e la fragilità vi partecipa. Bisogna imparare a regredire. La persona matura non ha paura di mostrarsi fragile. È una lezione che mi ha trasmesso Jervis. Rischiai di vanificarla dopo la malattia. Ero sull'orlo della morte. Lasciai l'università. Una parte di me non esisteva più. Poi, ancora una volta, ne sono uscito. Riemerso».
+
+Grazie al romanzo?
+
+«Anche, ma non solo. Giunto in tarda età mi sento un autore avventizio».
+
+In fondo tutta la sua vita è un tentativo di ricomporre l'immagine di una famiglia che lei ha vissuto in modo frantumato.
+
+«È probabile che volessi ricomporre quelle fratture. Un giorno frugando tra le carte di mio padre vidi sulla mensola una foto che non avevo mai notato. Dietro c'era la data: dicembre 1943. Nella foto la mamma è seduta in mezzo a un campo, mentre io bambino le bacio la guancia. Era una foto che lei gli aveva inviato, durante la guerra. In seguito mio padre la incorniciò e la tenne come un reperto prezioso. Ecco, penso che lì, nascosto nel bianco e nero, ci fosse il desiderio di una ricomposizione familiare».
+
+©RIPRODUZIONE RISERVATA
+
+14 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">L'identità siciliana nella letteratura vista da Di Gesù
+
+
+&quot;L'invenzione della Sicilia&quot;, il libro di Matteo Di Gesù che ragiona su &quot;Letteratura, mafia, modernità&quot;, si presenta alle 18 alal libreria Feltrinelli di via Cavour: con l'autore interverranno Clotilde Bertoni e Tommaso Baris.
+
+Il punto di partenza è l'interpretazione della narrativa di autori siciliani spesso in termini ideologicamente tendenziosi, come repertorio di una presunta identità siciliana immutabile. Il libro rivisita alcuni momenti della fondazione letteraria dell'ambigua nozione di identità siciliana moderna: dalla stagione dell'illuminismo isolano alla comparsa del tema mafia nell'Ottocento, fino ai romanzi sul Risorgimento.
+
+La copertina.&quot; L'invenzione della Sicilia&quot; si presenta alle 18 da Feltrinelli
+
+©RIPRODUZIONE RISERVATA
+
+04 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">&quot;Ma per capire meglio le inchieste di mafia non si chiama un boss&quot;
+
+
+ROMA.
+
+«Sono senza parole». Grazia Pradella, da un anno procuratore aggiunto a Imperia, protagonista delle indagini sugli assenteisti di Sanremo, per quasi trent'anni a Milano, dove prima da giudice e poi da pm ha affrontato il terrorismo rosso e nero, ma anche la famosa inchiesta sulla clinica degli orrori di Brega Massone. Netto il no sul caso Faranda.
+
+Perché l'ex postina delle Br non può entrare alla Scuola della magistratura?
+
+«Quello è il luogo deputato ad accrescere la professionalità dei magistrati. La sua testimonianzanon può certo portare a comprendere il fenomeno del terrorismo sotto il profilo giuridico. Sarebbe un po' come dire che per capire come si coordinano le indagini sulla mafia dovremmo invitare Provenzano ».
+
+Suoi colleghi come Galli e Spataro sono scandalizzati, mentre l'ideatore del corso Onida non vede il problema.
+
+«Condivido pienamente il pensiero di Alessandra e Armando. Noi tre non ci siamo mai sottratti a dibattiti di tipo storico e sociologico sul terrorismo. Ma un conto è affrontare queste tematiche in sedi pubbliche e come testimoni del lavoro fatto per cercare di comprendere il fenomeno e chiarire i fatti...».
+
+E invece se il confronto avviene alla scuola di Scandicci che cambia?
+
+«Tutto. Perché il dibattito prevede la partecipazione di persone - e qui non mi importa affatto la distinzione tra pentiti, dissociati e irriducibili - che si sono macchiate di fatti che non solo hanno gravemente offeso la nostra democrazia, ma colpito i magistrati che più generosamente e pervicacemente hanno fatto indagini e processi di terrorismo. Tutto ciò, per giunta, in un momento storico in cui non si può dire che il processo di pacificazione sociale sia terminato e ancor più che si sia stata fatta piena luce su episodi che hanno segnato la nostra storia».
+
+Per Onida, se si discute di giustizia riparativa, la presenza di Faranda non deve stupire.
+
+«Per chi, come me, ha lavorato anche sugli atti di Alessandrini e Galli, il dovere della memoria e del rispetto è un valore assoluto. Il perdono spetta ai parenti delle vittime. A noi magistrati spetta quello di scoprire chi ha causato quelle morti. Questi percorsi singoli e istituzionali sono del tutto estranei in un corso della scuola della magistratura».
+
+( l. mi.)
+
+©RIPRODUZIONE RISERVATA
+
+Sono senza parole. C'è il dovere della memoria e su quegli episodi ancora non è stata fatta piena luce
+
+Il procuratore Grazia Pradella
+
+03 febbraio 2016 sez.</column>
+        </table>
+        <table name="tblWebData">
+            <column name="Article">Mozzarelle, frutta e clan Gli affari della cosca tra hotel e supermercati
+
+... mozzarelle. «È questa la nuova frontiera della mafia: il salto di qualità nell’attività imprenditoriale per ripulire i capitali sporchi », spiega il comandante del Gico Mastrodomenico. Un modo “pulito” di...
+la Repubblica 10 febbraio 2016 pag. 02 sez. CRONACA</column>
+        </table>
+    </database>
+</pma_xml_export>
