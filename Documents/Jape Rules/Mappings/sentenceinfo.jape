@@ -1,0 +1,53 @@
+/*
+OwlExporter --  http://www.semanticsoftware.info/owlexporter
+
+This file is part of the OwlExporter architecture.
+
+Copyright (C) 2009, 2010 Semantic Software Lab, http://www.semanticsoftware.info
+        René Witte
+        Ninus Khamis
+
+The OwlExporter  architecture is free software: you can
+redistribute and/or modify it under the terms of the GNU Affero General
+Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+Phase: sentenceinformation
+Input: Document Sentence NP
+Options: control = all
+
+Rule: sentenceinformation
+(	
+	{Sentence}
+):ann	
+-->
+{	
+	try {		
+		AnnotationSet as = (gate.AnnotationSet)bindings.get("ann");
+		Annotation ann = (gate.Annotation)as.iterator().next();
+		
+		FeatureMap features = ann.getFeatures();
+		
+		String in = doc.getContent().getContent(
+				ann.getStartNode().getOffset(), ann.getEndNode().getOffset()).toString();
+
+		if (ann.getType().toString().compareToIgnoreCase("Sentence") == 0){						
+			features.put("content", in);
+			features.put("beginLocation", ann.getStartNode().getOffset());
+			features.put("endLocation", ann.getEndNode().getOffset());			
+		}
+	  
+	}
+	catch(Exception e)
+	{		
+		e.printStackTrace();
+	}
+}

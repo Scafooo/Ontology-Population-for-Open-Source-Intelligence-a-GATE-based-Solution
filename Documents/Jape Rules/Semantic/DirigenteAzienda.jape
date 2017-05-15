@@ -1,0 +1,139 @@
+Phase:	Dirigente
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+
+Rule: TrovaDirigente
+Priority: 30
+  (
+  (
+  ({Lookup.minorType==dirigente}):lavoroUno
+  ({Persona}):personaLavoraUno
+  )
+  ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+ 
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personaLavoraUno");
+
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+ gate.AnnotationSet ruoloUnoSet = (gate.AnnotationSet)bindings.get("lavoroUno");
+ gate.Annotation firstRuoloAnn = (gate.Annotation)ruoloUnoSet.iterator().next();
+ String RuoloNameContent = gate.Utils.stringFor(doc, firstRuoloAnn);
+ features.put("Titolo",RuoloNameContent);
+
+ features.put("classe", "Dirigente");
+
+ features.put("rule", "TrovaDirigente");
+
+outputAS.add(personSet.firstNode(), personSet.lastNode(), "Dirigente",features);
+}
+
+Rule: TrovaDirigenteDue
+Priority: 30
+  (
+  (({Persona}):personaLavoraDue
+  ({Token.string == ","})
+  ({Lookup.minorType==dirigente}):lavoroDue):dirigente
+  (({TokenSemantico.category == "PRE"})|({TokenSemantico.category == "PRE:det"}))
+  ((({Token.kind == word,Token.orth == upperInitial}) | ({Token.kind == word,Token.orth == allCaps})):aziendaDue
+  (({Token.kind == word,Token.orth == upperInitial})?):aziendacontDue):azienda
+  ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresAzienda = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("dirigente");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+ gate.AnnotationSet AziendaSet = (gate.AnnotationSet)bindings.get("azienda");
+ gate.Annotation AziendaAnn = (gate.Annotation)AziendaSet.iterator().next();
+  
+ gate.AnnotationSet firstNameSetDue = (gate.AnnotationSet)bindings.get("personaLavoraDue");
+
+ gate.Annotation firstNameAnnDue = (gate.Annotation)firstNameSetDue.iterator().next();
+ features.putAll(firstNameAnnDue.getFeatures());
+ gate.AnnotationSet ruoloDueSet = (gate.AnnotationSet)bindings.get("lavoroDue");
+ gate.Annotation secondRuoloAnn = (gate.Annotation)ruoloDueSet.iterator().next();
+ String SecondRuoloNameContent = gate.Utils.stringFor(doc, secondRuoloAnn);
+ features.put("Titolo",SecondRuoloNameContent);
+ 
+ gate.AnnotationSet firstAziendaSet = (gate.AnnotationSet)bindings.get("aziendaDue");
+ gate.Annotation firstAziendaAnnDue = (gate.Annotation)firstAziendaSet.iterator().next();
+ String AziendaDue = gate.Utils.stringFor(doc, firstAziendaAnnDue);
+ gate.AnnotationSet middleNameAziendaSet = (gate.AnnotationSet)bindings.get("aziendacontDue");
+ if (middleNameAziendaSet != null && middleNameAziendaSet.size()>0)
+{
+ gate.Annotation middleNameAziendaAnn = (gate.Annotation)middleNameAziendaSet.iterator().next();
+ String middleNameAziendaContent = gate.Utils.stringFor(doc, middleNameAziendaAnn);
+ String totNameAzienda=AziendaDue+" "+middleNameAziendaContent;
+ featuresAzienda.put("Identificativo",totNameAzienda);
+}
+else {featuresAzienda.put("Identificativo", AziendaDue);}
+
+
+ features.put("classe", "Dirigente");
+ 
+ featuresAzienda.put("classe", "Azienda");
+ 
+ features.put("rule", "TrovaDirigente");
+ 
+ featuresAzienda.put("rule", "TrovaAzienda");
+ 
+ outputAS.add(AziendaSet.firstNode(), AziendaSet.lastNode(), "Azienda",featuresAzienda);
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Dirigente",features);
+}
+
+
+Rule: TrovaDirigenteTre
+Priority: 30
+  (
+  ({Lookup.minorType==dirigente}):lavoroTre
+  (({TokenSemantico.category == "PRE"})|({TokenSemantico.category == "PRE:det"}))
+  ( (({Token.kind == word,Token.orth == upperInitial}) | ({Token.kind == word,Token.orth == allCaps})):aziendaTre
+  (({Token.kind == word,Token.orth == upperInitial})?):aziendacontTre):aziendaVerDue
+  (({Persona}):personaLavoraTre):dirigenteVerDue
+  ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresAzienda = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("dirigenteVerDue");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+ gate.AnnotationSet AziendaSet = (gate.AnnotationSet)bindings.get("aziendaVerDue");
+ gate.Annotation AziendaAnn = (gate.Annotation)AziendaSet.iterator().next();
+  
+ gate.AnnotationSet firstNameSetTre = (gate.AnnotationSet)bindings.get("personaLavoraTre");
+
+ gate.Annotation firstNameAnnTre = (gate.Annotation)firstNameSetTre.iterator().next();
+ features.putAll(firstNameAnnTre.getFeatures());
+ gate.AnnotationSet ruoloTreSet = (gate.AnnotationSet)bindings.get("lavoroTre");
+ gate.Annotation TerzoRuoloAnn = (gate.Annotation)ruoloTreSet.iterator().next();
+ String TerzoRuoloNameContent = gate.Utils.stringFor(doc, TerzoRuoloAnn);
+ features.put("Titolo",TerzoRuoloNameContent);
+ 
+ gate.AnnotationSet firstAziendaSet = (gate.AnnotationSet)bindings.get("aziendaTre");
+ gate.Annotation firstAziendaAnnDue = (gate.Annotation)firstAziendaSet.iterator().next();
+ String AziendaDue = gate.Utils.stringFor(doc, firstAziendaAnnDue);
+ gate.AnnotationSet middleNameAziendaSet = (gate.AnnotationSet)bindings.get("aziendacontTre");
+ if (middleNameAziendaSet != null && middleNameAziendaSet.size()>0)
+{
+ gate.Annotation middleNameAziendaAnn = (gate.Annotation)middleNameAziendaSet.iterator().next();
+ String middleNameAziendaContent = gate.Utils.stringFor(doc, middleNameAziendaAnn);
+ String totNameAzienda=AziendaDue+" "+middleNameAziendaContent;
+ featuresAzienda.put("Identificativo",totNameAzienda);
+}
+else {featuresAzienda.put("Identificativo", AziendaDue);}
+
+
+ features.put("classe", "Dirigente");
+ 
+ featuresAzienda.put("classe", "Azienda");
+ 
+ features.put("rule", "TrovaDirigente");
+ 
+ featuresAzienda.put("rule", "TrovaAzienda");
+ 
+ outputAS.add(AziendaSet.firstNode(), AziendaSet.lastNode(), "Azienda",featuresAzienda);
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Dirigente",features);
+}

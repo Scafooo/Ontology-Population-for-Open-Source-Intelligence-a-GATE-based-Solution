@@ -1,0 +1,27 @@
+Phase:	OrganizzazioneCriminale
+Input:  Token Lookup
+Options: control = appelt
+
+
+Rule: TrovaOrganizzazioneCriminale
+
+  (
+  (
+  ({Lookup.minorType==criminale}):organizzazione
+  (({!Token.string =~ "[Cc]apitale"}))
+  )
+  ):organizzazioneCriminale -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+
+  gate.AnnotationSet NameSet = (gate.AnnotationSet)bindings.get("organizzazione");
+  
+ gate.Annotation NameAnn = (gate.Annotation)NameSet.iterator().next();
+ String NameContent = gate.Utils.stringFor(doc, NameAnn);
+ 
+ features.put("Identificativo",NameContent);
+ features.put("classe","Criminale");
+ features.put("rule", "TrovaOrganizzazioneCriminale");
+outputAS.add(NameSet.firstNode(), NameSet.lastNode(), "Criminale",features);
+
+ }

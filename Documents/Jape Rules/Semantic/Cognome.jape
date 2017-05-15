@@ -1,0 +1,211 @@
+Phase:	CognomePersona
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaPersonaCasoUno
+((({!Lookup.minorType==partito})):partito)
+(
+(({Lookup.majorType==nome})):nome
+(({Lookup.majorType==nome})):secondoNome
+(({Token.kind == word,Token.orth == upperInitial})):cognome
+(({Token.kind == punctuation,Token.string == "'"})):apostrofo
+(({Token.kind == word,Token.orth == upperInitial})):secondoCognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("secondoNome");
+gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+String totName=firstNameContent+" "+middleNameContent;
+features.put("Nome",totName);
+
+gate.AnnotationSet surnameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation surnameAnn = (gate.Annotation)surnameSet.iterator().next();
+String surnameContent = gate.Utils.stringFor(doc, surnameAnn);
+gate.AnnotationSet apostrofoSurNameSet = (gate.AnnotationSet)bindings.get("apostrofo");
+gate.Annotation apostrofoSurNameAnn = (gate.Annotation)apostrofoSurNameSet.iterator().next();
+String apostrofoSurNameContent = gate.Utils.stringFor(doc, apostrofoSurNameAnn);
+String apostrofoSurNameTot =surnameContent+apostrofoSurNameContent;
+gate.AnnotationSet middleSurNameSet = (gate.AnnotationSet)bindings.get("secondoCognome");
+gate.Annotation middleSurNameAnn = (gate.Annotation)middleSurNameSet.iterator().next();
+ String middleSurNameContent = gate.Utils.stringFor(doc, middleSurNameAnn);
+ String middleSurNameTot =apostrofoSurNameTot+middleSurNameContent;
+ features.put("Cognome", middleSurNameTot);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: TrovaPersonaCasoDue
+((({!Lookup.minorType==partito})):partito)
+(
+(({Lookup.majorType==nome})):nome
+(({Lookup.majorType==nome})):secondoNome
+(({Token.kind == word,Token.orth == upperInitial})):cognome
+(({Token.kind == word,Token.orth == upperInitial})):secondoCognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("secondoNome");
+gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+String totName=firstNameContent+" "+middleNameContent;
+features.put("Nome",totName);
+
+gate.AnnotationSet surnameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation surnameAnn = (gate.Annotation)surnameSet.iterator().next();
+String surnameContent = gate.Utils.stringFor(doc, surnameAnn);
+gate.AnnotationSet middleSurNameSet = (gate.AnnotationSet)bindings.get("secondoCognome");
+gate.Annotation middleSurNameAnn = (gate.Annotation)middleSurNameSet.iterator().next();
+ String middleSurNameContent = gate.Utils.stringFor(doc, middleSurNameAnn);
+ String middleSurNameTot =surnameContent+" "+middleSurNameContent;
+ features.put("Cognome", middleSurNameTot);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: TrovaPersonaCasoTre
+((({!Lookup.minorType==partito})):partito)
+(
+(({Lookup.majorType==nome})):nome
+(({Lookup.majorType==nome})):secondoNome
+(({Token.kind == word,Token.orth == upperInitial})):cognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("secondoNome");
+gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+String totName=firstNameContent+" "+middleNameContent;
+features.put("Nome",totName);
+
+gate.AnnotationSet surnameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation surnameAnn = (gate.Annotation)surnameSet.iterator().next();
+String surnameContent = gate.Utils.stringFor(doc, surnameAnn);
+
+ features.put("Cognome", surnameContent);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: TrovaPersonaCasoQuattro
+((({!Lookup.minorType==partito})):partito)
+(
+(({Lookup.majorType==nome})):nome
+(({Token.kind == word,Token.orth == upperInitial})):cognome
+(({Token.kind == word,Token.orth == upperInitial})):secondoCognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+features.put("Nome",firstNameContent);
+
+gate.AnnotationSet surnameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation surnameAnn = (gate.Annotation)surnameSet.iterator().next();
+String surnameContent = gate.Utils.stringFor(doc, surnameAnn);
+gate.AnnotationSet middleSurNameSet = (gate.AnnotationSet)bindings.get("secondoCognome");
+gate.Annotation middleSurNameAnn = (gate.Annotation)middleSurNameSet.iterator().next();
+ String middleSurNameContent = gate.Utils.stringFor(doc, middleSurNameAnn);
+ String middleSurNameTot =surnameContent+" "+middleSurNameContent;
+ features.put("Cognome", middleSurNameTot);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: TrovaPersonaCasoCinque
+((({!Lookup.minorType==partito})):partito)
+(
+(({Lookup.majorType==nome})):nome
+(({Token.kind == word,Token.orth == upperInitial})):cognome
+(({Token.kind == punctuation,Token.string == "'"})):apostrofo
+(({Token.kind == word,Token.orth == upperInitial})):secondoCognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+features.put("Nome",firstNameContent);
+
+gate.AnnotationSet surnameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation surnameAnn = (gate.Annotation)surnameSet.iterator().next();
+String surnameContent = gate.Utils.stringFor(doc, surnameAnn);
+gate.AnnotationSet apostrofoSurNameSet = (gate.AnnotationSet)bindings.get("apostrofo");
+gate.Annotation apostrofoSurNameAnn = (gate.Annotation)apostrofoSurNameSet.iterator().next();
+String apostrofoSurNameContent = gate.Utils.stringFor(doc, apostrofoSurNameAnn);
+String apostrofoSurNameTot =surnameContent+apostrofoSurNameContent;
+gate.AnnotationSet middleSurNameSet = (gate.AnnotationSet)bindings.get("secondoCognome");
+gate.Annotation middleSurNameAnn = (gate.Annotation)middleSurNameSet.iterator().next();
+ String middleSurNameContent = gate.Utils.stringFor(doc, middleSurNameAnn);
+ String middleSurNameTot =apostrofoSurNameTot+middleSurNameContent;
+ features.put("Cognome", middleSurNameTot);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: TrovaPersonaCasoSei
+((({!Lookup.minorType==partito})):partito)
+(
+(({Lookup.majorType==nome})):nome
+(({Token.kind == word,Token.orth == upperInitial})):cognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+features.put("Nome",firstNameContent);
+
+gate.AnnotationSet surnameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation surnameAnn = (gate.Annotation)surnameSet.iterator().next();
+String surnameContent = gate.Utils.stringFor(doc, surnameAnn);
+ features.put("Cognome", surnameContent);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}

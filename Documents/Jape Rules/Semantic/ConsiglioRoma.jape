@@ -1,0 +1,20 @@
+Phase:	ConsiglioRoma
+Input:  Token Lookup 
+Options: control = appelt
+
+Rule: TrovaConsiglioRoma
+(
+( 
+{Lookup.minorType==consigliereprovinciale}
+)
+):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaConsiglioRoma");
+features.put("Carica", "Consigliere Provinciale");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "ConsiglioProvinciaRoma",features);
+}

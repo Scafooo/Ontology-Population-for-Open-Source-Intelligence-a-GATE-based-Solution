@@ -1,0 +1,96 @@
+Phase:	Giornalista
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+Rule: TrovaGiornalista
+(
+( 
+{Lookup.majorType == persona,Lookup.minorType == giornalista}
+)
+):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaGiornalista");
+features.put("classe", "Giornalista");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "Giornalista",features);
+}
+
+Rule: TrovaGiornalistaCasoUno
+  (
+  (
+  ({Lookup.majorType == lavoro,Lookup.minorType == giornalista}):lavoroUno
+  (({Token})?)
+  (({Token})?)
+  (({Lookup.minorType == giornale})?)
+  (({Token.kind==punctuation})?)
+  ({Persona}):personaLavoraUno
+  )
+ ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personaLavoraUno");
+
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+
+
+
+ features.put("classe", "Giornalista");
+
+ features.put("rule", "TrovaGiornalista");
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Giornalista",features);
+
+ }
+ 
+ 
+Rule: TrovaGiornalistaCasoDue
+  (
+  (
+  ({Persona}):personaLavoraDue
+  ({Token.string == ","})
+  (({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.majorType == lavoro,Lookup.minorType == giornalista}):jobdue
+  )
+ ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+
+ gate.AnnotationSet firstNameSetDue = (gate.AnnotationSet)bindings.get("personaLavoraDue");
+ gate.Annotation firstNameAnnDue = (gate.Annotation)firstNameSetDue.iterator().next();
+ features.putAll(firstNameAnnDue.getFeatures());
+
+
+ features.put("classe", "Giornalista");
+
+ features.put("rule", "TrovaGiornalista");
+outputAS.add(firstNameSetDue.firstNode(), firstNameSetDue.lastNode(), "Giornalista",features);
+
+ }
+ 
+ 
+ Rule: TrovaGiornalistaCasoTre
+  (
+  (
+  ({Persona}):personaLavoraTre
+  )
+  (({Lookup.majorType == lavoro,Lookup.minorType == giornalista})):lavoroTre
+ ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+
+ gate.AnnotationSet firstNameSetDue = (gate.AnnotationSet)bindings.get("personaLavoraTre");
+ gate.Annotation firstNameAnnDue = (gate.Annotation)firstNameSetDue.iterator().next();
+ features.putAll(firstNameAnnDue.getFeatures());
+
+
+ features.put("classe", "Giornalista");
+
+ features.put("rule", "TrovaGiornalista");
+outputAS.add(firstNameSetDue.firstNode(), firstNameSetDue.lastNode(), "Giornalista",features);
+
+ }

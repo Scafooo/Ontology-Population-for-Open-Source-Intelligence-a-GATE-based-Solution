@@ -1,0 +1,42 @@
+//
+// Multilingual Noun Phrase Extractor (MuNPEx)
+//
+// Grammar for detecting Named Entities
+//
+
+Phase: NP_Entities
+Input: Persona Unknown Comune Politico Giornalista Giornale Avvocato Partito Regione Nazione RappresentanteLegaleStato Agenzia Criminale Cooperativa Dirigente Imprenditore Azienda
+Options: control = appelt
+
+Macro: SEMANTIC_ENTITIES
+// entities that come with the default ANNIE application
+// the same entities also appear with the Italian plugin for GATE
+(
+	{Politico}|
+	{Giornalista}|
+	{Giornale}|
+	{Avvocato}|
+	{Partito}|
+	{Regione}|
+	{Nazione}|
+	{RappresentanteLegaleStato}|
+	{Agenzia}|
+	{Criminale}|
+	{Cooperativa}|
+	{Dirigente}|
+	{Imprenditore}|
+	{Azienda}
+	{Comune}|
+	{Persona}|
+	{Unknown}
+)
+
+
+Rule: head
+Priority: 90
+(
+	SEMANTIC_ENTITIES
+	
+):head
+-->
+	:head.tempNP = {kind = "HEAD", Pronoun="false"}

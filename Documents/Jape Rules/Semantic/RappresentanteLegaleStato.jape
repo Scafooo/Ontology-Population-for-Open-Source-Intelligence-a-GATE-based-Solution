@@ -1,0 +1,64 @@
+Phase:	RappresentanteLegaleStato
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+
+Rule: TrovaRappresentanteLegaleStatoCasoUno
+(
+  ({Lookup.minorType==legalestato}):LavoroUno
+  (({Token})?)
+  (({Lookup.majorType==luogo})?)
+  (({Token})?)
+  ({Persona}):personaLavoraUno
+):personaLavora -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ 
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personaLavoraUno");
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+
+ gate.AnnotationSet jobNameSet = (gate.AnnotationSet)bindings.get("LavoroUno");
+ gate.Annotation jobNameAnn = (gate.Annotation)jobNameSet.iterator().next();
+ String jobNameContent = gate.Utils.stringFor(doc, jobNameAnn);
+ features.put("Ruolo", jobNameContent);
+  
+
+ features.put("classe", "RappresentanteLegaleStato");
+
+
+ features.put("rule", "TrovaRappresentanteLegaleStato");
+ outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "RappresentanteLegaleStato",features);
+
+ }
+ 
+Rule: TrovaRappresentanteLegaleStatoCasoDue
+(
+  (
+  ({Persona}):personaLavoraDue
+  ({Token.string == ","})
+  (({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.minorType==legalestato}):LavoroDue
+  )
+):personaLavora -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ 
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personaLavoraDue");
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+
+ gate.AnnotationSet jobNameSet = (gate.AnnotationSet)bindings.get("LavoroDue");
+ gate.Annotation jobNameAnn = (gate.Annotation)jobNameSet.iterator().next();
+ String jobNameContent = gate.Utils.stringFor(doc, jobNameAnn);
+ features.put("Ruolo", jobNameContent);
+  
+
+ features.put("classe", "RappresentanteLegaleStato");
+
+
+ features.put("rule", "TrovaRappresentanteLegaleStato");
+ outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "RappresentanteLegaleStato",features);
+
+ }
+

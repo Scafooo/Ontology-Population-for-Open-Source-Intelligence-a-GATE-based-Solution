@@ -1,0 +1,67 @@
+Phase: EN_NP_Parts
+Input: Token Number Lookup
+Options: control = brill
+
+Rule: det
+Priority: 50
+(
+	{Token.category == "DET"}|         // check
+	{Token.category == "DET:def"}|
+	{Token.category == "DET:indef"}|
+	{Token.category == "PRE:det"}|
+	{Token.category == "PRE"}|     // check
+	{Token.category == "PRO:poss"}|
+	{Token.category == "PRO:indef"}|
+	{Token.category == "PRO:demo"}|
+	{Token.category == "PRO:poss"}
+):det
+-->
+	:det.tempNP = {kind = "DET"}
+
+
+Rule: mod
+Priority: 50
+(
+	{Token.category == "ABR"}|
+	{Token.category == "ADJ"}|
+	({Token.category == "ADJ"}({Token.category == "KON"}{Token.category == "ADJ"})*)|
+	{Token.category == "NUM"}|
+	{Number}
+):mod
+-->
+	:mod.tempNP = {kind = "MOD"}
+
+
+Rule: mod2
+Priority: 50
+(
+	{Token.category == "ABR"}|
+	{Token.category == "ADJ"}|
+	({Token.category == "ADJ"}({Token.category == "CON"}{Token.category == "ADJ"})*)|
+	{Token.category == "NUM"}|
+	{Number}
+):mod
+-->
+	:mod.tempNP = {kind = "MOD2"}
+
+
+Rule: head
+Priority: 50
+(
+	{Token.category == "NAM"}|
+	{Token.category == "NOM"}|
+	{Token.category == "NPR"}|
+	{Token.category == "PRO:pers"}
+):head
+-->
+	:head.tempNP = {kind = "HEAD"}
+
+
+Rule: head
+Priority: 80
+(
+	{Token.Comment == "<unknown>", Token.orth == "upperInitial"}
+	({Token.Comment == "<unknown>", Token.orth == "upperInitial"})*
+):head
+-->
+	:head.tempNP = {kind = "HEAD"}

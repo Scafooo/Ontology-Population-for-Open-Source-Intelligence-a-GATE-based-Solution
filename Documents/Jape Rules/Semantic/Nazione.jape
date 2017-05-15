@@ -1,0 +1,18 @@
+Phase:	Nazione
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaNazione
+((({!Lookup.majorType==nome})):nome)
+(( {Lookup.minorType==stato})):locazione
+--> 
+{
+gate.AnnotationSet loc = (gate.AnnotationSet)bindings.get("locazione");
+gate.Annotation locAnn = (gate.Annotation)loc.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaNazione");
+String locNameContent = gate.Utils.stringFor(doc, locAnn);
+features.put("Nominativo",locNameContent);
+features.put("classe","Nazione");
+outputAS.add(loc.firstNode(), loc.lastNode(), "Nazione",features);
+}

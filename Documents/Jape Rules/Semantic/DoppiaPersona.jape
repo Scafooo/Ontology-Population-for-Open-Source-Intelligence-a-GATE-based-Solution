@@ -1,0 +1,47 @@
+Phase:	DoppiaPersona
+Input:  Token Lookup Persona
+Options: control = appelt
+
+
+Rule: TrovaDoppiaPersona
+Priority: 10
+
+  (
+  ({Lookup.majorType==nome}):primoNome
+  (({Lookup.majorType==nome})?):nomeIntermedio
+  ({Token.kind == word,Token.string =="e"}):congiunzione
+  ({Persona}):personaCognome
+  )
+  :persona -->
+  {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("persona");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("primoNome");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ 
+ String firstNameContent = gate.Utils.stringFor(doc, firstNameAnn);
+
+ gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("nomeIntermedio");
+
+ if (middleNameSet != null && middleNameSet.size()>0)
+{
+ gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+ String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+ String totName=firstNameContent+" "+middleNameContent;
+ features.put("Nome", totName);
+}
+else{
+features.put("Nome", firstNameContent);
+}
+gate.AnnotationSet firstSurnameSet = (gate.AnnotationSet)bindings.get("personaCognome");
+gate.Annotation firstSurnameAnn = (gate.Annotation)firstSurnameSet.iterator().next();
+ 
+ features.put("Cognome", firstSurnameAnn.getFeatures().get("Cognome"));
+
+ features.put("classe", "Persona");
+ features.put("rule", "TrovaDoppiaPersona");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+
+ }

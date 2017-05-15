@@ -1,0 +1,517 @@
+Phase: mention_map_domain_relation
+Input: Lookup Token OwlExportClassDomain Politico Partito TokenSemantico
+Options: control = appelt
+
+Rule: Persona_Vive_Localita
+  (({OwlExportClassDomain.className == "Persona"}):dom)
+  ((
+    ( ((({Token})?) (({TokenSemantico.lemma=="vivere"})) (({Token})?)))  
+   |
+  ( ((({Token})?) (({TokenSemantico.lemma=="risiedere"})) (({Token})?)))  
+  ): rel)
+  (({OwlExportClassDomain.className == "Comune"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="viveA";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+
+Rule: Agenzia_Indaga_Persona
+
+  (({OwlExportClassDomain.className == "Agenzia"}):dom)
+  ((
+    ( ((({Token})?) (({TokenSemantico.lemma=="indagare"})) (({Token})?)))  
+   |
+  ( ((({Token})?) (({TokenSemantico.lemma=="intercettare"})) (({Token})?)))  
+  ): rel)
+  (({OwlExportClassDomain.className == "Persona"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="indaga";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+
+Rule: Avvocato_Rappresenta_Persona
+
+  (({OwlExportClassDomain.className == "Avvocato"}):dom)
+  ((
+    ( ((({Token})?) (({TokenSemantico.lemma=="difendere"})) (({Token})?) (({Token})?)) )  
+   |
+  ( ((({Token})?) (({TokenSemantico.lemma=="rappresentare"})) (({Token})?) (({Token})?)))  
+  ): rel)
+  (({OwlExportClassDomain.className == "Persona"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="rappresenta";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Avvocato_Rappresenta_Persona_Ver2
+
+  (({OwlExportClassDomain.className == "Avvocato"}):dom)
+  ((
+   ( (({Token})?) ({Token.string == "legale"}) (({Token})?) (({Token})?) )
+   |
+    ( (({Token})?) {Token.string == "rappresentante"} (({Token})?) (({Token})?) )
+   |
+  ( (({Token})?) {Token.string == "difensore"} (({Token})?) (({Token})?)) ): rel)
+  (({OwlExportClassDomain.className == "Persona"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="rappresenta";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+
+Rule: Avvocato_Rappresenta_Persona_Ver3
+
+  (({OwlExportClassDomain.className == "Pesona"}):ran)
+ ((
+    ( ((({Token})?) (({Token.string =="difeso"})) (({Token})?) (({Token})?) (({Token})?)) )  
+   |
+  ( ((({Token})?) (({Token.string=="rappresentato"})) (({Token})?) (({Token})?) (({Token})?)))  
+  ): rel)
+  (({OwlExportClassDomain.className == "Avvocato"}):dom)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="rappresenta";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Giornalista_Scrive_Giornale
+
+  (({OwlExportClassDomain.className == "Giornalista"}):dom)
+  ((
+  ((({Token})?) (({Token})?) (({Token})?))): rel)
+  (({OwlExportClassDomain.className == "Giornale"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="scrivePer";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Giornalista_Scrive_Giornale_Variante
+  ((
+  ( (({Lookup.minorType==giornalista})?) (({Token})?) (({Token})?) )): rel)
+  (({OwlExportClassDomain.className == "Giornale"}):ran)
+  ((
+  ((({Token})?)(({Token})?))))
+  (({OwlExportClassDomain.className == "Giornalista"}):dom)
+  
+  
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+  
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  
+  String propertyName="scrivePer";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Persona_Gestisce_Organizzazione
+
+  (({OwlExportClassDomain.className == "Persona"}):dom)
+   ((
+    ( ((({Token})?) (({TokenSemantico.lemma=="dirigere"})) (({Token})?)))  
+   |
+  ( ((({Token})?) (({TokenSemantico.lemma=="gestire"})) (({Token})?)))  
+  ): rel)
+  (({OwlExportClassDomain.className == "Azienda"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="gestisce";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Persona_Gestisce_Organizzazione_variante
+
+  (({OwlExportClassDomain.className == "Persona"}):dom)
+   ((
+    ( ((({Token})?) (({TokenSemantico.lemma=="dirigere"})) (({Token})?)))  
+   |
+  ( ((({Token})?) (({TokenSemantico.lemma=="gestire"})) (({Token})?)))  
+  ): rel)
+  (({OwlExportClassDomain.className == "Cooperativa"}):ran)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="gestisce";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Politico_Iscritto_Partito
+
+  (({OwlExportClassDomain.className == "Politico"}):dom)
+  ((
+  ({Token.string == "("}(({OwlExportClassDomain.className == "Partito"}):ran)
+  {Token.string == ")"})
+  ): rel)
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="iscritto";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Politico_Iscritto_Variante_Partito
+
+  (({OwlExportClassDomain.className == "Politico"}):dom)
+  ((({Token.string == ","})
+  (({Token})?)
+  ({Lookup.minorType==politici})
+  (({Token})?)
+  (({Token})?)):rel)
+  ((({OwlExportClassDomain.className == "Partito"})):ran)
+  
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="iscritto";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Politico_Iscritto_Variante_Due_Partito
+  ((({Lookup.minorType==politici}):ruolo
+  (({Token})?)
+  (({Token})?)):rel)
+  (({OwlExportClassDomain.className == "Partito"}):ran)
+  (({OwlExportClassDomain.className == "Politico"}):dom)
+  
+  
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="iscritto";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Dirigente_LavoraPer_Azienda
+
+  (
+  (({OwlExportClassDomain.className == "Dirigente"}):dom)
+  ((({TokenSemantico.category == "PRE"})|({TokenSemantico.category == "PRE:det"})): rel)
+  (({OwlExportClassDomain.className == "Azienda"}):ran)
+  )
+  
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="lavoraPer";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+
+Rule: Dirigente_LavoraPer_Azienda_CasoParticolare
+
+  (
+  (({OwlExportClassDomain.className == "Azienda"}):ran)
+  (({Token})?)
+  (({OwlExportClassDomain.className == "Dirigente"}):dom)
+  ):rel
+  
+-->
+{ 
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+
+  String propertyName="lavoraPer";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+
+Rule: Persona_collabora_con
+
+  (
+  (({OwlExportClassDomain.className == "Persona"}):dom)
+  (((({Token})?)(({Token})?)(({Token})?)(({Token.string =="braccio"}))(({Token.string =="destro"})?)(({Token.string == "di"})?)): rel)
+  (({OwlExportClassDomain.className == "Persona"}):ran)
+  )
+  
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="collaboraCon";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+
+Rule: Persona_collabora_con_ver2
+
+  
+    (({OwlExportClassDomain.className == "Persona"}):dom)
+  ((
+    ( ((({Token})?) (({TokenSemantico.lemma=="collaborare"})) (({Token})?)))  
+   
+  ): rel)
+  (({OwlExportClassDomain.className == "Persona"}):ran)
+
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="collaboraCon";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}
+Rule: Persona_componente_di
+
+  
+    (({OwlExportClassDomain.className == "Persona"}):dom)
+  ((
+    ( ((({Token})?) (({Token})) (({Token})?)))  
+   
+  ): rel)
+  (({OwlExportClassDomain.className == "Criminale"}):ran)
+
+-->
+{
+  gate.AnnotationSet domain = (gate.AnnotationSet)bindings.get("dom");
+  gate.Annotation domainAnn = (gate.Annotation)domain.iterator().next();	
+	
+  gate.AnnotationSet range = (gate.AnnotationSet)bindings.get("ran");
+  gate.Annotation rangeAnn = (gate.Annotation)range.iterator().next();
+
+  gate.AnnotationSet rel = (gate.AnnotationSet)bindings.get("rel");
+  gate.Annotation relAnn = (gate.Annotation)rel.iterator().next();
+  
+  String propertyName="componenteDi";
+  
+  gate.FeatureMap features = Factory.newFeatureMap();
+  features.put("propertyName",propertyName);
+  features.put("domainId",domainAnn.getFeatures().get("representationId"));
+  features.put("rangeId",rangeAnn.getFeatures().get("representationId"));	
+  features.put("kind", "JAPE");		
+  
+  outputAS.add(rel.firstNode(), rel.lastNode(),"OwlExportRelationDomain",features);
+}

@@ -1,0 +1,19 @@
+Phase:	Giornale
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaGiornale
+
+({Lookup.minorType == giornale}):giornale 
+--> 
+{
+gate.AnnotationSet gior = (gate.AnnotationSet)bindings.get("giornale");
+gate.Annotation giorAnn = (gate.Annotation)gior.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaGiornale");
+features.put("classe", "Giornale");
+String giorNameContent = gate.Utils.stringFor(doc, giorAnn);
+features.put("Identificativo",giorNameContent);
+features.put("string",giorNameContent);
+outputAS.add(gior.firstNode(), gior.lastNode(), "Giornale",features);
+}

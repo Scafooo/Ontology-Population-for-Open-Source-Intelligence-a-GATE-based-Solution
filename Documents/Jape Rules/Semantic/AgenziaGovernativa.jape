@@ -1,0 +1,19 @@
+Phase:	AgenziaGovernativa
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaAgenziaGovernativa
+
+( {Lookup.minorType == statale} ):forzeordine 
+--> 
+{
+gate.AnnotationSet gov = (gate.AnnotationSet)bindings.get("forzeordine");
+gate.Annotation govAnn = (gate.Annotation)gov.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaAgenziaGovernativa");
+features.put("classe", "Agenzia");
+String govNameContent = gate.Utils.stringFor(doc, govAnn);
+features.put("string",govNameContent);
+features.put("Tipologia",govNameContent);
+outputAS.add(gov.firstNode(), gov.lastNode(), "Agenzia",features);
+}

@@ -1,0 +1,37 @@
+Phase:	Deputato
+Input:  Token Lookup LookupSintattico Persona
+Options: control = appelt
+
+Rule: TrovaDeputati
+(
+( 
+{Lookup.minorType==deputato}
+)
+):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaDeputati");
+features.put("Carica", "Deputato");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "Deputato",features);
+}
+
+Rule: TrovaDeputatiDue
+(
+({Token.string=="deputato"})
+|
+({Token.string=="Deputato"}))
+(({Persona})):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaDeputati");
+features.put("Carica", "Deputato");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "Deputato",features);
+}

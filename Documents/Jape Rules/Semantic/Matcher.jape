@@ -1,0 +1,72 @@
+Phase:	CognomeMatcher
+Input:  Token Lookup Persona
+Options: control = appelt
+
+Rule: CreaRiferimentoCarminati
+(({!Token.string == "Massimo"})):nomeMancate
+(
+(({Token.string == "Carminati"})):cognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet lastNameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation lastNameAnn = (gate.Annotation)lastNameSet.iterator().next();
+String lastNameContent = gate.Utils.stringFor(doc, lastNameAnn);
+
+features.put("Nome","Massimo");
+
+ features.put("Cognome", lastNameContent);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "CreaRiferimentoCarminati");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: CreaRiferimentoBuzzi
+(({!Token.string == "Salvatore"})):nomeMancate
+(
+(({Token.string == "Buzzi"})):cognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet lastNameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation lastNameAnn = (gate.Annotation)lastNameSet.iterator().next();
+String lastNameContent = gate.Utils.stringFor(doc, lastNameAnn);
+
+features.put("Nome","Salvatore");
+
+ features.put("Cognome", lastNameContent);
+ 
+ features.put("classe", "Persona");
+ features.put("rule", "CreaRiferimentoBuzzi");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Persona",features);
+}
+
+Rule: CreaRiferimentoNaso
+(({!Token.string == "Bruno"})):nomeMancate
+(
+(({Token.string == "Naso"})):cognome
+):person 
+-->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("person");
+gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+gate.AnnotationSet lastNameSet = (gate.AnnotationSet)bindings.get("cognome");
+gate.Annotation lastNameAnn = (gate.Annotation)lastNameSet.iterator().next();
+String lastNameContent = gate.Utils.stringFor(doc, lastNameAnn);
+
+features.put("Nome","Bruno");
+
+ features.put("Cognome", lastNameContent);
+ 
+ features.put("classe", "Avvocato");
+ features.put("rule", "CreaRiferimentoNaso");
+ outputAS.add(personSet.firstNode(), personSet.lastNode(), "Avvocato",features);
+}

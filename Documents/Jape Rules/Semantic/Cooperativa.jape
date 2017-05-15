@@ -1,0 +1,40 @@
+Phase:	Cooperativa
+Input:  Token Lookup TokenSemantico
+Options: control = appelt
+
+Rule: TrovaEnteCooperativaUno
+
+
+(({Lookup.minorType==cooperativa})):nome
+--> 
+{
+gate.AnnotationSet coop = (gate.AnnotationSet)bindings.get("nome");
+gate.Annotation NameAnn = (gate.Annotation)coop.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+String NameContent = gate.Utils.stringFor(doc, NameAnn);
+
+features.put("classe", "Cooperativa");
+features.put("Identificativo", NameContent);
+features.put("rule", "TrovaCooperativa");
+outputAS.add(coop.firstNode(), coop.lastNode(), "Cooperativa",features);
+}
+
+Rule: TrovaEnteCooperativaDue
+
+(({Token.string=="Cooperativa"})|({Token.string=="cooperativa"})):tipo
+((({Token.orth == upperInitial})?)
+(({Token.orth == upperInitial})?)
+(({Token.orth == upperInitial})?)
+(({Token.orth == upperInitial}))):nomedue
+--> 
+{
+gate.AnnotationSet coop = (gate.AnnotationSet)bindings.get("nomedue");
+gate.Annotation NameAnn = (gate.Annotation)coop.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+String NameContent = gate.Utils.stringFor(doc, NameAnn);
+
+features.put("classe", "Cooperativa");
+features.put("Identificativo", NameContent);
+features.put("rule", "TrovaCooperativa");
+outputAS.add(coop.firstNode(), coop.lastNode(), "Cooperativa",features);
+}

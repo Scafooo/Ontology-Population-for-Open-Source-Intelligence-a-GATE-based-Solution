@@ -1,0 +1,21 @@
+Phase:	Partito
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaPartito
+
+( 
+{Lookup.minorType == partito}
+):partito 
+--> 
+{
+gate.AnnotationSet party = (gate.AnnotationSet)bindings.get("partito");
+gate.Annotation partyAnn = (gate.Annotation)party.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaPartito");
+String partyNameContent = gate.Utils.stringFor(doc, partyAnn);
+features.put("Identificativo",partyNameContent);
+features.put("string",partyNameContent);
+features.put("classe","Partito");
+outputAS.add(party.firstNode(), party.lastNode(), "Partito",features);
+}

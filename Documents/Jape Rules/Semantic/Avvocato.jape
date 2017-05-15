@@ -1,0 +1,45 @@
+Phase:	Avvocato
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+
+ Rule:TrovaAvvocatoCasoUno
+  (
+  (({Lookup.minorType==avvocato}):lavoroUno
+  ({Persona}):personaLavoraUno)
+ ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personaLavoraUno");
+
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+
+ features.put("classe","Avvocato");
+ features.put("rule", "TrovaAvvocato");
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Avvocato",features);
+
+ }
+ 
+ 
+Rule:TrovaAvvocatoCasoDue
+
+  (
+  (({Persona}):personaLavoraDue
+  ({Token.string == ","})
+(({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.minorType==avvocato}):lavoroDue)
+ ):personaLavoro -->
+{
+gate.FeatureMap features = Factory.newFeatureMap();
+
+ gate.AnnotationSet firstNameSetDue = (gate.AnnotationSet)bindings.get("personaLavoraDue");
+ gate.Annotation firstNameAnnDue = (gate.Annotation)firstNameSetDue.iterator().next();
+ features.putAll(firstNameAnnDue.getFeatures());
+
+ features.put("classe","Avvocato");
+ features.put("rule", "TrovaAvvocato");
+ outputAS.add(firstNameSetDue.firstNode(), firstNameSetDue.lastNode(), "Avvocato",features);
+
+ }

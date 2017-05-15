@@ -1,0 +1,86 @@
+Phase:	DoppioRappresentanteLegaleStato
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+
+Rule: TrovaDoppioRappresentanteLegaleStato
+
+  (
+  (
+  ({Lookup.minorType==legalistato}):lavoro
+  ({Persona}):legaleStatoUno
+  ({Token.kind == word,Token.string =="e"})
+  ({Persona}):legaleStatoDue
+  )
+ ):personaLavoro -->
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresdue = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("legaleStatoUno");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+  features.putAll(firstNameAnn.getFeatures());
+ 
+  gate.AnnotationSet firstNameSecSet = (gate.AnnotationSet)bindings.get("legaleStatoDue");
+  gate.Annotation firstNameSecAnn = (gate.Annotation)firstNameSecSet.iterator().next();
+  featuresdue.putAll(firstNameSecAnn.getFeatures());
+
+  gate.AnnotationSet jobNameSet = (gate.AnnotationSet)bindings.get("lavoro");
+  gate.Annotation jobNameAnn = (gate.Annotation)jobNameSet.iterator().next();
+  String jobNameContent = gate.Utils.stringFor(doc, jobNameAnn);
+  features.put("Ruolo", jobNameContent);
+  featuresdue.put("Ruolo", jobNameContent);
+
+ features.put("classe", "RappresentanteLegaleStato");
+ featuresdue.put("classe", "RappresentanteLegaleStato");
+
+ features.put("rule", "TrovaDoppioRappresentanteLegaleStato");
+ featuresdue.put("rule", "TrovaDoppioRappresentanteLegaleStato");
+ 
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "RappresentanteLegaleStato",features);
+outputAS.add(firstNameSecSet.firstNode(), firstNameSecSet.lastNode(), "RappresentanteLegaleStato",featuresdue);
+ }
+ 
+ Rule: TrovaDoppioRappresentanteLegaleStatoDue
+    (
+  (
+  ({Persona}):legaleStatoUno
+  ({Token.kind == word,Token.string =="e"})
+  ({Persona}):legaleStatoDue
+  (({Token.kind==punctuation})?)
+  (({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.minorType==legalistato}):lavoro
+  )
+ ):personaLavoro -->
+
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresdue = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("legaleStatoUno");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+  features.putAll(firstNameAnn.getFeatures());
+ 
+  gate.AnnotationSet firstNameSecSet = (gate.AnnotationSet)bindings.get("legaleStatoDue");
+  gate.Annotation firstNameSecAnn = (gate.Annotation)firstNameSecSet.iterator().next();
+  featuresdue.putAll(firstNameSecAnn.getFeatures());
+
+  gate.AnnotationSet jobNameSet = (gate.AnnotationSet)bindings.get("lavoro");
+  gate.Annotation jobNameAnn = (gate.Annotation)jobNameSet.iterator().next();
+  String jobNameContent = gate.Utils.stringFor(doc, jobNameAnn);
+  features.put("Ruolo", jobNameContent);
+  featuresdue.put("Ruolo", jobNameContent);
+
+ features.put("classe", "RappresentanteLegaleStato");
+ featuresdue.put("classe", "RappresentanteLegaleStato");
+
+ features.put("rule", "TrovaDoppioRappresentanteLegaleStato");
+ featuresdue.put("rule", "TrovaDoppioRappresentanteLegaleStato");
+ 
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "RappresentanteLegaleStato",features);
+outputAS.add(firstNameSecSet.firstNode(), firstNameSecSet.lastNode(), "RappresentanteLegaleStato",featuresdue);
+ }

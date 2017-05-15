@@ -1,0 +1,26 @@
+Phase:	Comune
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaComuneCasoUno
+
+((({!Lookup.majorType==nome})):nome)
+
+(( {Lookup.minorType==comune})):locazione 
+
+
+--> 
+{
+gate.AnnotationSet loc = (gate.AnnotationSet)bindings.get("locazione");
+gate.Annotation locAnn = (gate.Annotation)loc.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaComune1");
+String locNameContent = gate.Utils.stringFor(doc, locAnn);
+features.put("Nominativo",locNameContent);
+features.put("classe","Comune");
+outputAS.add(loc.firstNode(), loc.lastNode(), "Comune",features);
+}
+
+
+
+

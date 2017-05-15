@@ -1,0 +1,79 @@
+Phase:	Imprenditore
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+Rule: TrovaImprenditoreLista
+(
+( 
+{Lookup.majorType == persona,Lookup.minorType == imprenditore}
+)
+):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaImprenditore");
+features.put("classe", "Imprenditore");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "Imprenditore",features);
+}
+
+Rule: TrovaImprenditore
+  
+  (
+  ({Lookup.majorType == lavoro,Lookup.minorType==imprenditore}):lavoroUno
+  ({Persona}):personaLavoraUno
+  )
+  :personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personaLavoraUno");
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+
+
+
+
+ features.put("classe", "Imprenditore");
+
+
+ features.put("rule", "TrovaImprenditore");
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Imprenditore",features);
+
+ }
+ 
+ 
+ Rule: TrovaImprenditoreDue
+  (
+
+  (
+  ({Persona}):personaLavoraDue
+  ({Token.string == ","})
+  (({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.majorType == lavoro,Lookup.minorType==imprenditore}):lavoroDue
+  )
+  ):personaLavoro -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+ 
+ gate.AnnotationSet firstNameSetDue = (gate.AnnotationSet)bindings.get("personaLavoraDue");
+ gate.Annotation firstNameAnnDue = (gate.Annotation)firstNameSetDue.iterator().next();
+ features.putAll(firstNameAnnDue.getFeatures());
+
+
+
+
+ features.put("classe", "Imprenditore");
+
+
+ features.put("rule", "TrovaImprenditore");
+outputAS.add(firstNameSetDue.firstNode(), firstNameSetDue.lastNode(), "Imprenditore",features);
+
+ }

@@ -1,0 +1,25 @@
+//
+// Multilingual Noun Phrase Extractor (MuNPEx)
+//
+// This grammar is needed to fix a problem with multi-phase transducers 
+// when inputAS != outputAS
+//
+
+Phase: Check_AS
+Options: control = once
+
+Rule: Dummy
+(  
+  {Token}
+)
+-->  
+{
+    if( inputAS != outputAS) {
+        System.out.println("Warning: your MuNPEx inputAS is different from the outputAS");
+	AnnotationSet tempnp = outputAS.get("tempNP");
+	for( Annotation tnp: tempnp ) {
+	    inputAS.add( tnp );
+	    outputAS.remove( tnp );
+	}
+    }
+}

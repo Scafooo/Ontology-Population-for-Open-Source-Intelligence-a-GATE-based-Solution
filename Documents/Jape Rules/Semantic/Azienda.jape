@@ -1,0 +1,139 @@
+Phase:	Azienda
+Input:  Token Lookup LookupSintattico
+Options: control = appelt
+
+Rule:TrovaAzienda
+
+  (
+  (({Lookup.minorType==azienda}))
+  ):azienda 
+  -->
+ 
+{
+gate.AnnotationSet industry = (gate.AnnotationSet)bindings.get("azienda");
+gate.Annotation industryAnn = (gate.Annotation)industry.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaAzienda");
+String industryNameContent = gate.Utils.stringFor(doc, industryAnn);
+features.put("Identificativo",industryNameContent);
+features.put("classe","Azienda");
+outputAS.add(industry.firstNode(), industry.lastNode(), "Azienda",features);
+}
+
+
+Rule: TrovaAziendaUno
+(
+(({Token.kind == word,Token.orth == upperInitial})):primaParte
+(({Token.kind == word,Token.orth == upperInitial})?):secondaParte
+({Lookup.minorType==sigle}):sigla
+):azienda 
+--> 
+
+{gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet industry = (gate.AnnotationSet)bindings.get("azienda");
+gate.Annotation industryAnn = (gate.Annotation)industry.iterator().next();
+
+  gate.AnnotationSet industryNameSet = (gate.AnnotationSet)bindings.get("primaParte");
+  gate.Annotation industrNameAnn = (gate.Annotation)industryNameSet.iterator().next();
+ 
+ String industryNameContent = gate.Utils.stringFor(doc, industrNameAnn);
+
+ gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("secondaParte");
+
+ if (middleNameSet != null && middleNameSet.size()>0)
+{
+ gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+ String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+ gate.AnnotationSet siglaSet = (gate.AnnotationSet)bindings.get("sigla");
+ gate.Annotation siglaAnn = (gate.Annotation)siglaSet.iterator().next();
+ String siglaContent = gate.Utils.stringFor(doc, siglaAnn);
+ String totName=industryNameContent+" "+middleNameContent+" "+siglaContent;
+ features.put("Identificativo",totName);
+}
+else {
+ gate.AnnotationSet siglaSet = (gate.AnnotationSet)bindings.get("sigla");
+ gate.Annotation siglaAnn = (gate.Annotation)siglaSet.iterator().next();
+ 
+ String siglaContent = gate.Utils.stringFor(doc, siglaAnn);
+ String totName=industryNameContent+" "+siglaContent;
+features.put("Identificativo", totName);
+
+}
+ 
+features.put("classe", "Azienda");
+features.put("rule", "TrovaAzienda");
+outputAS.add(industry.firstNode(), industry.lastNode(), "Azienda",features);
+}
+
+Rule: TrovaAziendaDue
+(
+({Lookup.minorType==imprese}):sigla
+(({Token.kind == word,Token.orth == upperInitial})):primaParteNome
+(({Token.kind == word,Token.orth == upperInitial})?):secondaParteNome
+):azienda 
+--> 
+
+{gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet industry = (gate.AnnotationSet)bindings.get("azienda");
+gate.Annotation industryAnn = (gate.Annotation)industry.iterator().next();
+
+  gate.AnnotationSet industryNameSet = (gate.AnnotationSet)bindings.get("primaParteNome");
+  gate.Annotation industrNameAnn = (gate.Annotation)industryNameSet.iterator().next();
+ 
+ String industryNameContent = gate.Utils.stringFor(doc, industrNameAnn);
+
+ gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("secondaParteNome");
+
+ if (middleNameSet != null && middleNameSet.size()>0)
+{
+ gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+ String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+ String totName=industryNameContent+" "+middleNameContent;
+ features.put("Identificativo",totName);
+}
+else {
+
+features.put("Identificativo", industryNameContent);
+
+}
+ 
+features.put("classe", "Azienda");
+features.put("rule", "TrovaAzienda");
+outputAS.add(industry.firstNode(), industry.lastNode(), "Azienda",features);
+}
+Rule: TrovaAziendaTre
+(
+(({Token.kind == word,Token.orth == upperInitial})):primaParteNomeDue
+(({Token.kind == word,Token.orth == upperInitial})?):secondaParteNomeDue
+({Lookup.minorType==imprese}):sigla
+):azienda 
+--> 
+
+{gate.FeatureMap features = Factory.newFeatureMap();
+gate.AnnotationSet industry = (gate.AnnotationSet)bindings.get("azienda");
+gate.Annotation industryAnn = (gate.Annotation)industry.iterator().next();
+
+  gate.AnnotationSet industryNameSet = (gate.AnnotationSet)bindings.get("primaParteNomeDue");
+  gate.Annotation industrNameAnn = (gate.Annotation)industryNameSet.iterator().next();
+ 
+ String industryNameContent = gate.Utils.stringFor(doc, industrNameAnn);
+
+ gate.AnnotationSet middleNameSet = (gate.AnnotationSet)bindings.get("secondaParteNomeDue");
+
+ if (middleNameSet != null && middleNameSet.size()>0)
+{
+ gate.Annotation middleNameAnn = (gate.Annotation)middleNameSet.iterator().next();
+ String middleNameContent = gate.Utils.stringFor(doc, middleNameAnn);
+ String totName=industryNameContent+" "+middleNameContent;
+ features.put("Identificativo",totName);
+}
+else {
+
+features.put("Identificativo", industryNameContent);
+
+}
+ 
+features.put("classe", "Azienda");
+features.put("rule", "TrovaAzienda");
+outputAS.add(industry.firstNode(), industry.lastNode(), "Azienda",features);
+}

@@ -1,0 +1,74 @@
+Phase:	DoppioAvvocato
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+
+Rule: TrovaDoppioAvvocato
+  (
+  (
+  ({Lookup.minorType==avvocati}):lavoro
+  ({Persona}):avvocatoUno
+  ({Token.kind == word,Token.string =="e"})
+  ({Persona}):avvocatoDue
+  )
+ ):personjob -->
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresdue = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personjob");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("avvocatoUno");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+  features.putAll(firstNameAnn.getFeatures());
+ 
+  gate.AnnotationSet firstNameSecSet = (gate.AnnotationSet)bindings.get("avvocatoDue");
+  gate.Annotation firstNameSecAnn = (gate.Annotation)firstNameSecSet.iterator().next();
+  featuresdue.putAll(firstNameSecAnn.getFeatures());
+
+
+ features.put("classe", "Avvocato");
+ featuresdue.put("classe", "Avvocato");
+
+ features.put("rule", "TrovaDoppioAvvocato");;
+ featuresdue.put("rule", "TrovaDoppioAvvocato");
+ 
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Avvocato",features);
+outputAS.add(firstNameSecSet.firstNode(), firstNameSecSet.lastNode(), "Avvocato",featuresdue);
+ }
+ 
+ Rule: TrovaDoppioAvvocatoDue
+  (
+  (
+  ({Persona}):avvocatoUno
+  ({Token.kind == word,Token.string =="e"})
+  ({Persona}):avvocatoDue
+  (({Token.kind==punctuation})?)
+  (({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.minorType==avvocati}):lavoro
+  )
+ ):personjob -->
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresdue = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personjob");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("avvocatoUno");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+  features.putAll(firstNameAnn.getFeatures());
+ 
+  gate.AnnotationSet firstNameSecSet = (gate.AnnotationSet)bindings.get("avvocatoDue");
+  gate.Annotation firstNameSecAnn = (gate.Annotation)firstNameSecSet.iterator().next();
+  featuresdue.putAll(firstNameSecAnn.getFeatures());
+
+
+ features.put("classe", "Avvocato");
+ featuresdue.put("classe", "Avvocato");
+
+ features.put("rule", "TrovaDoppioAvvocato");;
+ featuresdue.put("rule", "TrovaDoppioAvvocato");
+ 
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Avvocato",features);
+outputAS.add(firstNameSecSet.firstNode(), firstNameSecSet.lastNode(), "Avvocato",featuresdue);
+ }

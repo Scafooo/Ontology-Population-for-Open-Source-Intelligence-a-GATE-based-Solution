@@ -1,0 +1,9 @@
+MultiPhase: Mention
+Phases:
+docinfo
+sentenceinfo
+mention_map_domain_entities
+mention_map_nlp_entities
+mention_map_domain_relation
+mention_map_nlp_relation
+mention_map_domain_nlp_relation

@@ -1,0 +1,11 @@
+//
+// Multilingual Noun Phrase Extractor (MuNPEx) -- Italian main file
+//
+
+MultiPhase: NP
+Phases:
+it-np-parts
+np-entities
+check 
+np
+clean

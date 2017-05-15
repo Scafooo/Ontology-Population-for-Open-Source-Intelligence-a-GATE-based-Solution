@@ -1,0 +1,45 @@
+/*
+OwlExporter --  http://www.semanticsoftware.info/owlexporter
+
+This file is part of the OwlExporter architecture.
+
+Copyright (C) 2009, 2010 Semantic Software Lab, http://www.semanticsoftware.info
+        René Witte
+        Ninus Khamis
+
+The OwlExporter  architecture is free software: you can
+redistribute and/or modify it under the terms of the GNU Affero General
+Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+Phase: docInfo
+Input: Token
+Options: control = Once
+
+Rule: docInfoRule
+
+({Token})
+:ann
+-->
+{
+	try
+	{
+		FeatureMap features = Factory.newFeatureMap();
+
+		features.put("source",doc.getSourceUrl().getFile());
+		features.put("title",doc.getName());			
+		outputAS.add((long) 0,doc.getContent().size(),
+				"Document",features);		
+	}
+	catch(InvalidOffsetException ioEX) {
+		System.out.println(ioEX);
+	}
+}

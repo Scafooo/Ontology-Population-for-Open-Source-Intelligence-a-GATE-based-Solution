@@ -1,0 +1,19 @@
+//
+// Multilingual Noun Phrase Extractor (MuNPEx) 
+// 
+// grammar to remove temp annotations
+//
+
+Phase: Clean
+Input: tempNP
+Options: control = all
+
+Rule: CleanTempAnnotations
+(
+  {tempNP}
+):temp
+-->
+{
+  AnnotationSet temp = bindings.get("temp");
+  inputAS.remove(temp.iterator().next());
+}

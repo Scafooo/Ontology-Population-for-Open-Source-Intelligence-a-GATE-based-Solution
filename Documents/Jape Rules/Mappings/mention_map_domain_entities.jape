@@ -1,0 +1,184 @@
+
+
+Phase: mention_map_domain_entities
+Input: Persona Token Lookup Comune Partito Regione Nazione Agenzia Giornale Avvocato Giornalista Imprenditore RappresentanteLegaleStato Politico Dirigente Azienda Criminale Cooperativa
+Options: control = all  debug = true
+
+Rule: mention_map_domain_entities
+(   
+   ({Persona})
+   |
+   ({Comune})
+   |
+   ({Partito})
+   |
+   ({Regione})
+   |
+   ({Nazione})
+   |
+   ({Agenzia})
+   |
+   ({Giornale})
+   |
+   ({Avvocato})
+   |
+   ({Giornalista})
+   |
+   ({Imprenditore})
+   |
+   ({RappresentanteLegaleStato})
+   |
+   ({Politico})
+   |
+   ({Dirigente})
+   |
+   ({Azienda})
+   |
+   ({Criminale})
+   |
+   ({Cooperativa})
+)
+:ann
+-->
+{
+   try   {   
+      AnnotationSet as = (gate.AnnotationSet)bindings.get("ann");
+      Annotation ann = (gate.Annotation)as.iterator().next();
+      gate.FeatureMap features = Factory.newFeatureMap();
+
+      if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Persona") == 0) {
+         features.put("className", "Persona");
+         String nomePersona=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomePersona);
+         String cognomePersona=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomePersona);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Comune") == 0) {
+         features.put("className", "Comune");
+         String nomeComune=(String)ann.getFeatures().get("Nominativo").toString();
+         features.put("Nominativo",nomeComune);
+      }
+       else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Partito") == 0) {
+         features.put("className", "Partito");
+         String nomePartito=(String)ann.getFeatures().get("Identificativo").toString();
+         features.put("Identificativo",nomePartito);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Regione") == 0) {
+         features.put("className", "Regione");
+         String nomeRegione=(String)ann.getFeatures().get("Nominativo").toString();
+         features.put("Nominativo",nomeRegione);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Nazione") == 0) {
+         features.put("className", "Nazione");
+         String nomeNazione=(String)ann.getFeatures().get("Nominativo").toString();
+         features.put("Nominativo",nomeNazione);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Agenzia") == 0) {
+         features.put("className", "Agenzia");
+         String nomeAgenzia=(String)ann.getFeatures().get("Tipologia").toString();
+         features.put("Tipologia",nomeAgenzia);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Giornale") == 0) {
+         features.put("className", "Giornale");
+         String nomeGiornale=(String)ann.getFeatures().get("Identificativo").toString();
+         features.put("Identificativo",nomeGiornale);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Avvocato") == 0) {
+         features.put("className", "Avvocato");
+         String nomeAvvocato=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomeAvvocato);
+         String cognomeAvvocato=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomeAvvocato);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Giornalista") == 0) {
+         features.put("className", "Giornalista");
+         String nomeGiornalista=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomeGiornalista);
+         String cognomeGiornalista=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomeGiornalista);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Imprenditore") == 0) {
+         features.put("className", "Imprenditore");
+         String nomeImprenditore=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomeImprenditore);
+         String cognomeImprenditore=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomeImprenditore);
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("RappresentanteLegaleStato") == 0) {
+         features.put("className", "RappresentanteLegaleStato");
+         String nomeRappresentanteLegaleStato=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomeRappresentanteLegaleStato);
+         String cognomeRappresentanteLegaleStato=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomeRappresentanteLegaleStato);
+         String ruoloRappresentanteLegaleStato=(String)ann.getFeatures().get("Ruolo").toString();
+         features.put("Ruolo",ruoloRappresentanteLegaleStato);
+         
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Politico") == 0) {
+         features.put("className", "Politico");
+         String nomePolitico=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomePolitico);
+         String cognomePolitico=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomePolitico);
+         String caricaPolitico=(String)ann.getFeatures().get("Carica").toString();
+         if (!caricaPolitico.equals("NULL")){
+ 			features.put("Carica",caricaPolitico);
+ 										}
+         
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Azienda") == 0) {
+         features.put("className", "Azienda");
+         String nomeAzienda=(String)ann.getFeatures().get("Identificativo").toString();
+         features.put("Identificativo",nomeAzienda);   
+      }
+      else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Dirigente") == 0) {
+         features.put("className", "Dirigente");
+         String nomeDirigente=(String)ann.getFeatures().get("Nome").toString();
+         features.put("Nome",nomeDirigente);
+         String cognomeDirigente=(String)ann.getFeatures().get("Cognome").toString();
+         features.put("Cognome",cognomeDirigente);
+         String caricaDirigente=(String)ann.getFeatures().get("Titolo").toString();
+ 		 features.put("Titolo",caricaDirigente);
+ 		 }						
+        else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Criminale") == 0) {
+         features.put("className", "Criminale");
+         String nomeEnte=(String)ann.getFeatures().get("Identificativo").toString();
+         features.put("Identificativo",nomeEnte);
+ 		 }	
+         else if(ann.getFeatures().get("classe").toString().compareToIgnoreCase("Cooperativa") == 0) {
+         features.put("className", "Cooperativa");
+         String nomeCooperativa=(String)ann.getFeatures().get("Identificativo").toString();
+         features.put("Identificativo",nomeCooperativa);   
+      }
+      
+      if((ann.getFeatures().get("classe").toString().compareToIgnoreCase("Persona") == 0) || 
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Comune") == 0) ||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Partito")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Nazione")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Regione")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Agenzia")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Giornale")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Avvocato")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Giornalista")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Imprenditore")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("RappresentanteLegaleStato")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Politico")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Azienda")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Dirigente")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Criminale")== 0)||
+      (ann.getFeatures().get("classe").toString().compareToIgnoreCase("Cooperativa")== 0)){
+         String in = doc.getContent().getContent(
+            ann.getStartNode().getOffset(), ann.getEndNode().getOffset()).toString();
+         features.put("instanceName", in);   
+         features.put("representationId", ann.getId());   
+         features.put("corefChain", null);                       
+         features.put("kind", "Class");   
+         outputAS.add(as.firstNode(), as.lastNode(), "OwlExportClassDomain", features);   
+         
+      }
+      
+   }
+   catch(Exception e){
+      e.printStackTrace();
+   }   
+}

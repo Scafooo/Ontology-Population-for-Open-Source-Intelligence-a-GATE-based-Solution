@@ -1,0 +1,73 @@
+/*
+OwlExporter --  http://www.semanticsoftware.info/owlexporter
+
+This file is part of the OwlExporter architecture.
+
+Copyright (C) 2009, 2010 Semantic Software Lab, http://www.semanticsoftware.info
+        René Witte
+        Ninus Khamis
+
+The OwlExporter  architecture is free software: you can
+redistribute and/or modify it under the terms of the GNU Affero General
+Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+Phase: mention_map_nlp_relation
+Input: Document Sentence Token Mention
+Options: control = all
+
+Rule: Document_containsSentence_Sentence
+(
+{Document}
+)
+:ann
+-->
+{	
+	gate.AnnotationSet docAS = (gate.AnnotationSet)bindings.get("ann");
+	gate.Annotation docAnn = (gate.Annotation)docAS.iterator().next();	
+	AnnotationSet sentAS = inputAS.getContained(docAS.firstNode().getOffset(), docAS.lastNode().getOffset()).get("Sentence");	
+	gate.Annotation sentAnn = (gate.Annotation)sentAS.iterator().next();
+
+	String propertyName="containsSentence";
+
+	for(Annotation a : sentAS) {
+		gate.FeatureMap features = Factory.newFeatureMap();
+		features.put("propertyName",propertyName);
+		features.put("domainId",docAnn.getId());
+		features.put("rangeId",a.getId());		
+		features.put("kind", "JAPE");				
+
+		outputAS.add(docAS.firstNode(), docAS.lastNode(),"OwlExportRelationNLP",features);
+	}		
+}
+
+Rule: Sentence_contains_NP
+(
+{Sentence}
+)
+:ann
+-->
+{	
+	gate.AnnotationSet sentAS = (gate.AnnotationSet)bindings.get("ann");
+	gate.Annotation sentAnn = (gate.Annotation)sentAS.iterator().next();	
+	AnnotationSet npAS = inputAS.getContained(sentAS.firstNode().getOffset(), sentAS.lastNode().getOffset()).get("NP");
+	String propertyName="contains";
+
+	for(Annotation a : npAS) {		
+			gate.FeatureMap features = Factory.newFeatureMap();
+			features.put("propertyName",propertyName);
+			features.put("domainId", sentAnn.getId());
+			features.put("rangeId",a.getId());
+			features.put("kind", "JAPE");		
+
+			outputAS.add(npAS.firstNode(), npAS.lastNode(),"OwlExportRelationNLP",features);
+	}
+}

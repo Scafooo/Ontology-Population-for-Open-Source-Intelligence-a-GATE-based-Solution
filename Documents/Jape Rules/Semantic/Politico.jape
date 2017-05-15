@@ -1,0 +1,114 @@
+Phase:	Politico
+Input:  Token Lookup Persona Partito
+Options: control = appelt
+
+Rule: TrovaPolitico
+(
+( 
+{Lookup.minorType==politico}
+)
+):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaPolitico");
+features.put("Carica", "NULL");
+features.put("classe", "Politico");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "Politico",features);
+}
+
+
+
+Rule: TrovaPoliticoVarUno
+
+(
+  ({Lookup.minorType==politici}):ruolo
+  (({Token})?)
+  (({Token})?)
+  (({Partito})?):partito
+  ({Persona}):politico
+  ):persona
+  -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("politico");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+ features.putAll(personAnn.getFeatures());
+ gate.AnnotationSet polNameSet = (gate.AnnotationSet)bindings.get("partito");
+ if (polNameSet != null && polNameSet.size()>0)
+{
+ gate.Annotation polNameAnn = (gate.Annotation)polNameSet.iterator().next();
+ String polNameContent = gate.Utils.stringFor(doc, polNameAnn).toUpperCase();
+ features.put("Partito", polNameContent);}
+ 
+ gate.AnnotationSet polRoleSet = (gate.AnnotationSet)bindings.get("ruolo");
+ gate.Annotation polRoleAnn = (gate.Annotation)polRoleSet.iterator().next();
+ String polRoleContent = gate.Utils.stringFor(doc, polRoleAnn).toUpperCase();
+ features.put("Carica", polRoleContent);
+
+ features.put("rule", "TrovaPolitico");
+ features.put("classe", "Politico");
+outputAS.add(personSet.firstNode(), personSet.lastNode(), "Politico", features);
+ }
+ 
+Rule: TrovaPoliticoVarDue
+
+(
+  ({Persona}):politico
+  ({Token.string == ","})
+  (({Token})?)
+  ({Lookup.minorType==politici}):ruolo
+  (({Token})?)
+  (({Token})?)
+  (({Partito})?):partito
+  ):persona
+  -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("politico");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+ features.putAll(personAnn.getFeatures());
+ gate.AnnotationSet polNameSet = (gate.AnnotationSet)bindings.get("partito");
+ if (polNameSet != null && polNameSet.size()>0)
+{
+ gate.Annotation polNameAnn = (gate.Annotation)polNameSet.iterator().next();
+ String polNameContent = gate.Utils.stringFor(doc, polNameAnn).toUpperCase();
+ features.put("Partito", polNameContent);}
+ 
+ gate.AnnotationSet polRoleSet = (gate.AnnotationSet)bindings.get("ruolo");
+ gate.Annotation polRoleAnn = (gate.Annotation)polRoleSet.iterator().next();
+ String polRoleContent = gate.Utils.stringFor(doc, polRoleAnn).toUpperCase();
+ features.put("Carica", polRoleContent);
+
+ features.put("rule", "TrovaPolitico");
+ features.put("classe", "Politico");
+outputAS.add(personSet.firstNode(), personSet.lastNode(), "Politico", features);
+ }
+ Rule: TrovaPoliticoVarTre
+
+(
+  ({Persona}):politico
+  (({Token.string=="("}))
+  ({Partito}):partito
+  (({Token.string==")"}))
+  ):persona
+  -->
+{
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("politico");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+ features.putAll(personAnn.getFeatures());
+ gate.AnnotationSet polNameSet = (gate.AnnotationSet)bindings.get("partito");
+
+ gate.Annotation polNameAnn = (gate.Annotation)polNameSet.iterator().next();
+ String polNameContent = gate.Utils.stringFor(doc, polNameAnn).toUpperCase();
+ features.put("Partito", polNameContent);
+ 
+ features.put("rule", "TrovaPolitico");
+ features.put("classe", "Politico");
+ features.put("Carica", "NULL");
+outputAS.add(personSet.firstNode(), personSet.lastNode(), "Politico", features);
+ }

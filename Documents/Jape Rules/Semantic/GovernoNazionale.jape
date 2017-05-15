@@ -1,0 +1,19 @@
+Phase:	GovernoNazionale
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: GovernoNazionaleTipo
+(
+( 
+{Lookup.minorType==membrogoverno}
+)
+):persona 
+--> 
+{
+gate.AnnotationSet person = (gate.AnnotationSet)bindings.get("persona");
+gate.Annotation personAnn = (gate.Annotation)person.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "GovernoNazionale");
+features.putAll(personAnn.getFeatures());
+outputAS.add(person.firstNode(), person.lastNode(), "GovernoNazionale",features);
+}

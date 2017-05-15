@@ -1,0 +1,18 @@
+Phase:	Regione
+Input:  Token Lookup
+Options: control = appelt
+
+Rule: TrovaRegione
+((({!Lookup.majorType==nome})):nome)
+(({Lookup.minorType==regione})):locazione 
+--> 
+{
+gate.AnnotationSet loc = (gate.AnnotationSet)bindings.get("locazione");
+gate.Annotation locAnn = (gate.Annotation)loc.iterator().next();
+gate.FeatureMap features = Factory.newFeatureMap();
+features.put("rule", "TrovaRegione");
+String locNameContent = gate.Utils.stringFor(doc, locAnn);
+features.put("Nominativo",locNameContent);
+features.put("classe","Regione");
+outputAS.add(loc.firstNode(), loc.lastNode(), "Regione",features);
+}

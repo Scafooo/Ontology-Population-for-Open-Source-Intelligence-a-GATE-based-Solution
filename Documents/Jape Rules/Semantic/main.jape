@@ -1,0 +1,35 @@
+/*
+*  main.jape
+*/
+
+MultiPhase:	TestTheGrammars
+Phases:
+Cognome
+Partito
+Comune
+Regione
+Nazione
+AgenziaGovernativa
+Giornale
+DoppiaPersona
+Avvocato
+DoppioAvvocato
+Giornalista
+DoppioGiornalista
+Imprenditore
+DoppioImprenditore
+RappresentanteLegaleStato
+DoppioRappresentanteLegaleStato
+ConsiglioLazio
+ConsiglioRoma
+GovernoNazionale
+Deputato
+Senatore
+GovernoRegioneLazio
+Politico
+AccorpaPolitici
+DirigenteAzienda
+Criminale
+Cooperativa
+Matcher
+Azienda

@@ -1,0 +1,81 @@
+Phase:	DoppioGiornalista
+Input:  Token Lookup Persona TokenSemantico
+Options: control = appelt
+
+
+Rule: TrovaDoppioGiornalista
+
+  (
+  (
+  ({Lookup.minorType==giornalisti}):lavoro
+  (({TokenSemantico.category == "DET:def"})?)
+  (({Lookup.minorType==giornale})?)
+  (({Token})?)
+  ({Persona}):giornalistaUno
+  ({Token.kind == word,Token.string =="e"})
+  ({Persona}):giornalistaDue
+  )
+ ):personaLavoro -->
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresdue = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("giornalistaUno");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+  features.putAll(firstNameAnn.getFeatures());
+ 
+  gate.AnnotationSet firstNameSecSet = (gate.AnnotationSet)bindings.get("giornalistaDue");
+  gate.Annotation firstNameSecAnn = (gate.Annotation)firstNameSecSet.iterator().next();
+  featuresdue.putAll(firstNameSecAnn.getFeatures());
+
+
+ features.put("classe", "Giornalista");
+ featuresdue.put("classe", "Giornalista");
+
+ features.put("rule", "TrovaDoppioGiornalista");
+ featuresdue.put("rule", "TrovaDoppioGiornalista");
+ 
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Giornalista",features);
+outputAS.add(firstNameSecSet.firstNode(), firstNameSecSet.lastNode(), "Giornalista",featuresdue);
+ }
+ 
+ 
+ Rule: TrovaDoppioGiornalistaDue
+
+  (
+  (
+
+  ({Persona}):giornalistaUno
+  ({Token.kind == word,Token.string =="e"})
+  ({Persona}):giornalistaDue
+  (({Token.kind==punctuation})?)
+  (({TokenSemantico.category == "DET:def"})?)
+  ({Lookup.minorType==giornalisti}):lavoro
+  )
+ ):personaLavoro -->
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.FeatureMap featuresdue = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("personaLavoro");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+  gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("giornalistaUno");
+  gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+  features.putAll(firstNameAnn.getFeatures());
+ 
+  gate.AnnotationSet firstNameSecSet = (gate.AnnotationSet)bindings.get("giornalistaDue");
+  gate.Annotation firstNameSecAnn = (gate.Annotation)firstNameSecSet.iterator().next();
+  featuresdue.putAll(firstNameSecAnn.getFeatures());
+
+
+ features.put("classe", "Giornalista");
+ featuresdue.put("classe", "Giornalista");
+
+ features.put("rule", "TrovaDoppioGiornalista");
+ featuresdue.put("rule", "TrovaDoppioGiornalista");
+ 
+outputAS.add(firstNameSet.firstNode(), firstNameSet.lastNode(), "Giornalista",features);
+outputAS.add(firstNameSecSet.firstNode(), firstNameSecSet.lastNode(), "Giornalista",featuresdue);
+ }

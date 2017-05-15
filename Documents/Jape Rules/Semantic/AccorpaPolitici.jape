@@ -1,0 +1,75 @@
+Phase:	AccorpamentoPolitici
+Input:  Token Lookup GovernoRegionale Senatore Deputato GovernoNazionale ConsiglioProvinciaRoma ConsigliereRegionale
+Options: control = appelt
+
+
+Rule: AccorpamentoPolitici
+Priority: 30
+
+ (
+  (
+  ({Senatore}):personauno
+  )
+  |
+  (
+  ({Deputato}):personadue
+  )
+  |
+  (
+  ({GovernoRegionale}):personatre
+  )
+  |
+  (
+  ({GovernoNazionale}):personaquattro
+  )
+  |
+  (
+  ({ConsiglioProvinciaRoma}):personacinque
+  )
+  |
+  (
+  ({ConsigliereRegionale}):personasei
+  )
+  ):politico -->
+ {
+ gate.FeatureMap features = Factory.newFeatureMap();
+ gate.AnnotationSet personSet = (gate.AnnotationSet)bindings.get("politico");
+ gate.Annotation personAnn = (gate.Annotation)personSet.iterator().next();
+
+ gate.AnnotationSet firstNameSet = (gate.AnnotationSet)bindings.get("personauno");
+ gate.AnnotationSet firstNameSetDue = (gate.AnnotationSet)bindings.get("personadue");
+ gate.AnnotationSet firstNameSetTre = (gate.AnnotationSet)bindings.get("personatre");
+ gate.AnnotationSet firstNameSetQuattro = (gate.AnnotationSet)bindings.get("personaquattro");
+ gate.AnnotationSet firstNameSetCinque = (gate.AnnotationSet)bindings.get("personacinque");
+ gate.AnnotationSet firstNameSetSei = (gate.AnnotationSet)bindings.get("personasei");
+ 
+if (firstNameSet != null && firstNameSet.size()>0)
+{
+ gate.Annotation firstNameAnn = (gate.Annotation)firstNameSet.iterator().next();
+ features.putAll(firstNameAnn.getFeatures());
+}
+else if (firstNameSetDue != null && firstNameSetDue.size()>0){
+ gate.Annotation firstNameAnnDue = (gate.Annotation)firstNameSetDue.iterator().next();
+ features.putAll(firstNameAnnDue.getFeatures());
+}
+else if (firstNameSetTre != null && firstNameSetTre.size()>0){
+ gate.Annotation firstNameAnnTre = (gate.Annotation)firstNameSetTre.iterator().next();
+ features.putAll(firstNameAnnTre.getFeatures());
+}
+else if (firstNameSetQuattro != null && firstNameSetQuattro.size()>0){
+ gate.Annotation firstNameAnnQuattro = (gate.Annotation)firstNameSetQuattro.iterator().next();
+ features.putAll(firstNameAnnQuattro.getFeatures());
+}
+else if (firstNameSetCinque != null && firstNameSetCinque.size()>0){
+ gate.Annotation firstNameAnnCinque = (gate.Annotation)firstNameSetCinque.iterator().next();
+ features.putAll(firstNameAnnCinque.getFeatures());
+}
+else{
+ gate.Annotation firstNameAnnSei = (gate.Annotation)firstNameSetSei.iterator().next();
+ features.putAll(firstNameAnnSei.getFeatures());
+}
+ 
+features.put("classe", "Politico");
+outputAS.add(personSet.firstNode(), personSet.lastNode(), "Politico",features);
+
+ }
