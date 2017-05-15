@@ -30,7 +30,13 @@ CREOLE Plugin Manager.
 
 ## 1.3 Configure Processing Resources
 
-To set and run CREOLE resources, we need to go back to the GATE home page (Figure 2). By a right click on the menu “Processing Resources”, the list of the resources loaded in the previous step will be shown, so that it is possible to select the resources to be configured (in the GATE terminology this selection is called resource creation). When a specific processing resource is created, it appears as a sub-item of the menu “Processing Resources”, as we can observe in Figure 2 for the GATE Unicode Tokeniser.
+To set and run CREOLE resources, we need to go back to the GATE home page (Figure 2). By a right click on the menu “Processing Resources”, the list of the resources loaded in the previous step will be shown,
+
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/creole.png)
+
+
+so that it is possible to select the resources to be configured (in the GATE terminology this selection is called resource creation). When a specific processing resource is created, it appears as a sub-item of the menu “Processing Resources”, as we can observe in Figure 2 for the GATE Unicode Tokeniser.
 Notice that it is possible to select the same processing resource more than once, and thus create more than one instance of the same resource, which however has to be assigned with a different name. This is particularly useful if the same resource will be used several times with different parameters. Below we describe how to set the initialisation parameters for each resource (run-time parameters will be set later).
 
 **Document Reset.** For this processing resource the only parameter that can be modified is the name. In our solution we have used the default name assigned to such resource (as shown in Figure 3).
