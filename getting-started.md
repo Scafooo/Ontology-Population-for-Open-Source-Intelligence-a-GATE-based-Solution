@@ -43,7 +43,6 @@ Notice that it is possible to select the same processing resource more than once
 
 In Figure 5 we show the initialisation parameters of RegEx Sentence Splitter.
 
-
 **TreeTagger Part Of Speech.** We first select the item Generic Tagger from the menu Processing Resources and set its parameters. The preProcessURL parameter has to point to a JAPE grammar. This is used to check whether the annotations created by the Sentence Splitter used in the previous phase are in fact compatible with the analysis that the tagger has to perform. This step is the same, whatever tagging resource is used. More precisely, we set preProcessURL to the path of the file sentencestring.jape (cf. Figure 6).
 The postProcessURL parameter is instead used for adding special annotations, which we do not use in our solution and thus leave this parameter blank.
 Since we want to use a third-party POS tagger (i.e., TreeTagger POS), we further need to execute some downloads at the link http://www.cis.uni-muenchen.de/ ̃schmid/ tools/TreeTagger/. More precisely, we need to download: the tagger package for the specific operating system we are working with, the tagging scripts, the installation script, and the parameter file for the language that we want to process. We put all the downloaded files in the same directory and unzip the compressed archives. Since we want to use the Italian version of TreeTagger, we need to modify the default settings in the file tree-tagger-italian present in the folder tagger-scripts/cmd. To this aim, we open tree-tagger-italian with a text editor and set the following parameters:
@@ -61,6 +60,7 @@ Notice that the file tree-tagger-italian will be pointed by run-time parameters 
 
 **OwlExporter.** For this Processing Resource we have used the default initialisation parameters. Notice also that changes to the exportFormat parameter are not in fact possible in the practice, since the only format supported for the export is OWL (in the XML/RDF syntax), and thus the only thing we can do is to change the name of the processing resource (which is not necessary).
 
+## 1.4 Loading Language Resources
 
 To import the document to be analyzed, the steps below have to be followed:
 
@@ -83,3 +83,36 @@ Alternatively, to populate a corpus from a directory, follow the steps below:
 3. Specify the file extension, so that only files with this extension are loaded (optional).
 4. Specify the encoding to be used (optional). If left blank, then the default platform encoding will be used.
 5. To view the corpus, double click on its name, and to view documents displayed inside a corpus, do the same on their names. From a corpus view it is possible to add/remove documents using dedicated buttons.
+
+
+## 1.5 Creating and Setting a new Application
+
+Once all the resources you need have been loaded, an application (set of processing resources in a specific order) can be created from them, and run on your text corpus. Right click on “Applications” and select “New” and then either “Corpus Pipeline” or “Pipeline”. A pipeline application can only be run over a single document, while a corpus pipeline can be run over a whole corpus. To build the pipeline, double click on it, and select the resources needed to run the application (you may not necessarily wish to use all those that have been loaded), i.e., move the selected resource from the set of “loaded components” (left hand side of the main window) to the set of “selected components” (right hand side of the main window) (cf. Figure 11). To order the components in the pipeline, use the up/down arrows. In our solution, we use the the following order:
+1. Document Reset
+2. Gate Unicode Tokeniser
+3. RegEx Sentence Splitter
+4. TreeTagger IT
+5. Gazetteer
+6. Jape Transducer Semantic
+7. Jape MunPEX
+8. Jape Mapping Classes and Relationships 9. OwlExporter
+
+Now it remains to set up the run-time parameters for the processing resources we have selected in the pipeline. They can be changed as follows:
+1. Click on the application name, and
+2. Click on the Process Resource into the application menu that contains the runtime parameters that you want to change.
+
+We need to change runtime parameters for only three processing resources, whereas the others maintain their default values:
+* TreeTagger, for which we set five parameters:
+ * endcoding to UTF-8;
+ * inputAnnotationType to Sentence, which is the annotation produced by the RegEx Sentence Splitter component;
+ * outputAnnotationType to SemanticToken, which is the annotation produced by the TreeTagger component;
+ * taggerBinary to the path of the file tree-tagger-italian, present in the cmd folder of the tagging scripts;
+ * updateAnnotations to false.
+* Gazetteer, for which we need to chance the parameter longestMatchOnly from true (default) to false;
+* Owl Exporter, for which we set four parameters:
+ * exportDomainOntology to the location and file name of the domain ontology in output;
+ * exportNLPOntology to the location and file name of the NLP ontology in output;
+ * importDomainOntology to the path of the file that contains the pre-existing domain ontology that the OwlExporter uses to populate and create the output ontology (i.e., the one set in the exportDomainOntology parameter);
+ * importNLPOntology to the path of the file that contains the pre-existing NLP ontology that the OwlExporter will use to populate and create the output NLP ontology (i.e., the one set in the exportNLPOntology parameter).
+ 
+We thus are finally able to run the application by selecting the corpus that we want to analyze in the “Corpus” box, and by clicking “run this application”.
