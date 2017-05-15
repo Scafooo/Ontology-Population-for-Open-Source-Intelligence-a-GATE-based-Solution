@@ -15,7 +15,10 @@ In GATE, processing resources are used to automatically create and manipulate an
 The CREOLE plugins can be managed through the graphical user interface which can be activated by selecting “Manage CREOLE Plugins” from the “File” menu. This will bring up a window listing all the known plugins. For each plugin there are two check-boxes, one labelled “Load Now” , which will load the plugin, and the other labelled “Load Always” which will add the plugin to the list of auto-loadable plugins. A “Delete” button is also provided, which will remove the plugin from the list of loaded plugins. This operation does not delete the actual plugin directory, so that it can be reloaded in future usages.. Installed plugins are found automatically when GATE is started; if an installed plugin is deleted from the list, it will re-appear next time GATE is launched.
 In order to set up our pipeline we need to select the Load Now box in the CREOLE Plugin Manager for the following plugins:
 
-Markup : * ANNIE, from which we take the following processing resources:
-              * Document Reset
-              * GATE Unicode Tokeniser 
-              * RegEx Sentence Splitter
+* ANNIE, from which we take the following processing resources:
+* Document Reset
+* GATE Unicode Tokeniser 
+* RegEx Sentence Splitter
+* ANNIE Gazetteer
+* Jape Transducer
+
