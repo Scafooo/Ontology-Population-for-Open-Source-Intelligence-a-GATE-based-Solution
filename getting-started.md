@@ -16,9 +16,11 @@ The CREOLE plugins can be managed through the graphical user interface which can
 In order to set up our pipeline we need to select the Load Now box in the CREOLE Plugin Manager for the following plugins:
 
 * ANNIE, from which we take the following processing resources:
-* Document Reset
-* GATE Unicode Tokeniser 
-* RegEx Sentence Splitter
-* ANNIE Gazetteer
-* Jape Transducer
-
+  * Document Reset
+  * GATE Unicode Tokeniser 
+  * RegEx Sentence Splitter
+  * ANNIE Gazetteer
+  * Jape Transducer
+* Tagger Framework, which contains the Generic Tagger Processing Resource
+* OwlExporter. To load this processing resource we need to download the creole.zip file from http://www.semanticsoftware.info/owlexporter, unzip the downloaded file, after that push the button with the symbol + in the upper-left corner of the tab “Install Plugins” (cf. Figure 1), and specify the path of the unzipped folder containing the OwlExporer resource. Finally we can flag the Load Now box in correspondence of OwlExporter in the
+CREOLE Plugin Manager.
