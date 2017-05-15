@@ -37,16 +37,30 @@ To set and run CREOLE resources, we need to go back to the GATE home page (Figur
 
 
 so that it is possible to select the resources to be configured (in the GATE terminology this selection is called resource creation). When a specific processing resource is created, it appears as a sub-item of the menu “Processing Resources”, as we can observe in Figure 2 for the GATE Unicode Tokeniser.
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/GateToken.png)
+
+
 Notice that it is possible to select the same processing resource more than once, and thus create more than one instance of the same resource, which however has to be assigned with a different name. This is particularly useful if the same resource will be used several times with different parameters. Below we describe how to set the initialisation parameters for each resource (run-time parameters will be set later).
 
 **Document Reset.** For this processing resource the only parameter that can be modified is the name. In our solution we have used the default name assigned to such resource (as shown in Figure 3).
 
-**Gate Unicode Tokeniser.** Besides the name, two other parameters can be set: rulesURL and encoding. The former contains the URL for the ruleset file, which is the file containing the rules for the tokenization process. The latter indicates the encoding used for text documents to be analyzed. In our solution, we use the standard name for the processing resource, the standard path for rulesURL, whereas we set the value of the encoding to UTF-8, as shown in Figure 4.
+**Gate Unicode Tokeniser.** Besides the name, two other parameters can be set: rulesURL and encoding. The former contains the URL for the ruleset file, which is the file containing the rules for 
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/DocumentReset.png)
+
+the tokenization process. The latter indicates the encoding used for text documents to be analyzed. In our solution, we use the standard name for the processing resource, the standard path for rulesURL, whereas we set the value of the encoding to UTF-8, as shown in Figure 4.
+
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/GateUnicodeTokeniser.png)
 
 **RegEx Sentence Splitter.** As before, for the encoding parameter we select UTF-8. For the remaining parameters we use the standard initialisation values. In particular, we do not need to change the value of the following attributes:
 * externalSplitListURL, which is the URL for the file containing the list of external split patterns;
 * internalSplitListURL,whichistheURLforthefilecontainingthelistofinternalsplitpatterns; 
 * nonSplitListURL, which is the URL for the file containing the list of non split patterns.
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/RegExSentenceSplitter.png)
+
 
 In Figure 5 we show the initialisation parameters of RegEx Sentence Splitter.
 
@@ -61,11 +75,23 @@ Since we want to use a third-party POS tagger (i.e., TreeTagger POS), we further
 Notice that the file tree-tagger-italian will be pointed by run-time parameters of the Generic Tagger, so that it will in fact run the Tree Tagger POS.
 **Gazetteer.** For this Processing Resource, we set the parameter listsURL so that it points to the .def file containing the indexes of the Gazetteer lists we want to use. Furthermore, we set the caseSensitive parameter to true, the encoding parameter to UTF-8, and the gazetteerFeatureSeparator parameter to “:”, which is the special character used to separate the name of the list from the major and minor types in the .def file.
 
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/TreeTagger.png)
+
+![alt text](MANCANTE)
+
+
+
 **Jape Transducer Semantic.** For this Processing Resource in grammarURL parameter we have to point the file main.jape that contains the identifiers of Jape Semantic rules we want to use (in other terms this file acts as an index of the rules). Furthermore, as usual, we set UTF-8 for the encoding parameter, whereas for the annotationAccessors and operators parameters we adopt the default values. Indeed, such parameters are used to add custom operators and meta-property abilities to the JAPE language, which are features that are not used in our solution. In Figure 8 we show the initialisation parameters of Jape Transducer Semantic.
 
 **Jape Transducer MunPEX and Jape Transducer Mapping.** Parameters of these processing resources have the same meaning as the ones of the Jape Transducer Semantic, and are set similarly. The only difference is in the value of grammarURL, which refers to a different files of JAPE rules.
 
 **OwlExporter.** For this Processing Resource we have used the default initialisation parameters. Notice also that changes to the exportFormat parameter are not in fact possible in the practice, since the only format supported for the export is OWL (in the XML/RDF syntax), and thus the only thing we can do is to change the name of the processing resource (which is not necessary).
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/MunPEX.png)
+
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/OwlExporter.png)
 
 ## 1.4 Loading Language Resources
 
@@ -92,9 +118,17 @@ Alternatively, to populate a corpus from a directory, follow the steps below:
 5. To view the corpus, double click on its name, and to view documents displayed inside a corpus, do the same on their names. From a corpus view it is possible to add/remove documents using dedicated buttons.
 
 
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/LoadCorp.png)
+
+
 ## 1.5 Creating and Setting a new Application
 
-Once all the resources you need have been loaded, an application (set of processing resources in a specific order) can be created from them, and run on your text corpus. Right click on “Applications” and select “New” and then either “Corpus Pipeline” or “Pipeline”. A pipeline application can only be run over a single document, while a corpus pipeline can be run over a whole corpus. To build the pipeline, double click on it, and select the resources needed to run the application (you may not necessarily wish to use all those that have been loaded), i.e., move the selected resource from the set of “loaded components” (left hand side of the main window) to the set of “selected components” (right hand side of the main window) (cf. Figure 11). To order the components in the pipeline, use the up/down arrows. In our solution, we use the the following order:
+Once all the resources you need have been loaded, an application (set of processing resources in a specific order) can be created from them, and run on your text corpus. Right click on “Applications” and select “New” and then either “Corpus Pipeline” or “Pipeline”. A pipeline application can only be run over a single document, while a corpus pipeline can be run over a whole corpus. To build the pipeline, double click on it, and select the resources needed to run the application (you may not necessarily wish to use all those that have been loaded),
+
+![alt text](https://github.com/Scafooo/Ontology-Population-for-Open-Source-Intelligence-a-GATE-based-Solution/blob/master/images/Pipeline.png)
+
+
+i.e., move the selected resource from the set of “loaded components” (left hand side of the main window) to the set of “selected components” (right hand side of the main window) (cf. Figure 11). To order the components in the pipeline, use the up/down arrows. In our solution, we use the the following order:
 1. Document Reset
 2. Gate Unicode Tokeniser
 3. RegEx Sentence Splitter
